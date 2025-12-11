@@ -1,0 +1,22 @@
+{
+  "name" : "Target type",
+  "description" : null,
+  "language" : "it",
+  "tags" : [ {
+    "tag_name" : "Backchannel",
+    "tag_description" : null
+  }, {
+    "tag_name" : "Filled Pause",
+    "tag_description" : null
+  }, {
+    "tag_name" : "Post-content",
+    "tag_description" : null
+  }, {
+    "tag_name" : "Pre-content",
+    "tag_description" : null
+  }, {
+    "tag_name" : "Repair",
+    "tag_description" : null
+  } ],
+  "create_tag" : false
+}

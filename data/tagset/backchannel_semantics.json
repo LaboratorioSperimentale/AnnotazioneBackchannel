@@ -1,0 +1,16 @@
+{
+  "name" : "Backchannel semantics",
+  "description" : null,
+  "language" : "it",
+  "tags" : [ {
+    "tag_name" : "Content",
+    "tag_description" : null
+  }, {
+    "tag_name" : "Interjection",
+    "tag_description" : null
+  }, {
+    "tag_name" : "None",
+    "tag_description" : null
+  } ],
+  "create_tag" : false
+}
