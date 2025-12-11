@@ -1,0 +1,4645 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Intonation|Intonation_values
+#T_SP=webanno.custom.Jefferson|Jefferson_values
+#T_SP=webanno.custom.Speaker|Speaker_values
+#T_SP=webanno.custom.TokenID|TokenID_values
+#T_CH=webanno.custom.OverlapsLink|referenceRelation|referenceType
+
+
+#Text=okay [PAUSE] mi piacerebbe
+1-1	0-4	okay	okay	0-0	TO002	_	_	_
+1-2	5-12	[PAUSE]	(.)	0-1	_	_	_	_
+1-3	13-15	mi	mi	0-2	_	_	_	_
+1-4	16-26	piacerebbe	piacerebbe::	0-3	_	_	_	_
+
+#Text=non mi ricordo mica come è il suo nome
+2-1	27-30	non	non	1-0	TO002	_	_	_
+2-2	31-33	mi	mi	1-1	_	_	_	_
+2-3	34-41	ricordo	ricordo	1-2	_	_	_	_
+2-4	42-46	mica	mica	1-3	_	_	_	_
+2-5	47-51	come	come	1-4	_	_	_	_
+2-6	52-53	è	è	1-5	_	_	_	_
+2-7	54-56	il	il	1-6	_	_	_	_
+2-8	57-60	suo	suo	1-7	_	_	_	_
+2-9	61-65	nome	nome:	1-8	_	_	_	_
+
+#Text=è mario rossi
+3-1	66-67	è	è	2-0	TO003	_	_	_
+3-2	68-73	mario	mario	2-1	_	_	_	_
+3-3	74-79	rossi	ro\[ssi\]	2-2	_	_	_	_
+3-3.1	76-81	ssi	_	_	_	_	*->1-1	*[1]
+
+#Text=mario
+4-1	80-85	mario	\[mar\]io.	3-0	TO002	Falling	_	_
+4-1.1	80-83	mar	_	_	_	_	*->1-2	*[1]
+
+#Text=mario noi ci siamo conosciuti a lungo
+5-1	86-91	mario	mario	4-0	TO002	_	_	_
+5-2	92-95	noi	noi	4-1	_	_	_	_
+5-3	96-98	ci	ci	4-2	_	_	_	_
+5-4	99-104	siamo	siamo	4-3	_	_	_	_
+5-5	105-115	conosciuti	conosciuti	4-4	_	_	_	_
+5-6	116-117	a	a	4-5	_	_	_	_
+5-7	118-123	lungo	lu:n\[go:\]	4-6	_	_	_	_
+5-7.1	121-126	go	_	_	_	_	*->2-1	*[2]
+
+#Text=eh s~ ((ride))
+6-1	124-126	eh	\[eh\]	5-0	TO003	_	*->2-2	*[2]
+6-2	127-129	s~	s~	5-1	_	_	_	_
+6-3	130-138	((ride))	((ride))	5-2	_	_	_	_
+
+#Text=è stata una esperienza [PAUSE] non so quanto drammatica per lei
+7-1	139-140	è	è	6-0	TO002	_	_	_
+7-2	141-146	stata	stata	6-1	_	_	_	_
+7-3	147-150	una	una	6-2	_	_	_	_
+7-4	151-161	esperienza	esperienza:	6-3	_	_	_	_
+7-5	162-169	[PAUSE]	(.)	6-4	_	_	_	_
+7-6	170-173	non	non	6-5	_	_	_	_
+7-7	174-176	so	so	6-6	_	_	_	_
+7-8	177-183	quanto	quanto	6-7	_	_	_	_
+7-9	184-194	drammatica	drammatica	6-8	_	_	_	_
+7-10	195-198	per	per	6-9	_	_	_	_
+7-11	199-202	lei	le:i:	6-10	_	_	_	_
+
+#Text=eh mh
+8-1	203-205	eh	e:::h	7-0	TO002	_	_	_
+8-2	206-208	mh	m:::h	7-1	_	_	_	_
+
+#Text=appunto volevo sapere anche da lei questo
+9-1	209-216	appunto	appunto	8-0	TO002	_	_	_
+9-2	217-223	volevo	volevo	8-1	_	_	_	_
+9-3	224-230	sapere	sapere	8-2	_	_	_	_
+9-4	231-236	anche	anche	8-3	_	_	_	_
+9-5	237-239	da	da	8-4	_	_	_	_
+9-6	240-243	lei	lei	8-5	_	_	_	_
+9-7	244-250	questo	questo:::	8-6	_	_	_	_
+
+#Text=la sua opinione su questo libro come ho chiesto a tutti prima di cominciare
+10-1	251-253	la	la	9-0	TO002	_	_	_
+10-2	254-257	sua	sua	9-1	_	_	_	_
+10-3	258-266	opinione	opinione	9-2	_	_	_	_
+10-4	267-269	su	su	9-3	_	_	_	_
+10-5	270-276	questo	questo	9-4	_	_	_	_
+10-6	277-282	libro	libro	9-5	_	_	_	_
+10-7	283-287	come	come	9-6	_	_	_	_
+10-8	288-290	ho	ho	9-7	_	_	_	_
+10-9	291-298	chiesto	chiesto	9-8	_	_	_	_
+10-10	299-300	a	a	9-9	_	_	_	_
+10-11	301-306	tutti	tutti:	9-10	_	_	_	_
+10-12	307-312	prima	prima	9-11	_	_	_	_
+10-13	313-315	di	di	9-12	_	_	_	_
+10-14	316-326	cominciare	comincia:re,	9-13	_	weakly_rising	_	_
+
+#Text=sì
+11-1	327-329	sì	sì	10-0	TO003	_	_	_
+
+#Text=ehm
+12-1	330-333	ehm	e::hm	11-0	TO002	_	_	_
+
+#Text=non è una curiosità ma semplicemente proprio per capire
+13-1	334-337	non	non	12-0	TO002	_	_	_
+13-2	338-339	è	è	12-1	_	_	_	_
+13-3	340-343	una	una	12-2	_	_	_	_
+13-4	344-353	curiosità	curiosità	12-3	_	_	_	_
+13-5	354-356	ma	ma	12-4	_	_	_	_
+13-6	357-370	semplicemente	semplicemente	12-5	_	_	_	_
+13-7	371-378	proprio	proprio	12-6	_	_	_	_
+13-8	379-382	per	per	12-7	_	_	_	_
+13-9	383-389	capire	capire:::	12-8	_	_	_	_
+
+#Text=come migliorare il servizio per eh
+14-1	390-394	come	come	13-0	TO002	_	_	_
+14-2	395-405	migliorare	migliorare	13-1	_	_	_	_
+14-3	406-408	il	il	13-2	_	_	_	_
+14-4	409-417	servizio	servizio	13-3	_	_	_	_
+14-5	418-421	per	per	13-4	_	_	_	_
+14-6	422-424	eh	e::h.	13-5	_	Falling	_	_
+
+#Text=i suoi [PAUSE] i suoi colleghi l' anno prossimo insomma
+15-1	425-426	i	i	14-0	TO002	_	_	_
+15-2	427-431	suoi	suoi::	14-1	_	_	_	_
+15-3	432-439	[PAUSE]	(.)	14-2	_	_	_	_
+15-4	440-441	i	i	14-3	_	_	_	_
+15-5	442-446	suoi	suoi	14-4	_	_	_	_
+15-6	447-455	colleghi	colleghi	14-5	_	_	_	_
+15-7	456-458	l'	l'	14-6	_	_	_	_
+15-8	459-463	anno	anno	14-7	_	_	_	_
+15-9	464-472	prossimo	prossimo.	14-8	_	Falling	_	_
+15-10	473-480	insomma	in\[somma\]	14-9	_	_	_	_
+15-10.1	475-482	somma	_	_	_	_	*->3-1	*[3]
+
+#Text=sì sì certo
+16-1	481-483	sì	\[sì	15-0	TO003	_	*->3-2	*[3]
+16-2	484-486	sì	sì\],	15-1	_	weakly_rising	*->3-3	*[3]
+16-3	487-492	certo	ce(rto).	15-2	_	Falling	_	_
+
+#Text=ma allora io di questo libro ho trovato [PAUSE] tanti aspetti positivi
+17-1	493-495	ma	ma	16-0	TO003	_	_	_
+17-2	496-502	allora	allora	16-1	_	_	_	_
+17-3	503-505	io	io	16-2	_	_	_	_
+17-4	506-508	di	di	16-3	_	_	_	_
+17-5	509-515	questo	questo	16-4	_	_	_	_
+17-6	516-521	libro	libro	16-5	_	_	_	_
+17-7	522-524	ho	ho	16-6	_	_	_	_
+17-8	525-532	trovato	trovato::	16-7	_	_	_	_
+17-9	533-540	[PAUSE]	(.)	16-8	_	_	_	_
+17-10	541-546	tanti	tanti	16-9	_	_	_	_
+17-11	547-554	aspetti	aspetti	16-10	_	_	_	_
+17-12	555-563	positivi	positivi,	16-11	_	weakly_rising	_	_
+
+#Text=quanti negativi si può dire
+18-1	564-570	quanti	<quanti	17-0	TO003	_	_	_
+18-2	571-579	negativi	negativ>i	17-1	_	_	_	_
+18-3	580-582	si	si	17-2	_	_	_	_
+18-4	583-586	può	può	17-3	_	_	_	_
+18-5	587-591	dire	dire.	17-4	_	Falling	_	_
+
+#Text=eh beh partendo dagli aspetti positivi secondo me
+19-1	592-594	eh	e:h	18-0	TO003	_	_	_
+19-2	595-598	beh	beh.	18-1	_	Falling	_	_
+19-3	599-607	partendo	partendo	18-2	_	_	_	_
+19-4	608-613	dagli	dagli	18-3	_	_	_	_
+19-5	614-621	aspetti	aspetti	18-4	_	_	_	_
+19-6	622-630	positivi	positivi	18-5	_	_	_	_
+19-7	631-638	secondo	secondo	18-6	_	_	_	_
+19-8	639-641	me	me,	18-7	_	weakly_rising	_	_
+
+#Text=è un libro [PAUSE] che eh mh
+20-1	642-643	è	è	19-0	TO003	_	_	_
+20-2	644-646	un	un	19-1	_	_	_	_
+20-3	647-652	libro	libro::	19-2	_	_	_	_
+20-4	653-660	[PAUSE]	(.)	19-3	_	_	_	_
+20-5	661-664	che	che:	19-4	_	_	_	_
+20-6	665-667	eh	e::h	19-5	_	_	_	_
+20-7	668-670	mh	m:::h	19-6	_	_	_	_
+
+#Text=integra molte cose con le schede eh [PAUSE] di dati che quindi
+21-1	671-678	integra	integra	20-0	TO003	_	_	_
+21-2	679-684	molte	molte	20-1	_	_	_	_
+21-3	685-689	cose	cose	20-2	_	_	_	_
+21-4	690-693	con	con	20-3	_	_	_	_
+21-5	694-696	le	le	20-4	_	_	_	_
+21-6	697-703	schede	schede:	20-5	_	_	_	_
+21-7	704-706	eh	e::h	20-6	_	_	_	_
+21-8	707-714	[PAUSE]	(.)	20-7	_	_	_	_
+21-9	715-717	di	di	20-8	_	_	_	_
+21-10	718-722	dati	dati	20-9	_	_	_	_
+21-11	723-726	che	che	20-10	_	_	_	_
+21-12	727-733	quindi	quindi,	20-11	_	weakly_rising	_	_
+
+#Text=è una cosa [PAUSE] molto eh [PAUSE] positiva perché nel caso in cui si volesse approfondire
+22-1	734-735	è	è	21-0	TO003	_	_	_
+22-2	736-739	una	una	21-1	_	_	_	_
+22-3	740-744	cosa	cosa:	21-2	_	_	_	_
+22-4	745-752	[PAUSE]	(.)	21-3	_	_	_	_
+22-5	753-758	molto	molto:	21-4	_	_	_	_
+22-6	759-761	eh	e:h	21-5	_	_	_	_
+22-7	762-769	[PAUSE]	(.)	21-6	_	_	_	_
+22-8	770-778	positiva	positiva,	21-7	_	weakly_rising	_	_
+22-9	779-785	perché	perché	21-8	_	_	_	_
+22-10	786-789	nel	nel	21-9	_	_	_	_
+22-11	790-794	caso	caso	21-10	_	_	_	_
+22-12	795-797	in	in	21-11	_	_	_	_
+22-13	798-801	cui	cui	21-12	_	_	_	_
+22-14	802-804	si	si	21-13	_	_	_	_
+22-15	805-812	volesse	volesse	21-14	_	_	_	_
+22-16	813-825	approfondire	approfondire	21-15	_	_	_	_
+
+#Text=loro ci offrono la possibilità anche attraverso la sitografia o la bibliografia
+23-1	826-830	loro	loro	22-0	TO003	_	_	_
+23-2	831-833	ci	ci	22-1	_	_	_	_
+23-3	834-841	offrono	offrono	22-2	_	_	_	_
+23-4	842-844	la	la	22-3	_	_	_	_
+23-5	845-856	possibilità	possibilità	22-4	_	_	_	_
+23-6	857-862	anche	anche	22-5	_	_	_	_
+23-7	863-873	attraverso	attraverso	22-6	_	_	_	_
+23-8	874-876	la	la	22-7	_	_	_	_
+23-9	877-887	sitografia	sitografia	22-8	_	_	_	_
+23-10	888-889	o	o	22-9	_	_	_	_
+23-11	890-892	la	la	22-10	_	_	_	_
+23-12	893-905	bibliografia	bibliografia	22-11	_	_	_	_
+
+#Text=di andare più a fondo nella [PAUSE] nella ricerca
+24-1	906-908	di	di	23-0	TO003	_	_	_
+24-2	909-915	andare	andare	23-1	_	_	_	_
+24-3	916-919	più	più	23-2	_	_	_	_
+24-4	920-921	a	a	23-3	_	_	_	_
+24-5	922-927	fondo	fondo	23-4	_	_	_	_
+24-6	928-933	nella	nella	23-5	_	_	_	_
+24-7	934-941	[PAUSE]	(.)	23-6	_	_	_	_
+24-8	942-947	nella	nella	23-7	_	_	_	_
+24-9	948-955	ricerca	ricerca	23-8	_	_	_	_
+
+#Text=quella [PAUSE] così
+25-1	956-962	quella	quella:	24-0	TO003	_	_	_
+25-2	963-970	[PAUSE]	(.)	24-1	_	_	_	_
+25-3	971-975	così	\[co\]sì.	24-2	_	Falling	_	_
+25-3.1	971-973	co	_	_	_	_	*->4-1	*[4]
+
+#Text=certo
+26-1	976-981	certo	\[°certo°\]	25-0	TO002	_	*->4-2	*[4]
+
+#Text=poi soprattutto [PAUSE] secondo me
+27-1	982-985	poi	poi	26-0	TO003	_	_	_
+27-2	986-997	soprattutto	soprattutto:	26-1	_	_	_	_
+27-3	998-1005	[PAUSE]	(.)	26-2	_	_	_	_
+27-4	1006-1013	secondo	secondo	26-3	_	_	_	_
+27-5	1014-1016	me	me,	26-4	_	weakly_rising	_	_
+
+#Text=vabbè questo [PAUSE] riguarda sia il libro ma anche la materia in generale
+28-1	1017-1022	vabbè	vabbè	27-0	TO003	_	_	_
+28-2	1023-1029	questo	questo	27-1	_	_	_	_
+28-3	1030-1037	[PAUSE]	(.)	27-2	_	_	_	_
+28-4	1038-1046	riguarda	riguarda	27-3	_	_	_	_
+28-5	1047-1050	sia	sia	27-4	_	_	_	_
+28-6	1051-1053	il	il	27-5	_	_	_	_
+28-7	1054-1059	libro	libro	27-6	_	_	_	_
+28-8	1060-1062	ma	ma	27-7	_	_	_	_
+28-9	1063-1068	anche	anche::	27-8	_	_	_	_
+28-10	1069-1071	la	la	27-9	_	_	_	_
+28-11	1072-1079	materia	materia	27-10	_	_	_	_
+28-12	1080-1082	in	in	27-11	_	_	_	_
+28-13	1083-1091	generale	generale.	27-12	_	Falling	_	_
+
+#Text=cioè io [PAUSE] ho scoperto [PAUSE] moltissime cose leggendo questo libro che [PAUSE] mi hanno veramente
+29-1	1092-1096	cioè	cioè	28-0	TO003	_	_	_
+29-2	1097-1099	io	io:	28-1	_	_	_	_
+29-3	1100-1107	[PAUSE]	(.)	28-2	_	_	_	_
+29-4	1108-1110	ho	ho	28-3	_	_	_	_
+29-5	1111-1119	scoperto	scoperto	28-4	_	_	_	_
+29-6	1120-1127	[PAUSE]	(.)	28-5	_	_	_	_
+29-7	1128-1138	moltissime	moltissime	28-6	_	_	_	_
+29-8	1139-1143	cose	cose	28-7	_	_	_	_
+29-9	1144-1152	leggendo	leggendo	28-8	_	_	_	_
+29-10	1153-1159	questo	questo	28-9	_	_	_	_
+29-11	1160-1165	libro	libro	28-10	_	_	_	_
+29-12	1166-1169	che	che	28-11	_	_	_	_
+29-13	1170-1177	[PAUSE]	(.)	28-12	_	_	_	_
+29-14	1178-1180	mi	mi	28-13	_	_	_	_
+29-15	1181-1186	hanno	hanno	28-14	_	_	_	_
+29-16	1187-1196	veramente	veramente:	28-15	_	_	_	_
+
+#Text=aperto [PAUSE] mh un mondo nuovo
+30-1	1197-1203	aperto	aperto	29-0	TO003	_	_	_
+30-2	1204-1211	[PAUSE]	(.)	29-1	_	_	_	_
+30-3	1212-1214	mh	m:h	29-2	_	_	_	_
+30-4	1215-1217	un	un	29-3	_	_	_	_
+30-5	1218-1223	mondo	mondo	29-4	_	_	_	_
+30-6	1224-1229	nuovo	nuovo.	29-5	_	Falling	_	_
+
+#Text=perché ad esempio sapere che [PAUSE] mh [PAUSE] ci sia ancora [PAUSE] parte della popolazione mondiale [PAUSE] che soffra per la schiavitù
+31-1	1230-1236	perché	perché	30-0	TO003	_	_	_
+31-2	1237-1239	ad	ad	30-1	_	_	_	_
+31-3	1240-1247	esempio	esempio	30-2	_	_	_	_
+31-4	1248-1254	sapere	sapere	30-3	_	_	_	_
+31-5	1255-1258	che	che	30-4	_	_	_	_
+31-6	1259-1266	[PAUSE]	(.)	30-5	_	_	_	_
+31-7	1267-1269	mh	m:h	30-6	_	_	_	_
+31-8	1270-1277	[PAUSE]	(.)	30-7	_	_	_	_
+31-9	1278-1280	ci	ci	30-8	_	_	_	_
+31-10	1281-1284	sia	sia	30-9	_	_	_	_
+31-11	1285-1291	ancora	ancora:	30-10	_	_	_	_
+31-12	1292-1299	[PAUSE]	(.)	30-11	_	_	_	_
+31-13	1300-1305	parte	parte	30-12	_	_	_	_
+31-14	1306-1311	della	della	30-13	_	_	_	_
+31-15	1312-1323	popolazione	popolazione	30-14	_	_	_	_
+31-16	1324-1332	mondiale	mondiale:	30-15	_	_	_	_
+31-17	1333-1340	[PAUSE]	(.)	30-16	_	_	_	_
+31-18	1341-1344	che	che	30-17	_	_	_	_
+31-19	1345-1351	soffra	soffra	30-18	_	_	_	_
+31-20	1352-1355	per	per	30-19	_	_	_	_
+31-21	1356-1358	la	la	30-20	_	_	_	_
+31-22	1359-1368	schiavitù	schiavitù,	30-21	_	weakly_rising	_	_
+
+#Text=eh
+32-1	1369-1371	eh	eh	31-0	TO002	_	_	_
+
+#Text=eh che ci sia appunto ancora la schiavitù del mondo dopo
+33-1	1372-1374	eh	e::h	32-0	TO003	_	_	_
+33-2	1375-1378	che	che	32-1	_	_	_	_
+33-3	1379-1381	ci	ci	32-2	_	_	_	_
+33-4	1382-1385	sia	sia	32-3	_	_	_	_
+33-5	1386-1393	appunto	appunto	32-4	_	_	_	_
+33-6	1394-1400	ancora	ancora	32-5	_	_	_	_
+33-7	1401-1403	la	la	32-6	_	_	_	_
+33-8	1404-1413	schiavitù	schiavitù	32-7	_	_	_	_
+33-9	1414-1417	del	del	32-8	_	_	_	_
+33-10	1418-1423	mondo	mondo	32-9	_	_	_	_
+33-11	1424-1428	dopo	dopo	32-10	_	_	_	_
+
+#Text=cinquecento anni che mh addirittura venivano trasportati [PAUSE] i neri dall' africa all' americhe
+34-1	1429-1440	cinquecento	cinquecento	33-0	TO003	_	_	_
+34-2	1441-1445	anni	anni	33-1	_	_	_	_
+34-3	1446-1449	che	che:	33-2	_	_	_	_
+34-4	1450-1452	mh	m:h	33-3	_	_	_	_
+34-5	1453-1464	addirittura	addirittura	33-4	_	_	_	_
+34-6	1465-1473	venivano	venivano	33-5	_	_	_	_
+34-7	1474-1485	trasportati	trasportati	33-6	_	_	_	_
+34-8	1486-1493	[PAUSE]	(.)	33-7	_	_	_	_
+34-9	1494-1495	i	i	33-8	_	_	_	_
+34-10	1496-1500	neri	neri	33-9	_	_	_	_
+34-11	1501-1506	dall'	dall'	33-10	_	_	_	_
+34-12	1507-1513	africa	africa:	33-11	_	_	_	_
+34-13	1514-1518	all'	all'	33-12	_	_	_	_
+34-14	1519-1527	americhe	americhe:,	33-13	_	weakly_rising	_	_
+
+#Text=fa molto pensare perché noi [PAUSE] lo vediamo [PAUSE] molto secondo me come un processo storico ormai morto e sepolto nel senso
+35-1	1528-1530	fa	fa	34-0	TO003	_	_	_
+35-2	1531-1536	molto	molto	34-1	_	_	_	_
+35-3	1537-1544	pensare	pensare	34-2	_	_	_	_
+35-4	1545-1551	perché	perché	34-3	_	_	_	_
+35-5	1552-1555	noi	noi	34-4	_	_	_	_
+35-6	1556-1563	[PAUSE]	(.)	34-5	_	_	_	_
+35-7	1564-1566	lo	lo	34-6	_	_	_	_
+35-8	1567-1574	vediamo	vediamo:	34-7	_	_	_	_
+35-9	1575-1582	[PAUSE]	(.)	34-8	_	_	_	_
+35-10	1583-1588	molto	mo:lto	34-9	_	_	_	_
+35-11	1589-1596	secondo	secondo	34-10	_	_	_	_
+35-12	1597-1599	me	me	34-11	_	_	_	_
+35-13	1600-1604	come	come	34-12	_	_	_	_
+35-14	1605-1607	un	un	34-13	_	_	_	_
+35-15	1608-1616	processo	processo	34-14	_	_	_	_
+35-16	1617-1624	storico	storico	34-15	_	_	_	_
+35-17	1625-1630	ormai	ormai	34-16	_	_	_	_
+35-18	1631-1636	morto	morto	34-17	_	_	_	_
+35-19	1637-1638	e	e	34-18	_	_	_	_
+35-20	1639-1646	sepolto	sepolto	34-19	_	_	_	_
+35-21	1647-1650	nel	nel	34-20	_	_	_	_
+35-22	1651-1656	senso	senso,	34-21	_	weakly_rising	_	_
+
+#Text=quello è avvenuto nel millecinquecento [PAUSE] ci sono state ancora mh ovviamente [PAUSE] ehm delle ondate nel milleseicento millesettecento avanti però
+36-1	1657-1663	quello	quello	35-0	TO003	_	_	_
+36-2	1664-1665	è	è	35-1	_	_	_	_
+36-3	1666-1674	avvenuto	avvenuto	35-2	_	_	_	_
+36-4	1675-1678	nel	nel	35-3	_	_	_	_
+36-5	1679-1695	millecinquecento	millecinquecento	35-4	_	_	_	_
+36-6	1696-1703	[PAUSE]	(.)	35-5	_	_	_	_
+36-7	1704-1706	ci	ci	35-6	_	_	_	_
+36-8	1707-1711	sono	sono	35-7	_	_	_	_
+36-9	1712-1717	state	state	35-8	_	_	_	_
+36-10	1718-1724	ancora	ancora:	35-9	_	_	_	_
+36-11	1725-1727	mh	m:h	35-10	_	_	_	_
+36-12	1728-1738	ovviamente	ovviamente	35-11	_	_	_	_
+36-13	1739-1746	[PAUSE]	(.)	35-12	_	_	_	_
+36-14	1747-1750	ehm	ehm::	35-13	_	_	_	_
+36-15	1751-1756	delle	delle	35-14	_	_	_	_
+36-16	1757-1763	ondate	ondate	35-15	_	_	_	_
+36-17	1764-1767	nel	nel	35-16	_	_	_	_
+36-18	1768-1781	milleseicento	milleseicento	35-17	_	_	_	_
+36-19	1782-1797	millesettecento	>millesettecento	35-18	_	_	_	_
+36-20	1798-1804	avanti	avanti<	35-19	_	_	_	_
+36-21	1805-1809	però	però,	35-20	_	weakly_rising	_	_
+
+#Text=cioè per quanto mi riguarda io lo davo come un fenomeno morto e sepolto lì [PAUSE] finità lì [PAUSE] e invece
+37-1	1810-1814	cioè	cioè	36-0	TO003	_	_	_
+37-2	1815-1818	per	per	36-1	_	_	_	_
+37-3	1819-1825	quanto	quanto	36-2	_	_	_	_
+37-4	1826-1828	mi	mi	36-3	_	_	_	_
+37-5	1829-1837	riguarda	riguarda	36-4	_	_	_	_
+37-6	1838-1840	io	io	36-5	_	_	_	_
+37-7	1841-1843	lo	lo	36-6	_	_	_	_
+37-8	1844-1848	davo	davo	36-7	_	_	_	_
+37-9	1849-1853	come	come	36-8	_	_	_	_
+37-10	1854-1856	un	un	36-9	_	_	_	_
+37-11	1857-1865	fenomeno	fenomeno	36-10	_	_	_	_
+37-12	1866-1871	morto	morto	36-11	_	_	_	_
+37-13	1872-1873	e	e	36-12	_	_	_	_
+37-14	1874-1881	sepolto	sepolto:	36-13	_	_	_	_
+37-15	1882-1884	lì	lì.	36-14	_	Falling	_	_
+37-16	1885-1892	[PAUSE]	(.)	36-15	_	_	_	_
+37-17	1893-1899	finità	finità	36-16	_	_	_	_
+37-18	1900-1902	lì	lì	36-17	_	_	_	_
+37-19	1903-1910	[PAUSE]	(.)	36-18	_	_	_	_
+37-20	1911-1912	e	\[<e	36-19	_	_	*->5-1	*[5]
+37-21	1913-1919	invece	inve:ce:>\]	36-20	_	_	*->5-2	*[5]
+
+#Text=a un certo punto dipende [PAUSE] da cosa si intende per [PAUSE] per schiavitù esattamente [PAUSE] insomma ecco [PAUSE] non x
+38-1	1920-1921	a	\[a	37-0	TO002	_	*->5-3	*[5]
+38-2	1922-1924	un	un	37-1	_	_	*->5-4	*[5]
+38-3	1925-1930	certo	certo	37-2	_	_	*->5-5	*[5]
+38-4	1931-1936	punto	punto	37-3	_	_	*->5-6	*[5]
+38-5	1937-1944	dipende	dipende\]	37-4	_	_	*->5-7	*[5]
+38-6	1945-1952	[PAUSE]	(.)	37-5	_	_	_	_
+38-7	1953-1955	da	da	37-6	_	_	_	_
+38-8	1956-1960	cosa	cosa	37-7	_	_	_	_
+38-9	1961-1963	si	si	37-8	_	_	_	_
+38-10	1964-1971	intende	intende	37-9	_	_	_	_
+38-11	1972-1975	per	pe:r	37-10	_	_	_	_
+38-12	1976-1983	[PAUSE]	(.)	37-11	_	_	_	_
+38-13	1984-1987	per	per	37-12	_	_	_	_
+38-14	1988-1997	schiavitù	schiavitù	37-13	_	_	_	_
+38-15	1998-2009	esattamente	esattamente	37-14	_	_	_	_
+38-16	2010-2017	[PAUSE]	(.)	37-15	_	_	_	_
+38-17	2018-2025	insomma	\[insomma\]	37-16	_	_	*->6-1	*[6]
+38-18	2026-2030	ecco	ecco	37-17	_	_	_	_
+38-19	2031-2038	[PAUSE]	(.)	37-18	_	_	_	_
+38-20	2039-2042	non	\[°non	37-19	_	_	*->7-1	*[7]
+38-21	2043-2044	x	x:°\]	37-20	_	_	*->7-2	*[7]
+
+#Text=sì
+39-1	2045-2047	sì	\[sì\].	38-0	TO003	Falling	*->6-2	*[6]
+
+#Text=beh certo
+40-1	2048-2051	beh	\[beh	39-0	TO003	_	*->7-3	*[7]
+40-2	2052-2057	certo	certo\].	39-1	_	Falling	*->7-4	*[7]
+
+#Text=prendo ad esempio il libro che fa l' esempio del bonded labor [PAUSE] che mh nient' altro che praticamente quello che già avveniva tempo fa cioè [PAUSE] e una famiglia si indebita con uno strozzino
+41-1	2058-2064	prendo	(prendo)	40-0	TO003	_	_	_
+41-2	2065-2067	ad	ad	40-1	_	_	_	_
+41-3	2068-2075	esempio	esempio	40-2	_	_	_	_
+41-4	2076-2078	il	il	40-3	_	_	_	_
+41-5	2079-2084	libro	libro	40-4	_	_	_	_
+41-6	2085-2088	che	che	40-5	_	_	_	_
+41-7	2089-2091	fa	fa	40-6	_	_	_	_
+41-8	2092-2094	l'	l'	40-7	_	_	_	_
+41-9	2095-2102	esempio	esempio	40-8	_	_	_	_
+41-10	2103-2106	del	del	40-9	_	_	_	_
+41-11	2107-2113	bonded	bonded	40-10	_	_	_	_
+41-12	2114-2119	labor	labor	40-11	_	_	_	_
+41-13	2120-2127	[PAUSE]	(.)	40-12	_	_	_	_
+41-14	2128-2131	che	che	40-13	_	_	_	_
+41-15	2132-2134	mh	m:h	40-14	_	_	_	_
+41-16	2135-2141	nient'	nient'	40-15	_	_	_	_
+41-17	2142-2147	altro	altro	40-16	_	_	_	_
+41-18	2148-2151	che	che	40-17	_	_	_	_
+41-19	2152-2164	praticamente	praticamente	40-18	_	_	_	_
+41-20	2165-2171	quello	>quello	40-19	_	_	_	_
+41-21	2172-2175	che	che	40-20	_	_	_	_
+41-22	2176-2179	già	già	40-21	_	_	_	_
+41-23	2180-2188	avveniva	avveniva	40-22	_	_	_	_
+41-24	2189-2194	tempo	tempo	40-23	_	_	_	_
+41-25	2195-2197	fa	fa	40-24	_	_	_	_
+41-26	2198-2202	cioè	cioè<	40-25	_	_	_	_
+41-27	2203-2210	[PAUSE]	(.)	40-26	_	_	_	_
+41-28	2211-2212	e	(e)	40-27	_	_	_	_
+41-29	2213-2216	una	una	40-28	_	_	_	_
+41-30	2217-2225	famiglia	famiglia	40-29	_	_	_	_
+41-31	2226-2228	si	si	40-30	_	_	_	_
+41-32	2229-2237	indebita	indebita	40-31	_	_	_	_
+41-33	2238-2241	con	con	40-32	_	_	_	_
+41-34	2242-2245	uno	uno	40-33	_	_	_	_
+41-35	2246-2255	strozzino	strozzino,	40-34	_	weakly_rising	_	_
+
+#Text=questo strozzino porta a [PAUSE] al massimo i livelli di tasso d' interesse sul mh [PAUSE] sul mh l' indebitamento
+42-1	2256-2262	questo	questo	41-0	TO003	_	_	_
+42-2	2263-2272	strozzino	strozzino	41-1	_	_	_	_
+42-3	2273-2278	porta	porta:	41-2	_	_	_	_
+42-4	2279-2280	a	a:	41-3	_	_	_	_
+42-5	2281-2288	[PAUSE]	(.)	41-4	_	_	_	_
+42-6	2289-2291	al	al	41-5	_	_	_	_
+42-7	2292-2299	massimo	massimo	41-6	_	_	_	_
+42-8	2300-2301	i	i	41-7	_	_	_	_
+42-9	2302-2309	livelli	livelli	41-8	_	_	_	_
+42-10	2310-2312	di	di	41-9	_	_	_	_
+42-11	2313-2318	tasso	tasso	41-10	_	_	_	_
+42-12	2319-2321	d'	d'	41-11	_	_	_	_
+42-13	2322-2331	interesse	interesse	41-12	_	_	_	_
+42-14	2332-2335	sul	su:l	41-13	_	_	_	_
+42-15	2336-2338	mh	m:h	41-14	_	_	_	_
+42-16	2339-2346	[PAUSE]	(.)	41-15	_	_	_	_
+42-17	2347-2350	sul	su:l	41-16	_	_	_	_
+42-18	2351-2353	mh	m:h	41-17	_	_	_	_
+42-19	2354-2356	l'	l'	41-18	_	_	_	_
+42-20	2357-2370	indebitamento	indebitamento,	41-19	_	weakly_rising	_	_
+
+#Text=e quindi praticamente l' unica soluzione che la famiglia ha per sdebitarsi [PAUSE] è di [PAUSE] eh schiavizzarsi [PAUSE] di [PAUSE] di rendersi schiava [PAUSE] per sopperire a questa eh [PAUSE] a questa impossiblità di venire incontro al debito che è stato
+43-1	2371-2372	e	e	42-0	TO003	_	_	_
+43-2	2373-2379	quindi	quindi	42-1	_	_	_	_
+43-3	2380-2392	praticamente	praticamente	42-2	_	_	_	_
+43-4	2393-2395	l'	l'	42-3	_	_	_	_
+43-5	2396-2401	unica	unica	42-4	_	_	_	_
+43-6	2402-2411	soluzione	soluzione	42-5	_	_	_	_
+43-7	2412-2415	che	che	42-6	_	_	_	_
+43-8	2416-2418	la	la	42-7	_	_	_	_
+43-9	2419-2427	famiglia	famiglia	42-8	_	_	_	_
+43-10	2428-2430	ha	ha	42-9	_	_	_	_
+43-11	2431-2434	per	per	42-10	_	_	_	_
+43-12	2435-2445	sdebitarsi	sdebitarsi	42-11	_	_	_	_
+43-13	2446-2453	[PAUSE]	(.)	42-12	_	_	_	_
+43-14	2454-2455	è	è	42-13	_	_	_	_
+43-15	2456-2458	di	di	42-14	_	_	_	_
+43-16	2459-2466	[PAUSE]	(.)	42-15	_	_	_	_
+43-17	2467-2469	eh	e:h	42-16	_	_	_	_
+43-18	2470-2483	schiavizzarsi	schiavizzarsi.	42-17	_	Falling	_	_
+43-19	2484-2491	[PAUSE]	(.)	42-18	_	_	_	_
+43-20	2492-2494	di	di:	42-19	_	_	_	_
+43-21	2495-2502	[PAUSE]	(.)	42-20	_	_	_	_
+43-22	2503-2505	di	di	42-21	_	_	_	_
+43-23	2506-2514	rendersi	rendersi	42-22	_	_	_	_
+43-24	2515-2522	schiava	schiava:.	42-23	_	Falling	_	_
+43-25	2523-2530	[PAUSE]	(.)	42-24	_	_	_	_
+43-26	2531-2534	per	\[per\]	42-25	_	_	*->8-1	*[8]
+43-27	2535-2544	sopperire	sopperire	42-26	_	_	_	_
+43-28	2545-2546	a	a	42-27	_	_	_	_
+43-29	2547-2553	questa	questa:	42-28	_	_	_	_
+43-30	2554-2556	eh	e:h	42-29	_	_	_	_
+43-31	2557-2564	[PAUSE]	(.)	42-30	_	_	_	_
+43-32	2565-2566	a	a	42-31	_	_	_	_
+43-33	2567-2573	questa	questa	42-32	_	_	_	_
+43-34	2574-2586	impossiblità	impossiblità	42-33	_	_	_	_
+43-35	2587-2589	di	di	42-34	_	_	_	_
+43-36	2590-2596	venire	venire	42-35	_	_	_	_
+43-37	2597-2605	incontro	incontro	42-36	_	_	_	_
+43-38	2606-2608	al	al	42-37	_	_	_	_
+43-39	2609-2615	debito	debito:	42-38	_	_	_	_
+43-40	2616-2619	che	che:	42-39	_	_	_	_
+43-41	2620-2621	è	è	42-40	_	_	_	_
+43-42	2622-2627	stato	stato:	42-41	_	_	_	_
+
+#Text=sì
+44-1	2628-2630	sì	\[sì\].	43-0	TO002	Falling	*->8-2	*[8]
+
+#Text=lo schiavizzarsi vorrebbe dire in questo caso di
+45-1	2631-2633	lo	lo	44-0	TO002	_	_	_
+45-2	2634-2647	schiavizzarsi	schiavizzarsi	44-1	_	_	_	_
+45-3	2648-2656	vorrebbe	vorrebbe	44-2	_	_	_	_
+45-4	2657-2661	dire	dire	44-3	_	_	_	_
+45-5	2662-2664	in	in	44-4	_	_	_	_
+45-6	2665-2671	questo	questo	44-5	_	_	_	_
+45-7	2672-2676	caso	caso	44-6	_	_	_	_
+45-8	2677-2679	di	di::	44-7	_	_	_	_
+
+#Text=fare cosa in realtà
+46-1	2680-2684	fare	fare	45-0	TO002	_	_	_
+46-2	2685-2689	cosa	cosa	45-1	_	_	_	_
+46-3	2690-2692	in	°in	45-2	_	_	_	_
+46-4	2693-2699	realtà	real\[tà°\]?	45-3	_	Rising	_	_
+46-4.1	2697-2703	tà	_	_	_	_	*->9-1	*[9]
+
+#Text=di mettersi al servizio di questa persona ad esempio
+47-1	2700-2702	di	\[di\]	46-0	TO003	_	*->9-2	*[9]
+47-2	2703-2711	mettersi	mettersi	46-1	_	_	_	_
+47-3	2712-2714	al	al	46-2	_	_	_	_
+47-4	2715-2723	servizio	servizio	46-3	_	_	_	_
+47-5	2724-2726	di	di	46-4	_	_	_	_
+47-6	2727-2733	questa	questa	46-5	_	_	_	_
+47-7	2734-2741	persona	perso:na,	46-6	_	weakly_rising	_	_
+47-8	2742-2744	ad	ad	46-7	_	_	_	_
+47-9	2745-2752	esempio	esempio:	46-8	_	_	_	_
+
+#Text=eh
+48-1	2753-2755	eh	e::::h	47-0	TO003	_	_	_
+
+#Text=beh schiavizzarsi nel senso di [PAUSE] sia mettersi al servizio della persona ma [PAUSE] più propriamente [PAUSE] finire ad esempio a [PAUSE] eh
+49-1	2756-2759	beh	beh	48-0	TO003	_	_	_
+49-2	2760-2773	schiavizzarsi	schiavizzarsi	48-1	_	_	_	_
+49-3	2774-2777	nel	nel	48-2	_	_	_	_
+49-4	2778-2783	senso	senso	48-3	_	_	_	_
+49-5	2784-2786	di	di	48-4	_	_	_	_
+49-6	2787-2794	[PAUSE]	(.)	48-5	_	_	_	_
+49-7	2795-2798	sia	sia	48-6	_	_	_	_
+49-8	2799-2807	mettersi	mettersi	48-7	_	_	_	_
+49-9	2808-2810	al	al	48-8	_	_	_	_
+49-10	2811-2819	servizio	servizio	48-9	_	_	_	_
+49-11	2820-2825	della	della	48-10	_	_	_	_
+49-12	2826-2833	persona	persona	48-11	_	_	_	_
+49-13	2834-2836	ma	ma	48-12	_	_	_	_
+49-14	2837-2844	[PAUSE]	(.)	48-13	_	_	_	_
+49-15	2845-2848	più	più	48-14	_	_	_	_
+49-16	2849-2861	propriamente	propriamente:	48-15	_	_	_	_
+49-17	2862-2869	[PAUSE]	(.)	48-16	_	_	_	_
+49-18	2870-2876	finire	finire	48-17	_	_	_	_
+49-19	2877-2879	ad	ad	48-18	_	_	_	_
+49-20	2880-2887	esempio	esempio	48-19	_	_	_	_
+49-21	2888-2889	a	a	48-20	_	_	_	_
+49-22	2890-2897	[PAUSE]	(.)	48-21	_	_	_	_
+49-23	2898-2900	eh	e::h	48-22	_	_	_	_
+
+#Text=costruire mh ad esempio [PAUSE] fa l' esempio di una bambina che
+50-1	2901-2910	costruire	costruire::	49-0	TO003	_	_	_
+50-2	2911-2913	mh	mh	49-1	_	_	_	_
+50-3	2914-2916	ad	ad	49-2	_	_	_	_
+50-4	2917-2924	esempio	esempio	49-3	_	_	_	_
+50-5	2925-2932	[PAUSE]	(.)	49-4	_	_	_	_
+50-6	2933-2935	fa	fa	49-5	_	_	_	_
+50-7	2936-2938	l'	l'	49-6	_	_	_	_
+50-8	2939-2946	esempio	esempio	49-7	_	_	_	_
+50-9	2947-2949	di	di	49-8	_	_	_	_
+50-10	2950-2953	una	una	49-9	_	_	_	_
+50-11	2954-2961	bambina	bambina	49-10	_	_	_	_
+50-12	2962-2965	che	che:	49-11	_	_	_	_
+
+#Text=costruisce dei mattoni utilizzando della terra
+51-1	2966-2976	costruisce	costruisce	50-0	TO003	_	_	_
+51-2	2977-2980	dei	dei	50-1	_	_	_	_
+51-3	2981-2988	mattoni	mattoni	50-2	_	_	_	_
+51-4	2989-3000	utilizzando	utilizzando	50-3	_	_	_	_
+51-5	3001-3006	della	della	50-4	_	_	_	_
+51-6	3007-3012	terra	terra::	50-5	_	_	_	_
+
+#Text=della terra dell' argilla per dire
+52-1	3013-3018	della	della	51-0	TO003	_	_	_
+52-2	3019-3024	terra	terra	51-1	_	_	_	_
+52-3	3025-3030	dell'	dell'	51-2	_	_	_	_
+52-4	3031-3038	argilla	argilla.	51-3	_	Falling	_	_
+52-5	3039-3042	per	\[per	51-4	_	_	*->10-1	*[10]
+52-6	3043-3047	dire	dire\].	51-5	_	Falling	*->10-2	*[10]
+
+#Text=ma è appunto invece
+53-1	3048-3050	ma	\[ma	52-0	TO002	_	*->10-3	*[10]
+53-2	3051-3052	è	è	52-1	_	_	*->10-4	*[10]
+53-3	3053-3060	appunto	appun\]to	52-2	_	_	_	_
+53-3.1	3053-3058	appun	_	_	_	_	*->10-5	*[10]
+53-4	3061-3067	invece	invece	52-3	_	_	_	_
+
+#Text=visto che con la sua collega [PAUSE] si parlava di immigrazione
+54-1	3068-3073	visto	>visto	53-0	TO002	_	_	_
+54-2	3074-3077	che	che	53-1	_	_	_	_
+54-3	3078-3081	con	con<	53-2	_	_	_	_
+54-4	3082-3084	la	la	53-3	_	_	_	_
+54-5	3085-3088	sua	sua	53-4	_	_	_	_
+54-6	3089-3096	collega	collega:	53-5	_	_	_	_
+54-7	3097-3104	[PAUSE]	(.)	53-6	_	_	_	_
+54-8	3105-3107	si	si	53-7	_	_	_	_
+54-9	3108-3115	parlava	parlava	53-8	_	_	_	_
+54-10	3116-3118	di	di	53-9	_	_	_	_
+54-11	3119-3131	immigrazione	immigrazione	53-10	_	_	_	_
+
+#Text=questa forma di indebitamento eh
+55-1	3132-3138	questa	questa	54-0	TO002	_	_	_
+55-2	3139-3144	forma	forma	54-1	_	_	_	_
+55-3	3145-3147	di	di	54-2	_	_	_	_
+55-4	3148-3161	indebitamento	indebitame:nto:	54-3	_	_	_	_
+55-5	3162-3164	eh	e:::h	54-4	_	_	_	_
+
+#Text=uh [PAUSE] può può essere una delle [PAUSE] delle tante cause dell' immigrazione
+56-1	3165-3167	uh	uh	55-0	TO002	_	_	_
+56-2	3168-3175	[PAUSE]	(.)	55-1	_	_	_	_
+56-3	3176-3179	può	può	55-2	_	_	_	_
+56-4	3180-3183	può	può	55-3	_	_	_	_
+56-5	3184-3190	essere	essere	55-4	_	_	_	_
+56-6	3191-3194	una	una	55-5	_	_	_	_
+56-7	3195-3200	delle	de:lle:	55-6	_	_	_	_
+56-8	3201-3208	[PAUSE]	(.)	55-7	_	_	_	_
+56-9	3209-3214	delle	delle	55-8	_	_	_	_
+56-10	3215-3220	tante	tante	55-9	_	_	_	_
+56-11	3221-3226	cause	cause	55-10	_	_	_	_
+56-12	3227-3232	dell'	dell'	55-11	_	_	_	_
+56-13	3233-3245	immigrazione	immigrazione:.	55-12	_	Falling	_	_
+
+#Text=sì certo assolutamente
+57-1	3246-3248	sì	sì	56-0	TO003	_	_	_
+57-2	3249-3254	certo	certo	56-1	_	_	_	_
+57-3	3255-3268	assolutamente	assolutame:nte.	56-2	_	Falling	_	_
+
+#Text=eh mh
+58-1	3269-3271	eh	e:::h	57-0	TO003	_	_	_
+58-2	3272-3274	mh	\[mh\]	57-1	_	_	*->11-1	*[11]
+
+#Text=che un modo [PAUSE] può questa l' immigrazione può essere considerata che cosa da questo punto di vista [PAUSE] una
+59-1	3275-3278	che	\[che\]	58-0	TO002	_	*->11-2	*[11]
+59-2	3279-3281	un	un	58-1	_	_	_	_
+59-3	3282-3286	modo	modo	58-2	_	_	_	_
+59-4	3287-3294	[PAUSE]	(.)	58-3	_	_	_	_
+59-5	3295-3298	può	può	58-4	_	_	_	_
+59-6	3299-3305	questa	questa	58-5	_	_	_	_
+59-7	3306-3308	l'	(l'	58-6	_	_	_	_
+59-8	3309-3321	immigrazione	)immigrazione	58-7	_	_	_	_
+59-9	3322-3325	può	può	58-8	_	_	_	_
+59-10	3326-3332	essere	essere	58-9	_	_	_	_
+59-11	3333-3344	considerata	considerata	58-10	_	_	_	_
+59-12	3345-3348	che	che	58-11	_	_	_	_
+59-13	3349-3353	cosa	cosa	58-12	_	_	_	_
+59-14	3354-3356	da	da	58-13	_	_	_	_
+59-15	3357-3363	questo	questo	58-14	_	_	_	_
+59-16	3364-3369	punto	punto	58-15	_	_	_	_
+59-17	3370-3372	di	di	58-16	_	_	_	_
+59-18	3373-3378	vista	vista	58-17	_	_	_	_
+59-19	3379-3386	[PAUSE]	(.)	58-18	_	_	_	_
+59-20	3387-3390	una	\[una:\],	58-19	_	weakly_rising	*->12-1	*[12]
+
+#Text=beh da questo punto di vista mh c' è un aspetto molto importante cioè quello che [PAUSE] un tempo l' immigrazione [PAUSE] avveniva soprattutto dai paesi cosiddetti del sud del mondo al nord del mondo
+60-1	3391-3394	beh	\[beh	59-0	TO003	_	*->12-2	*[12]
+60-2	3395-3397	da	da	59-1	_	_	*->12-3	*[12]
+60-3	3398-3404	questo	questo	59-2	_	_	*->12-4	*[12]
+60-4	3405-3410	punto	pun\]to	59-3	_	_	_	_
+60-4.1	3405-3408	pun	_	_	_	_	*->12-5	*[12]
+60-5	3411-3413	di	di	59-4	_	_	_	_
+60-6	3414-3419	vista	vista:	59-5	_	_	_	_
+60-7	3420-3422	mh	m:h	59-6	_	_	_	_
+60-8	3423-3425	c'	c'	59-7	_	_	_	_
+60-9	3426-3427	è	è	59-8	_	_	_	_
+60-10	3428-3430	un	un	59-9	_	_	_	_
+60-11	3431-3438	aspetto	aspetto	59-10	_	_	_	_
+60-12	3439-3444	molto	molto	59-11	_	_	_	_
+60-13	3445-3455	importante	importante	59-12	_	_	_	_
+60-14	3456-3460	cioè	cioè	59-13	_	_	_	_
+60-15	3461-3467	quello	quello	59-14	_	_	_	_
+60-16	3468-3471	che	che	59-15	_	_	_	_
+60-17	3472-3479	[PAUSE]	(.)	59-16	_	_	_	_
+60-18	3480-3482	un	un	59-17	_	_	_	_
+60-19	3483-3488	tempo	tempo	59-18	_	_	_	_
+60-20	3489-3491	l'	l'	59-19	_	_	_	_
+60-21	3492-3504	immigrazione	immigrazione	59-20	_	_	_	_
+60-22	3505-3512	[PAUSE]	(.)	59-21	_	_	_	_
+60-23	3513-3521	avveniva	avveniva	59-22	_	_	_	_
+60-24	3522-3533	soprattutto	soprattutto	59-23	_	_	_	_
+60-25	3534-3537	dai	dai	59-24	_	_	_	_
+60-26	3538-3543	paesi	paesi	59-25	_	_	_	_
+60-27	3544-3554	cosiddetti	cosiddetti	59-26	_	_	_	_
+60-28	3555-3558	del	del	59-27	_	_	_	_
+60-29	3559-3562	sud	sud	59-28	_	_	_	_
+60-30	3563-3566	del	del	59-29	_	_	_	_
+60-31	3567-3572	mondo	mondo	59-30	_	_	_	_
+60-32	3573-3575	al	al	59-31	_	_	_	_
+60-33	3576-3580	nord	nord	59-32	_	_	_	_
+60-34	3581-3584	del	del	59-33	_	_	_	_
+60-35	3585-3590	mondo	mondo.	59-34	_	Falling	_	_
+
+#Text=invece adesso [PAUSE] eh spesso e volentieri [PAUSE] capita che eh [PAUSE] i profughi [PAUSE] eh siano anche profughi di cosiddetti interni cioè all' interno dello stesso stato di appartenenza
+61-1	3591-3597	invece	invece	60-0	TO003	_	_	_
+61-2	3598-3604	adesso	adesso:	60-1	_	_	_	_
+61-3	3605-3612	[PAUSE]	(.)	60-2	_	_	_	_
+61-4	3613-3615	eh	eh	60-3	_	_	_	_
+61-5	3616-3622	spesso	spesso	60-4	_	_	_	_
+61-6	3623-3624	e	e	60-5	_	_	_	_
+61-7	3625-3635	volentieri	volentieri	60-6	_	_	_	_
+61-8	3636-3643	[PAUSE]	(.)	60-7	_	_	_	_
+61-9	3644-3650	capita	capita	60-8	_	_	_	_
+61-10	3651-3654	che	che:	60-9	_	_	_	_
+61-11	3655-3657	eh	e:h	60-10	_	_	_	_
+61-12	3658-3665	[PAUSE]	(.)	60-11	_	_	_	_
+61-13	3666-3667	i	i	60-12	_	_	_	_
+61-14	3668-3676	profughi	profughi	60-13	_	_	_	_
+61-15	3677-3684	[PAUSE]	(.)	60-14	_	_	_	_
+61-16	3685-3687	eh	eh	60-15	_	_	_	_
+61-17	3688-3693	siano	siano	60-16	_	_	_	_
+61-18	3694-3699	anche	anche	60-17	_	_	_	_
+61-19	3700-3708	profughi	profughi	60-18	_	_	_	_
+61-20	3709-3711	di	(di)	60-19	_	_	_	_
+61-21	3712-3722	cosiddetti	cosiddetti	60-20	_	_	_	_
+61-22	3723-3730	interni	interni.	60-21	_	Falling	_	_
+61-23	3731-3735	cioè	cioè	60-22	_	_	_	_
+61-24	3736-3740	all'	all'	60-23	_	_	_	_
+61-25	3741-3748	interno	interno	60-24	_	_	_	_
+61-26	3749-3754	dello	dello	60-25	_	_	_	_
+61-27	3755-3761	stesso	stesso	60-26	_	_	_	_
+61-28	3762-3767	stato	stato	60-27	_	_	_	_
+61-29	3768-3770	di	di	60-28	_	_	_	_
+61-30	3771-3783	appartenenza	appartenenza.	60-29	_	Falling	_	_
+
+#Text=che magari sfuggono da una zona in cui appunto c' è questa pratica della [PAUSE] dello sfruttamento minarile dello dello schiavismo
+62-1	3784-3787	che	che	61-0	TO003	_	_	_
+62-2	3788-3794	magari	magari	61-1	_	_	_	_
+62-3	3795-3803	sfuggono	sfuggono	61-2	_	_	_	_
+62-4	3804-3806	da	da:	61-3	_	_	_	_
+62-5	3807-3810	una	una	61-4	_	_	_	_
+62-6	3811-3815	zona	zona:,	61-5	_	weakly_rising	_	_
+62-7	3816-3818	in	in	61-6	_	_	_	_
+62-8	3819-3822	cui	cui	61-7	_	_	_	_
+62-9	3823-3830	appunto	appunto	61-8	_	_	_	_
+62-10	3831-3833	c'	c'	61-9	_	_	_	_
+62-11	3834-3835	è	è	61-10	_	_	_	_
+62-12	3836-3842	questa	questa	61-11	_	_	_	_
+62-13	3843-3850	pratica	pratica	61-12	_	_	_	_
+62-14	3851-3856	della	della:	61-13	_	_	_	_
+62-15	3857-3864	[PAUSE]	(.)	61-14	_	_	_	_
+62-16	3865-3870	dello	dello	61-15	_	_	_	_
+62-17	3871-3883	sfruttamento	sfruttamento	61-16	_	_	_	_
+62-18	3884-3892	minarile	minari:le,	61-17	_	weakly_rising	_	_
+62-19	3893-3898	dello	dello:	61-18	_	_	_	_
+62-20	3899-3904	dello	dello	61-19	_	_	_	_
+62-21	3905-3915	schiavismo	schiavismo:,	61-20	_	weakly_rising	_	_
+
+#Text=del bonded labor eh
+63-1	3916-3919	del	\[del	62-0	TO003	_	*->13-1	*[13]
+63-2	3920-3926	bonded	bonded	62-1	_	_	*->13-2	*[13]
+63-3	3927-3932	labor	labor	62-2	_	_	*->13-3	*[13]
+63-4	3933-3935	eh	e:h\]	62-3	_	_	*->13-4	*[13]
+
+#Text=sì ma allora a cosa a cosa a cosa serve il a cosa
+64-1	3936-3938	sì	\[sì	63-0	TO002	_	*->13-5	*[13]
+64-2	3939-3941	ma	ma	63-1	_	_	*->13-6	*[13]
+64-3	3942-3948	allora	allora	63-2	_	_	*->13-7	*[13]
+64-4	3949-3950	a	a	63-3	_	_	*->13-8	*[13]
+64-5	3951-3955	cosa	cosa	63-4	_	_	*->13-9	*[13]
+64-6	3956-3957	a	a	63-5	_	_	*->13-10	*[13]
+64-7	3958-3962	cosa	cosa\]	63-6	_	_	*->13-11	*[13]
+64-8	3963-3964	a	a	63-7	_	_	_	_
+64-9	3965-3969	cosa	cosa	63-8	_	_	_	_
+64-10	3970-3975	serve	serve	63-9	_	_	_	_
+64-11	3976-3978	il	i::l	63-10	_	_	_	_
+64-12	3979-3980	a	a	63-11	_	_	_	_
+64-13	3981-3985	cosa	co:sa:	63-12	_	_	_	_
+
+#Text=in che modo l' indebitamento [PAUSE] mh [PAUSE] apre la strada per l' imm~ [PAUSE] eh all' immigrazione
+65-1	3986-3988	in	in	64-0	TO002	_	_	_
+65-2	3989-3992	che	che	64-1	_	_	_	_
+65-3	3993-3997	modo	modo	64-2	_	_	_	_
+65-4	3998-4000	l'	l'	64-3	_	_	_	_
+65-5	4001-4014	indebitamento	indebitamento:	64-4	_	_	_	_
+65-6	4015-4022	[PAUSE]	(.)	64-5	_	_	_	_
+65-7	4023-4025	mh	m::h	64-6	_	_	_	_
+65-8	4026-4033	[PAUSE]	(.)	64-7	_	_	_	_
+65-9	4034-4038	apre	apre	64-8	_	_	_	_
+65-10	4039-4041	la	la	64-9	_	_	_	_
+65-11	4042-4048	strada	strada	64-10	_	_	_	_
+65-12	4049-4052	per	per	64-11	_	_	_	_
+65-13	4053-4055	l'	l'	64-12	_	_	_	_
+65-14	4056-4060	imm~	imm~	64-13	_	_	_	_
+65-15	4061-4068	[PAUSE]	(.)	64-14	_	_	_	_
+65-16	4069-4071	eh	e:::::h	64-15	_	_	_	_
+65-17	4072-4076	all'	all'	64-16	_	_	_	_
+65-18	4077-4089	immigrazione	immigrazione.	64-17	_	Falling	_	_
+
+#Text=perché
+66-1	4090-4096	perché	\[per\]ché	65-0	TO002	_	_	_
+66-1.1	4090-4093	per	_	_	_	_	*->14-1	*[14]
+
+#Text=beh
+67-1	4097-4100	beh	\[beh\]	66-0	TO003	_	*->14-2	*[14]
+
+#Text=perché
+68-1	4101-4107	perché	perché?	67-0	TO002	Rising	_	_
+
+#Text=perché ad esempio se noi andiamo
+69-1	4108-4114	perché	perché:	68-0	TO003	_	_	_
+69-2	4115-4117	ad	\[ad	68-1	_	_	*->15-1	*[15]
+69-3	4118-4125	esempio	esempio	68-2	_	_	*->15-2	*[15]
+69-4	4126-4128	se	se	68-3	_	_	*->15-3	*[15]
+69-5	4129-4132	noi	noi	68-4	_	_	*->15-4	*[15]
+69-6	4133-4140	andiamo	andiamo:\]	68-5	_	_	*->15-5	*[15]
+
+#Text=per sfuggire allo strozzino
+70-1	4141-4144	per	\[per	69-0	TO002	_	*->15-6	*[15]
+70-2	4145-4153	sfuggire	sfuggire	69-1	_	_	*->15-7	*[15]
+70-3	4154-4158	allo	allo	69-2	_	_	*->15-8	*[15]
+70-4	4159-4168	strozzino	strozzino\]?	69-3	_	Rising	*->15-9	*[15]
+
+#Text=non solo perché se ad esempio se noi consideriamo la teoria di everett lee
+71-1	4169-4172	non	non	70-0	TO003	_	_	_
+71-2	4173-4177	solo	solo	70-1	_	_	_	_
+71-3	4178-4184	perché	perché	70-2	_	_	_	_
+71-4	4185-4187	se	se	70-3	_	_	_	_
+71-5	4188-4190	ad	ad	70-4	_	_	_	_
+71-6	4191-4198	esempio	esempio	70-5	_	_	_	_
+71-7	4199-4201	se	se	70-6	_	_	_	_
+71-8	4202-4205	noi	no:i:	70-7	_	_	_	_
+71-9	4206-4218	consideriamo	consideriamo	70-8	_	_	_	_
+71-10	4219-4221	la	la	70-9	_	_	_	_
+71-11	4222-4228	teoria	teoria	70-10	_	_	_	_
+71-12	4229-4231	di	di	70-11	_	_	_	_
+71-13	4232-4239	everett	everett	70-12	_	_	_	_
+71-14	4240-4243	lee	lee,	70-13	_	weakly_rising	_	_
+
+#Text=che ha elaborato [PAUSE] mettendo insieme una serie di fattori che [PAUSE] eh portano il profugo a lasciare il proprio territorio di eh di origine eh
+72-1	4244-4247	che	che	71-0	TO003	_	_	_
+72-2	4248-4250	ha	ha	71-1	_	_	_	_
+72-3	4251-4260	elaborato	elaborato:	71-2	_	_	_	_
+72-4	4261-4268	[PAUSE]	(.)	71-3	_	_	_	_
+72-5	4269-4277	mettendo	mettendo	71-4	_	_	_	_
+72-6	4278-4285	insieme	insieme	71-5	_	_	_	_
+72-7	4286-4289	una	una	71-6	_	_	_	_
+72-8	4290-4295	serie	serie	71-7	_	_	_	_
+72-9	4296-4298	di	di	71-8	_	_	_	_
+72-10	4299-4306	fattori	fattori	71-9	_	_	_	_
+72-11	4307-4310	che	che:	71-10	_	_	_	_
+72-12	4311-4318	[PAUSE]	(.)	71-11	_	_	_	_
+72-13	4319-4321	eh	e:h	71-12	_	_	_	_
+72-14	4322-4329	portano	portano	71-13	_	_	_	_
+72-15	4330-4332	il	il	71-14	_	_	_	_
+72-16	4333-4340	profugo	profugo	71-15	_	_	_	_
+72-17	4341-4342	a	a	71-16	_	_	_	_
+72-18	4343-4351	lasciare	lasciare	71-17	_	_	_	_
+72-19	4352-4354	il	il	71-18	_	_	_	_
+72-20	4355-4362	proprio	proprio	71-19	_	_	_	_
+72-21	4363-4373	territorio	territorio	71-20	_	_	_	_
+72-22	4374-4376	di	di	71-21	_	_	_	_
+72-23	4377-4379	eh	e:h	71-22	_	_	_	_
+72-24	4380-4382	di	di	71-23	_	_	_	_
+72-25	4383-4390	origine	origine	71-24	_	_	_	_
+72-26	4391-4393	eh	eh,	71-25	_	weakly_rising	_	_
+
+#Text=eh possiamo dire che [PAUSE] influiscano anche non solo le [PAUSE] le aspettative di un miglioramento cioè ad esempio [PAUSE] sfuggire da uno strozzino o dal lavoro forzato o
+73-1	4394-4396	eh	eh	72-0	TO003	_	_	_
+73-2	4397-4405	possiamo	possiamo	72-1	_	_	_	_
+73-3	4406-4410	dire	dire	72-2	_	_	_	_
+73-4	4411-4414	che	che:	72-3	_	_	_	_
+73-5	4415-4422	[PAUSE]	(.)	72-4	_	_	_	_
+73-6	4423-4434	influiscano	influiscano	72-5	_	_	_	_
+73-7	4435-4440	anche	anche	72-6	_	_	_	_
+73-8	4441-4444	non	non	72-7	_	_	_	_
+73-9	4445-4449	solo	solo	72-8	_	_	_	_
+73-10	4450-4452	le	le	72-9	_	_	_	_
+73-11	4453-4460	[PAUSE]	(.)	72-10	_	_	_	_
+73-12	4461-4463	le	le	72-11	_	_	_	_
+73-13	4464-4475	aspettative	aspettative:	72-12	_	_	_	_
+73-14	4476-4478	di	di	72-13	_	_	_	_
+73-15	4479-4481	un	un	72-14	_	_	_	_
+73-16	4482-4495	miglioramento	miglioramento.	72-15	_	Falling	_	_
+73-17	4496-4500	cioè	cioè	72-16	_	_	_	_
+73-18	4501-4503	ad	ad	72-17	_	_	_	_
+73-19	4504-4511	esempio	esempio	72-18	_	_	_	_
+73-20	4512-4519	[PAUSE]	(.)	72-19	_	_	_	_
+73-21	4520-4528	sfuggire	sfuggire	72-20	_	_	_	_
+73-22	4529-4531	da	da	72-21	_	_	_	_
+73-23	4532-4535	uno	uno	72-22	_	_	_	_
+73-24	4536-4545	strozzino	strozzino:	72-23	_	_	_	_
+73-25	4546-4547	o	o	72-24	_	_	_	_
+73-26	4548-4551	dal	dal	72-25	_	_	_	_
+73-27	4552-4558	lavoro	lavoro:	72-26	_	_	_	_
+73-28	4559-4566	forzato	forzato	72-27	_	_	_	_
+73-29	4567-4568	o	o:::,	72-28	_	weakly_rising	_	_
+
+#Text=o qualsiasi altro lavoro illegale
+74-1	4569-4570	o	o	73-0	TO003	_	_	_
+74-2	4571-4580	qualsiasi	qualsiasi	73-1	_	_	_	_
+74-3	4581-4586	altro	altro	73-2	_	_	_	_
+74-4	4587-4593	lavoro	lavoro:	73-3	_	_	_	_
+74-5	4594-4602	illegale	illegale.	73-4	_	Falling	_	_
+
+#Text=ma ad esempio anche le aspettative personali perché no
+75-1	4603-4605	ma	ma	74-0	TO003	_	_	_
+75-2	4606-4608	ad	ad	74-1	_	_	_	_
+75-3	4609-4616	esempio	esempio	74-2	_	_	_	_
+75-4	4617-4622	anche	anche:	74-3	_	_	_	_
+75-5	4623-4625	le	le	74-4	_	_	_	_
+75-6	4626-4637	aspettative	aspettative	74-5	_	_	_	_
+75-7	4638-4647	personali	personali	74-6	_	_	_	_
+75-8	4648-4654	perché	perché	74-7	_	_	_	_
+75-9	4655-4657	no	no,	74-8	_	weakly_rising	_	_
+
+#Text=mh
+76-1	4658-4660	mh	m:h.	75-0	TO002	Falling	_	_
+
+#Text=il fatto di poter dire [PAUSE] che [PAUSE] mh nel caso in cui si voglia mettere su famiglia in un altro stato si è più sicuri si è più protetti dallo stato
+77-1	4661-4663	il	il	76-0	TO003	_	_	_
+77-2	4664-4669	fatto	fatto	76-1	_	_	_	_
+77-3	4670-4672	di	di	76-2	_	_	_	_
+77-4	4673-4678	poter	poter	76-3	_	_	_	_
+77-5	4679-4683	dire	dire:	76-4	_	_	_	_
+77-6	4684-4691	[PAUSE]	(.)	76-5	_	_	_	_
+77-7	4692-4695	che	che:	76-6	_	_	_	_
+77-8	4696-4703	[PAUSE]	(.)	76-7	_	_	_	_
+77-9	4704-4706	mh	mh	76-8	_	_	_	_
+77-10	4707-4710	nel	nel	76-9	_	_	_	_
+77-11	4711-4715	caso	caso	76-10	_	_	_	_
+77-12	4716-4718	in	in	76-11	_	_	_	_
+77-13	4719-4722	cui	cui	76-12	_	_	_	_
+77-14	4723-4725	si	si	76-13	_	_	_	_
+77-15	4726-4732	voglia	voglia	76-14	_	_	_	_
+77-16	4733-4740	mettere	mettere	76-15	_	_	_	_
+77-17	4741-4743	su	su	76-16	_	_	_	_
+77-18	4744-4752	famiglia	famiglia,	76-17	_	weakly_rising	_	_
+77-19	4753-4755	in	in	76-18	_	_	_	_
+77-20	4756-4758	un	un	76-19	_	_	_	_
+77-21	4759-4764	altro	altro	76-20	_	_	_	_
+77-22	4765-4770	stato	stato	76-21	_	_	_	_
+77-23	4771-4773	si	si	76-22	_	_	_	_
+77-24	4774-4775	è	è	76-23	_	_	_	_
+77-25	4776-4779	più	più	76-24	_	_	_	_
+77-26	4780-4786	sicuri	sicuri	76-25	_	_	_	_
+77-27	4787-4789	si	si	76-26	_	_	_	_
+77-28	4790-4791	è	è	76-27	_	_	_	_
+77-29	4792-4795	più	più	76-28	_	_	_	_
+77-30	4796-4804	protetti	protetti	76-29	_	_	_	_
+77-31	4805-4810	dallo	dallo	76-30	_	_	_	_
+77-32	4811-4816	stato	stato,	76-31	_	weakly_rising	_	_
+
+#Text=da questo punto di vista
+78-1	4817-4819	da	da	77-0	TO003	_	_	_
+78-2	4820-4826	questo	questo	77-1	_	_	_	_
+78-3	4827-4832	punto	punto	77-2	_	_	_	_
+78-4	4833-4835	di	di	77-3	_	_	_	_
+78-5	4836-4841	vista	vista.	77-4	_	Falling	_	_
+
+#Text=ah [PAUSE] eh [PAUSE] eh sì ha finito
+79-1	4842-4844	ah	ah	78-0	TO002	_	_	_
+79-2	4845-4852	[PAUSE]	(.)	78-1	_	_	_	_
+79-3	4853-4855	eh	eh	78-2	_	_	_	_
+79-4	4856-4863	[PAUSE]	(.)	78-3	_	_	_	_
+79-5	4864-4866	eh	eh	78-4	_	_	_	_
+79-6	4867-4869	sì	sì.	78-5	_	Falling	_	_
+79-7	4870-4872	ha	ha	78-6	_	_	_	_
+79-8	4873-4879	finito	finito	78-7	_	_	_	_
+
+#Text=ah no sì prego dica
+80-1	4880-4882	ah	ah	79-0	TO003	_	_	_
+80-2	4883-4885	no	no	79-1	_	_	_	_
+80-3	4886-4888	sì	sì	79-2	_	_	_	_
+80-4	4889-4894	prego	prego	79-3	_	_	_	_
+80-5	4895-4899	dica	dica.	79-4	_	Falling	_	_
+
+#Text=no no no mh [PAUSE] però mh non ha ancora proprio risposto alla domanda che le sto facendo cioè
+81-1	4900-4902	no	no.	80-0	TO002	Falling	_	_
+81-2	4903-4905	no	>no	80-1	_	_	_	_
+81-3	4906-4908	no	no<	80-2	_	_	_	_
+81-4	4909-4911	mh	m::h	80-3	_	_	_	_
+81-5	4912-4919	[PAUSE]	(.)	80-4	_	_	_	_
+81-6	4920-4924	però	però	80-5	_	_	_	_
+81-7	4925-4927	mh	m::h	80-6	_	_	_	_
+81-8	4928-4931	non	non	80-7	_	_	_	_
+81-9	4932-4934	ha	ha	80-8	_	_	_	_
+81-10	4935-4941	ancora	ancora	80-9	_	_	_	_
+81-11	4942-4949	proprio	proprio	80-10	_	_	_	_
+81-12	4950-4958	risposto	risposto	80-11	_	_	_	_
+81-13	4959-4963	alla	alla	80-12	_	_	_	_
+81-14	4964-4971	domanda	domanda	80-13	_	_	_	_
+81-15	4972-4975	che	che	80-14	_	_	_	_
+81-16	4976-4978	le	le	80-15	_	_	_	_
+81-17	4979-4982	sto	sto	80-16	_	_	_	_
+81-18	4983-4990	facendo	facendo.	80-17	_	Falling	_	_
+81-19	4991-4995	cioè	cioè	80-18	_	_	_	_
+
+#Text=o meglio non è la risposta che m' aspettavo io forse è questa cosa
+82-1	4996-4997	o	o	81-0	TO002	_	_	_
+82-2	4998-5004	meglio	meglio	81-1	_	_	_	_
+82-3	5005-5008	non	non	81-2	_	_	_	_
+82-4	5009-5010	è	è	81-3	_	_	_	_
+82-5	5011-5013	la	la	81-4	_	_	_	_
+82-6	5014-5022	risposta	risposta	81-5	_	_	_	_
+82-7	5023-5026	che	che	81-6	_	_	_	_
+82-8	5027-5029	m'	m'(	81-7	_	_	_	_
+82-9	5030-5039	aspettavo	aspetta\[vo	81-8	_	_	_	_
+82-9.1	5037-5046	vo	_	_	_	_	*->16-1	*[16]
+82-10	5040-5042	io	io.	81-9	_	Falling	*->16-2	*[16]
+82-11	5043-5048	forse	(forse	81-10	_	_	*->16-3	*[16]
+82-12	5049-5050	è	è	81-11	_	_	*->16-4	*[16]
+82-13	5051-5057	questa	questa	81-12	_	_	*->16-5	*[16]
+82-14	5058-5062	cosa	cosa)\]	81-13	_	_	*->16-6	*[16]
+
+#Text=ah okay ((ride))
+83-1	5063-5065	ah	\[ah	82-0	TO003	_	*->16-7	*[16]
+83-2	5066-5070	okay	okay\].	82-1	_	Falling	*->16-8	*[16]
+83-3	5071-5079	((ride))	((ride))	82-2	_	_	_	_
+
+#Text=no ma comunque ci si arriva
+84-1	5080-5082	no	no	83-0	TO002	_	_	_
+84-2	5083-5085	ma	ma	83-1	_	_	_	_
+84-3	5086-5094	comunque	comunque	83-2	_	_	_	_
+84-4	5095-5097	ci	ci	83-3	_	_	_	_
+84-5	5098-5100	si	si	83-4	_	_	_	_
+84-6	5101-5107	arriva	arriva.	83-5	_	Falling	_	_
+
+#Text=nel senso con ragionamenti progressivi
+85-1	5108-5111	nel	nel	84-0	TO002	_	_	_
+85-2	5112-5117	senso	senso	84-1	_	_	_	_
+85-3	5118-5121	con	con	84-2	_	_	_	_
+85-4	5122-5134	ragionamenti	ragionamenti	84-3	_	_	_	_
+85-5	5135-5146	progressivi	progressivi.	84-4	_	Falling	_	_
+
+#Text=sì
+86-1	5147-5149	sì	sì.	85-0	TO003	Falling	_	_
+
+#Text=eh perché in fin de conto la situazione che m' ha descritto lei è quello della fuga da [PAUSE] qualcuno che [PAUSE] ti eh
+87-1	5150-5152	eh	e:h	86-0	TO002	_	_	_
+87-2	5153-5159	perché	perché	86-1	_	_	_	_
+87-3	5160-5162	in	in	86-2	_	_	_	_
+87-4	5163-5166	fin	fin	86-3	_	_	_	_
+87-5	5167-5169	de	de	86-4	_	_	_	_
+87-6	5170-5175	conto	conto	86-5	_	_	_	_
+87-7	5176-5178	la	la	86-6	_	_	_	_
+87-8	5179-5189	situazione	situazione	86-7	_	_	_	_
+87-9	5190-5193	che	che	86-8	_	_	_	_
+87-10	5194-5196	m'	m'(	86-9	_	_	_	_
+87-11	5197-5199	ha	ha	86-10	_	_	_	_
+87-12	5200-5209	descritto	descritto	86-11	_	_	_	_
+87-13	5210-5213	lei	lei	86-12	_	_	_	_
+87-14	5214-5215	è	è	86-13	_	_	_	_
+87-15	5216-5222	quello	quello	86-14	_	_	_	_
+87-16	5223-5228	della	della	86-15	_	_	_	_
+87-17	5229-5233	fuga	fuga	86-16	_	_	_	_
+87-18	5234-5236	da	da.	86-17	_	Falling	_	_
+87-19	5237-5244	[PAUSE]	(.)	86-18	_	_	_	_
+87-20	5245-5253	qualcuno	qualcuno	86-19	_	_	_	_
+87-21	5254-5257	che	che	86-20	_	_	_	_
+87-22	5258-5265	[PAUSE]	(.)	86-21	_	_	_	_
+87-23	5266-5268	ti	ti	86-22	_	_	_	_
+87-24	5269-5271	eh	e::h,	86-23	_	weakly_rising	_	_
+
+#Text=ah sì ah no no ho capito ho capito sì sì
+88-1	5272-5274	ah	ah	87-0	TO003	_	_	_
+88-2	5275-5277	sì	sì	87-1	_	_	_	_
+88-3	5278-5280	ah	ah	87-2	_	_	_	_
+88-4	5281-5283	no	no	87-3	_	_	_	_
+88-5	5284-5286	no	no	87-4	_	_	_	_
+88-6	5287-5289	ho	ho	87-5	_	_	_	_
+88-7	5290-5296	capito	\[capito	87-6	_	_	*->17-1	*[17]
+88-8	5297-5299	ho	ho	87-7	_	_	*->17-2	*[17]
+88-9	5300-5306	capito	capito	87-8	_	_	*->17-3	*[17]
+88-10	5307-5309	sì	sì	87-9	_	_	*->17-4	*[17]
+88-11	5310-5312	sì	sì\].	87-10	_	Falling	*->17-5	*[17]
+
+#Text=allora in che modo l' emmi~ l' immi~ [PAUSE] l' emigrazione può servire
+89-1	5313-5319	allora	\[allora	88-0	TO002	_	*->17-6	*[17]
+89-2	5320-5322	in	in	88-1	_	_	*->17-7	*[17]
+89-3	5323-5326	che	che	88-2	_	_	*->17-8	*[17]
+89-4	5327-5331	modo	modo	88-3	_	_	*->17-9	*[17]
+89-5	5332-5334	l'	l'	88-4	_	_	*->17-10	*[17]
+89-6	5335-5340	emmi~	emmi~	88-5	_	_	*->17-11	*[17]
+89-7	5341-5343	l'	l'	88-6	_	_	*->17-12	*[17]
+89-8	5344-5349	immi~	immi~\]	88-7	_	_	*->17-13	*[17]
+89-9	5350-5357	[PAUSE]	(.)	88-8	_	_	_	_
+89-10	5358-5360	l'	l'	88-9	_	_	_	_
+89-11	5361-5372	emigrazione	emigrazione	88-10	_	_	_	_
+89-12	5373-5376	può	può	88-11	_	_	_	_
+89-13	5377-5384	servire	servire,	88-12	_	weakly_rising	_	_
+
+#Text=come risposta all' end~ all' endibitamento [PAUSE] dal punto di vista di chi
+90-1	5385-5389	come	come	89-0	TO002	_	_	_
+90-2	5390-5398	risposta	risposta	89-1	_	_	_	_
+90-3	5399-5403	all'	all'	89-2	_	_	_	_
+90-4	5404-5408	end~	end~	89-3	_	_	_	_
+90-5	5409-5413	all'	all'	89-4	_	_	_	_
+90-6	5414-5427	endibitamento	endibitamento	89-5	_	_	_	_
+90-7	5428-5435	[PAUSE]	(.)	89-6	_	_	_	_
+90-8	5436-5439	dal	\[dal	89-7	_	_	*->18-1	*[18]
+90-9	5440-5445	punto	punto	89-8	_	_	*->18-2	*[18]
+90-10	5446-5448	di	di	89-9	_	_	*->18-3	*[18]
+90-11	5449-5454	vista	vista	89-10	_	_	*->18-4	*[18]
+90-12	5455-5457	di	di	89-11	_	_	*->18-5	*[18]
+90-13	5458-5461	chi	chi\],	89-12	_	weakly_rising	*->18-6	*[18]
+
+#Text=ah ho capito
+91-1	5462-5464	ah	\[ah	90-0	TO003	_	*->18-7	*[18]
+91-2	5465-5467	ho	ho	90-1	_	_	*->18-8	*[18]
+91-3	5468-5474	capito	capito\].	90-2	_	Falling	*->18-9	*[18]
+
+#Text=beh ad esempio
+92-1	5475-5478	beh	beh	91-0	TO003	_	_	_
+92-2	5479-5481	ad	ad	91-1	_	_	_	_
+92-3	5482-5489	esempio	\[esempio::\],	91-2	_	weakly_rising	*->19-1	*[19]
+
+#Text=o della famiglia
+93-1	5490-5491	o	\[o	92-0	TO002	_	*->19-2	*[19]
+93-2	5492-5497	della	della	92-1	_	_	*->19-3	*[19]
+93-3	5498-5506	famiglia	famiglia\].	92-2	_	Falling	*->19-4	*[19]
+
+#Text=sì ad esempio l'
+94-1	5507-5509	sì	sì	93-0	TO003	_	_	_
+94-2	5510-5512	ad	ad	93-1	_	_	_	_
+94-3	5513-5520	esempio	esempi\[o::	93-2	_	_	_	_
+94-3.1	5519-5526	o	_	_	_	_	*->20-1	*[20]
+94-4	5521-5523	l'	l'\],	93-3	_	weakly_rising	*->20-2	*[20]
+
+#Text=indebitata
+95-1	5524-5534	indebitata	\[indebitata\].	94-0	TO002	Falling	*->20-3	*[20]
+
+#Text=s~ mh [PAUSE] se parliamo di migrazione per fuggire da
+96-1	5535-5537	s~	s~	95-0	TO003	_	_	_
+96-2	5538-5540	mh	m:h	95-1	_	_	_	_
+96-3	5541-5548	[PAUSE]	(.)	95-2	_	_	_	_
+96-4	5549-5551	se	se	95-3	_	_	_	_
+96-5	5552-5560	parliamo	parliamo	95-4	_	_	_	_
+96-6	5561-5563	di	di:	95-5	_	_	_	_
+96-7	5564-5574	migrazione	migrazione	95-6	_	_	_	_
+96-8	5575-5578	per	per	95-7	_	_	_	_
+96-9	5579-5586	fuggire	fuggire	95-8	_	_	_	_
+96-10	5587-5589	da	da,	95-9	_	weakly_rising	_	_
+
+#Text=potremmo anche dire che la fuga di cervelli è sempre una fuga da però non per quanto riguarda la famiglia [PAUSE] ma [PAUSE] per l' individuo in sè
+97-1	5590-5598	potremmo	potremmo	96-0	TO003	_	_	_
+97-2	5599-5604	anche	anche	96-1	_	_	_	_
+97-3	5605-5609	dire	dire	96-2	_	_	_	_
+97-4	5610-5613	che	che	96-3	_	_	_	_
+97-5	5614-5616	la	la	96-4	_	_	_	_
+97-6	5617-5621	fuga	fuga	96-5	_	_	_	_
+97-7	5622-5624	di	di	96-6	_	_	_	_
+97-8	5625-5633	cervelli	cervelli	96-7	_	_	_	_
+97-9	5634-5635	è	è	96-8	_	_	_	_
+97-10	5636-5642	sempre	sempre	96-9	_	_	_	_
+97-11	5643-5646	una	una	96-10	_	_	_	_
+97-12	5647-5651	fuga	fuga:	96-11	_	_	_	_
+97-13	5652-5654	da	da,	96-12	_	weakly_rising	_	_
+97-14	5655-5659	però	però	96-13	_	_	_	_
+97-15	5660-5663	non	non	96-14	_	_	_	_
+97-16	5664-5667	per	>per	96-15	_	_	_	_
+97-17	5668-5674	quanto	quanto	96-16	_	_	_	_
+97-18	5675-5683	riguarda	riguarda<	96-17	_	_	_	_
+97-19	5684-5686	la	la	96-18	_	_	_	_
+97-20	5687-5695	famiglia	famiglia,	96-19	_	weakly_rising	_	_
+97-21	5696-5703	[PAUSE]	(.)	96-20	_	_	_	_
+97-22	5704-5706	ma	ma,	96-21	_	weakly_rising	_	_
+97-23	5707-5714	[PAUSE]	(.)	96-22	_	_	_	_
+97-24	5715-5718	per	per	96-23	_	_	_	_
+97-25	5719-5721	l'	l'	96-24	_	_	_	_
+97-26	5722-5731	individuo	individuo	96-25	_	_	_	_
+97-27	5732-5734	in	in	96-26	_	_	_	_
+97-28	5735-5737	sè	sè.	96-27	_	Falling	_	_
+
+#Text=cioè non si sfugge da una mh ah appunto da uno sfruttamento o altre cose del genere ma si va
+98-1	5738-5742	cioè	cioè	97-0	TO003	_	_	_
+98-2	5743-5746	non	non	97-1	_	_	_	_
+98-3	5747-5749	si	si	97-2	_	_	_	_
+98-4	5750-5756	sfugge	sfugge	97-3	_	_	_	_
+98-5	5757-5759	da	da	97-4	_	_	_	_
+98-6	5760-5763	una	una	97-5	_	_	_	_
+98-7	5764-5766	mh	m:h	97-6	_	_	_	_
+98-8	5767-5769	ah	a::h	97-7	_	_	_	_
+98-9	5770-5777	appunto	appunto	97-8	_	_	_	_
+98-10	5778-5780	da	da	97-9	_	_	_	_
+98-11	5781-5784	uno	uno	97-10	_	_	_	_
+98-12	5785-5797	sfruttamento	sfruttamento	97-11	_	_	_	_
+98-13	5798-5799	o	o	97-12	_	_	_	_
+98-14	5800-5805	altre	altre	97-13	_	_	_	_
+98-15	5806-5810	cose	cose	97-14	_	_	_	_
+98-16	5811-5814	del	del	97-15	_	_	_	_
+98-17	5815-5821	genere	genere	97-16	_	_	_	_
+98-18	5822-5824	ma	ma	97-17	_	_	_	_
+98-19	5825-5827	si	si	97-18	_	_	_	_
+98-20	5828-5830	va	va:,	97-19	_	weakly_rising	_	_
+
+#Text=mh cioè l' aspettativa non è di lasciare un paese
+99-1	5831-5833	mh	m:h	98-0	TO003	_	_	_
+99-2	5834-5838	cioè	cioè	98-1	_	_	_	_
+99-3	5839-5841	l'	l'	98-2	_	_	_	_
+99-4	5842-5853	aspettativa	aspettativa	98-3	_	_	_	_
+99-5	5854-5857	non	non	98-4	_	_	_	_
+99-6	5858-5859	è	è	98-5	_	_	_	_
+99-7	5860-5862	di	di	98-6	_	_	_	_
+99-8	5863-5871	lasciare	lasciare	98-7	_	_	_	_
+99-9	5872-5874	un	un	98-8	_	_	_	_
+99-10	5875-5880	paese	paese:	98-9	_	_	_	_
+
+#Text=eh perché questo paese non offre possiblità di miglioramento [PAUSE] personale
+100-1	5881-5883	eh	e::h	99-0	TO003	_	_	_
+100-2	5884-5890	perché	perché:	99-1	_	_	_	_
+100-3	5891-5897	questo	questo	99-2	_	_	_	_
+100-4	5898-5903	paese	paese	99-3	_	_	_	_
+100-5	5904-5907	non	non	99-4	_	_	_	_
+100-6	5908-5913	offre	offre	99-5	_	_	_	_
+100-7	5914-5924	possiblità	possiblità	99-6	_	_	_	_
+100-8	5925-5927	di	di	99-7	_	_	_	_
+100-9	5928-5941	miglioramento	miglioramento	99-8	_	_	_	_
+100-10	5942-5949	[PAUSE]	(.)	99-9	_	_	_	_
+100-11	5950-5959	personale	personale.	99-10	_	Falling	_	_
+
+#Text=ma di eh proprio di andare in un altro stato
+101-1	5960-5962	ma	ma	100-0	TO003	_	_	_
+101-2	5963-5965	di	di	100-1	_	_	_	_
+101-3	5966-5968	eh	e:h	100-2	_	_	_	_
+101-4	5969-5976	proprio	proprio	100-3	_	_	_	_
+101-5	5977-5979	di	di	100-4	_	_	_	_
+101-6	5980-5986	andare	andare	100-5	_	_	_	_
+101-7	5987-5989	in	in	100-6	_	_	_	_
+101-8	5990-5992	un	un	100-7	_	_	_	_
+101-9	5993-5998	altro	altro	100-8	_	_	_	_
+101-10	5999-6004	stato	stato,	100-9	_	weakly_rising	_	_
+
+#Text=dove invece si eh si pensa che ciò possa avvenire [PAUSE] secondo me
+102-1	6005-6009	dove	dove	101-0	TO003	_	_	_
+102-2	6010-6016	invece	invece	101-1	_	_	_	_
+102-3	6017-6019	si	si	101-2	_	_	_	_
+102-4	6020-6022	eh	eh	101-3	_	_	_	_
+102-5	6023-6025	si	\[si	101-4	_	_	*->21-1	*[21]
+102-6	6026-6031	pensa	pe\]nsa	101-5	_	_	_	_
+102-6.1	6026-6028	pe	_	_	_	_	*->21-2	*[21]
+102-7	6032-6035	che	che	101-6	_	_	_	_
+102-8	6036-6039	ciò	ciò	101-7	_	_	_	_
+102-9	6040-6045	possa	possa	101-8	_	_	_	_
+102-10	6046-6054	avvenire	avvenire	101-9	_	_	_	_
+102-11	6055-6062	[PAUSE]	(.)	101-10	_	_	_	_
+102-12	6063-6070	secondo	secondo	101-11	_	_	_	_
+102-13	6071-6073	me	\[me\].	101-12	_	Falling	*->22-1	*[22]
+
+#Text=mh
+103-1	6074-6076	mh	\[mh\]	102-0	TO002	_	*->21-3	*[21]
+
+#Text=no ma ragioni sul [PAUSE] quello la voglio portare alla mia al rispondere a quello che ((ride))
+104-1	6077-6079	no	\[no\].	103-0	TO002	Falling	*->22-2	*[22]
+104-2	6080-6082	ma	ma	103-1	_	_	_	_
+104-3	6083-6090	ragioni	ragioni	103-2	_	_	_	_
+104-4	6091-6094	sul	sul	103-3	_	_	_	_
+104-5	6095-6102	[PAUSE]	(.)	103-4	_	_	_	_
+104-6	6103-6109	quello	quello	103-5	_	_	_	_
+104-7	6110-6112	la	la	103-6	_	_	_	_
+104-8	6113-6119	voglio	voglio	103-7	_	_	_	_
+104-9	6120-6127	portare	portare	103-8	_	_	_	_
+104-10	6128-6132	alla	alla	103-9	_	_	_	_
+104-11	6133-6136	mia	mia:	103-10	_	_	_	_
+104-12	6137-6139	al	al	103-11	_	_	_	_
+104-13	6140-6150	rispondere	rispondere	103-12	_	_	_	_
+104-14	6151-6152	a	a	103-13	_	_	_	_
+104-15	6153-6159	quello	quello	103-14	_	_	_	_
+104-16	6160-6163	che	che	103-15	_	_	_	_
+104-17	6164-6172	((ride))	((ride))	103-16	_	_	_	_
+
+#Text=((ride))
+105-1	6173-6181	((ride))	((ride))	104-0	TO003	_	_	_
+
+#Text=ragioni sull' indebitamento
+106-1	6182-6189	ragioni	ragioni	105-0	TO002	_	_	_
+106-2	6190-6195	sull'	sull'	105-1	_	_	_	_
+106-3	6196-6209	indebitamento	indebitamento.	105-2	_	Falling	_	_
+
+#Text=ah okay sull' indebitamento
+107-1	6210-6212	ah	ah	106-0	TO003	_	_	_
+107-2	6213-6217	okay	okay	106-1	_	_	_	_
+107-3	6218-6223	sull'	sull'	106-2	_	_	_	_
+107-4	6224-6237	indebitamento	indebitame\[nto::\]	106-3	_	_	_	_
+107-4.1	6234-6247	nto	_	_	_	_	*->23-1	*[23]
+
+#Text=sull' indebitamento vuol dire che
+108-1	6238-6243	sull'	\[sull'	107-0	TO002	_	*->23-2	*[23]
+108-2	6244-6257	indebitamento	indebitame\]nto	107-1	_	_	_	_
+108-2.1	6244-6254	indebitame	_	_	_	_	*->23-3	*[23]
+108-3	6258-6262	vuol	vuol	107-2	_	_	_	_
+108-4	6263-6267	dire	dire	107-3	_	_	_	_
+108-5	6268-6271	che	che	107-4	_	_	_	_
+
+#Text=se io m' indebito per ics ragioni come il contadino per avere le sementi per coltivare il grano o per comprarmi una macchina agricola che mi permette di xxrare meno fatica o di implemenetare la mia produzione
+109-1	6272-6274	se	se	108-0	TO002	_	_	_
+109-2	6275-6277	io	io	108-1	_	_	_	_
+109-3	6278-6280	m'	m'(	108-2	_	_	_	_
+109-4	6281-6289	indebito	indebito	108-3	_	_	_	_
+109-5	6290-6293	per	per	108-4	_	_	_	_
+109-6	6294-6297	ics	ics	108-5	_	_	_	_
+109-7	6298-6305	ragioni	ragioni.	108-6	_	Falling	_	_
+109-8	6306-6310	come	\[come	108-7	_	_	*->24-1	*[24]
+109-9	6311-6313	il	il	108-8	_	_	*->24-2	*[24]
+109-10	6314-6323	contadino	co\]ntadino	108-9	_	_	_	_
+109-10.1	6314-6316	co	_	_	_	_	*->24-3	*[24]
+109-11	6324-6327	per	per	108-10	_	_	_	_
+109-12	6328-6333	avere	avere	108-11	_	_	_	_
+109-13	6334-6336	le	le	108-12	_	_	_	_
+109-14	6337-6344	sementi	sementi	108-13	_	_	_	_
+109-15	6345-6348	per	per	108-14	_	_	_	_
+109-16	6349-6358	coltivare	coltivare	108-15	_	_	_	_
+109-17	6359-6361	il	il	108-16	_	_	_	_
+109-18	6362-6367	grano	grano	108-17	_	_	_	_
+109-19	6368-6369	o	\[o	108-18	_	_	*->25-1	*[25]
+109-20	6370-6373	per	per	108-19	_	_	*->25-2	*[25]
+109-21	6374-6383	comprarmi	compra\]rmi	108-20	_	_	_	_
+109-21.1	6374-6380	compra	_	_	_	_	*->25-3	*[25]
+109-22	6384-6387	una	una	108-21	_	_	_	_
+109-23	6388-6396	macchina	macchina	108-22	_	_	_	_
+109-24	6397-6405	agricola	agricola	108-23	_	_	_	_
+109-25	6406-6409	che	che	108-24	_	_	_	_
+109-26	6410-6412	mi	mi	108-25	_	_	_	_
+109-27	6413-6421	permette	permette	108-26	_	_	_	_
+109-28	6422-6424	di	di	108-27	_	_	_	_
+109-29	6425-6431	xxrare	xxrare	108-28	_	_	_	_
+109-30	6432-6436	meno	meno	108-29	_	_	_	_
+109-31	6437-6443	fatica	fatica	108-30	_	_	_	_
+109-32	6444-6445	o	o	108-31	_	_	_	_
+109-33	6446-6448	di	di	108-32	_	_	_	_
+109-34	6449-6462	implemenetare	implemenetare	108-33	_	_	_	_
+109-35	6463-6465	la	la	108-34	_	_	_	_
+109-36	6466-6469	mia	mia	108-35	_	_	_	_
+109-37	6470-6480	produzione	produzione,	108-36	_	weakly_rising	_	_
+
+#Text=sì
+110-1	6481-6483	sì	\[sì\].	109-0	TO003	Falling	*->24-4	*[24]
+
+#Text=ah ah
+111-1	6484-6486	ah	\[ah	110-0	TO003	_	*->25-4	*[25]
+111-2	6487-6489	ah	ah\].	110-1	_	Falling	*->25-5	*[25]
+
+#Text=eh eccetera io mi indebito come posso
+112-1	6490-6492	eh	e:h	111-0	TO002	_	_	_
+112-2	6493-6501	eccetera	eccetera.	111-1	_	Falling	_	_
+112-3	6502-6504	io	io	111-2	_	_	_	_
+112-4	6505-6507	mi	mi	111-3	_	_	_	_
+112-5	6508-6516	indebito	indebito.	111-4	_	Falling	_	_
+112-6	6517-6521	come	come	111-5	_	_	_	_
+112-7	6522-6527	posso	posso,	111-6	_	weakly_rising	_	_
+
+#Text=eh
+113-1	6528-6530	eh	e::::::::::h	112-0	TO002	_	_	_
+
+#Text=mh a~ arrivare a creare le condizioni per rimborsare questo debito
+114-1	6531-6533	mh	mh	113-0	TO002	_	_	_
+114-2	6534-6536	a~	a~	113-1	_	_	_	_
+114-3	6537-6545	arrivare	arrivare	113-2	_	_	_	_
+114-4	6546-6547	a	a	113-3	_	_	_	_
+114-5	6548-6554	creare	creare	113-4	_	_	_	_
+114-6	6555-6557	le	le	113-5	_	_	_	_
+114-7	6558-6568	condizioni	condizioni	113-6	_	_	_	_
+114-8	6569-6572	per	per	113-7	_	_	_	_
+114-9	6573-6583	rimborsare	rimborsare	113-8	_	_	_	_
+114-10	6584-6590	questo	questo	113-9	_	_	_	_
+114-11	6591-6597	debito	debito.	113-10	_	Falling	_	_
+
+#Text=uno è quello del eh bonded labour [PAUSE] di cui diceva lei è [PAUSE] il fatto che io resto sullo stesso posto e presto la mia manodopera [PAUSE] gratuitamente finché questo debito non è rimborsato
+115-1	6598-6601	uno	uno	114-0	TO002	_	_	_
+115-2	6602-6603	è	è	114-1	_	_	_	_
+115-3	6604-6610	quello	quello	114-2	_	_	_	_
+115-4	6611-6614	del	del	114-3	_	_	_	_
+115-5	6615-6617	eh	e::h	114-4	_	_	_	_
+115-6	6618-6624	bonded	bonded	114-5	_	_	_	_
+115-7	6625-6631	labour	labour	114-6	_	_	_	_
+115-8	6632-6639	[PAUSE]	(.)	114-7	_	_	_	_
+115-9	6640-6642	di	\[di	114-8	_	_	*->26-1	*[26]
+115-10	6643-6646	cui	cui\]	114-9	_	_	*->26-2	*[26]
+115-11	6647-6653	diceva	diceva	114-10	_	_	_	_
+115-12	6654-6657	lei	lei	114-11	_	_	_	_
+115-13	6658-6659	è	è	114-12	_	_	_	_
+115-14	6660-6667	[PAUSE]	(.)	114-13	_	_	_	_
+115-15	6668-6670	il	il	114-14	_	_	_	_
+115-16	6671-6676	fatto	fatto	114-15	_	_	_	_
+115-17	6677-6680	che	che	114-16	_	_	_	_
+115-18	6681-6683	io	io	114-17	_	_	_	_
+115-19	6684-6689	resto	resto	114-18	_	_	_	_
+115-20	6690-6695	sullo	sullo	114-19	_	_	_	_
+115-21	6696-6702	stesso	stesso	114-20	_	_	_	_
+115-22	6703-6708	posto	posto	114-21	_	_	_	_
+115-23	6709-6710	e	e	114-22	_	_	_	_
+115-24	6711-6717	presto	presto	114-23	_	_	_	_
+115-25	6718-6720	la	la	114-24	_	_	_	_
+115-26	6721-6724	mia	mia	114-25	_	_	_	_
+115-27	6725-6735	manodopera	manodopera	114-26	_	_	_	_
+115-28	6736-6743	[PAUSE]	(.)	114-27	_	_	_	_
+115-29	6744-6757	gratuitamente	gratuitamente	114-28	_	_	_	_
+115-30	6758-6764	finché	finché	114-29	_	_	_	_
+115-31	6765-6771	questo	questo	114-30	_	_	_	_
+115-32	6772-6778	debito	debito	114-31	_	_	_	_
+115-33	6779-6782	non	\[non	114-32	_	_	*->27-1	*[27]
+115-34	6783-6784	è	è\]	114-33	_	_	*->27-2	*[27]
+115-35	6785-6795	rimborsato	rimborsato.	114-34	_	Falling	_	_
+
+#Text=mh mh
+116-1	6796-6798	mh	\[mh	115-0	TO003	_	*->26-3	*[26]
+116-2	6799-6801	mh	mh\].	115-1	_	Falling	*->26-4	*[26]
+
+#Text=mh
+117-1	6802-6804	mh	\[mh\].	116-0	TO003	Falling	*->27-3	*[27]
+
+#Text=sì
+118-1	6805-6807	sì	\[sì\].	117-0	TO003	Falling	*->28-1	*[28]
+
+#Text=o secondo delle convenzioni che possono essere più o meno
+119-1	6808-6809	o	\[o\]	118-0	TO002	_	*->28-2	*[28]
+119-2	6810-6817	secondo	secondo	118-1	_	_	_	_
+119-3	6818-6823	delle	delle	118-2	_	_	_	_
+119-4	6824-6835	convenzioni	convenzioni	118-3	_	_	_	_
+119-5	6836-6839	che	che	118-4	_	_	_	_
+119-6	6840-6847	possono	possono	118-5	_	_	_	_
+119-7	6848-6854	essere	essere	118-6	_	_	_	_
+119-8	6855-6858	più	più	118-7	_	_	_	_
+119-9	6859-6860	o	o	118-8	_	_	_	_
+119-10	6861-6865	meno	meno:	118-9	_	_	_	_
+
+#Text=un' altra parte un altro modo è essere [PAUSE] quello dell' immigrazione
+120-1	6866-6869	un'	un'	119-0	TO002	_	_	_
+120-2	6870-6875	altra	altra	119-1	_	_	_	_
+120-3	6876-6881	parte	parte,	119-2	_	weakly_rising	_	_
+120-4	6882-6884	un	un	119-3	_	_	_	_
+120-5	6885-6890	altro	altro	119-4	_	_	_	_
+120-6	6891-6895	modo	modo	119-5	_	_	_	_
+120-7	6896-6897	è	è	119-6	_	_	_	_
+120-8	6898-6904	essere	essere	119-7	_	_	_	_
+120-9	6905-6912	[PAUSE]	(.)	119-8	_	_	_	_
+120-10	6913-6919	quello	quello	119-9	_	_	_	_
+120-11	6920-6925	dell'	dell'	119-10	_	_	_	_
+120-12	6926-6938	immigrazione	immigrazione.	119-11	_	Falling	_	_
+
+#Text=ma non per fuggire
+121-1	6939-6941	ma	ma	120-0	TO002	_	_	_
+121-2	6942-6945	non	non	120-1	_	_	_	_
+121-3	6946-6949	per	per	120-2	_	_	_	_
+121-4	6950-6957	fuggire	fuggire.	120-3	_	Falling	_	_
+
+#Text=ah ne senso di
+122-1	6958-6960	ah	ah	121-0	TO003	_	_	_
+122-2	6961-6963	ne	ne	121-1	_	_	_	_
+122-3	6964-6969	senso	senso	121-2	_	_	_	_
+122-4	6970-6972	di	\[di::\]	121-3	_	_	*->29-1	*[29]
+
+#Text=che cosa ci faccio fare [PAUSE] cosa mi serve l' immigrazione
+123-1	6973-6976	che	\[che	122-0	TO002	_	*->29-2	*[29]
+123-2	6977-6981	cosa	cosa\]	122-1	_	_	*->29-3	*[29]
+123-3	6982-6984	ci	ci	122-2	_	_	_	_
+123-4	6985-6991	faccio	faccio	122-3	_	_	_	_
+123-5	6992-6996	fare	fare:	122-4	_	_	_	_
+123-6	6997-7004	[PAUSE]	(.)	122-5	_	_	_	_
+123-7	7005-7009	cosa	cosa	122-6	_	_	_	_
+123-8	7010-7012	mi	mi	122-7	_	_	_	_
+123-9	7013-7018	serve	serve	122-8	_	_	_	_
+123-10	7019-7021	l'	l'	122-9	_	_	_	_
+123-11	7022-7034	immigrazione	immigrazione.	122-10	_	Falling	_	_
+
+#Text=nel senso di spostarsi un' altra città per trovare lavoro e pagare il debitomh che si è contratti [PAUSE] che si è contratto nei confronti di uno strozzino ad esempio
+124-1	7035-7038	nel	nel	123-0	TO003	_	_	_
+124-2	7039-7044	senso	senso	123-1	_	_	_	_
+124-3	7045-7047	di	di	123-2	_	_	_	_
+124-4	7048-7057	spostarsi	spostarsi	123-3	_	_	_	_
+124-5	7058-7061	un'	un'	123-4	_	_	_	_
+124-6	7062-7067	altra	altra	123-5	_	_	_	_
+124-7	7068-7073	città	città	123-6	_	_	_	_
+124-8	7074-7077	per	per	123-7	_	_	_	_
+124-9	7078-7085	trovare	trovare	123-8	_	_	_	_
+124-10	7086-7092	lavoro	lavoro	123-9	_	_	_	_
+124-11	7093-7094	e	e	123-10	_	_	_	_
+124-12	7095-7101	pagare	pagare	123-11	_	_	_	_
+124-13	7102-7104	il	il	123-12	_	_	_	_
+124-14	7105-7113	debitomh	debito::m:h	123-13	_	_	_	_
+124-15	7114-7117	che	che	123-14	_	_	_	_
+124-16	7118-7120	si	si	123-15	_	_	_	_
+124-17	7121-7122	è	è	123-16	_	_	_	_
+124-18	7123-7132	contratti	contratti	123-17	_	_	_	_
+124-19	7133-7140	[PAUSE]	(.)	123-18	_	_	_	_
+124-20	7141-7144	che	che	123-19	_	_	_	_
+124-21	7145-7147	si	si	123-20	_	_	_	_
+124-22	7148-7149	è	è	123-21	_	_	_	_
+124-23	7150-7159	contratto	contratto	123-22	_	_	_	_
+124-24	7160-7163	nei	nei	123-23	_	_	_	_
+124-25	7164-7173	confronti	confronti	123-24	_	_	_	_
+124-26	7174-7176	di	di	123-25	_	_	_	_
+124-27	7177-7180	uno	uno	123-26	_	_	_	_
+124-28	7181-7190	strozzino	strozzino	123-27	_	_	_	_
+124-29	7191-7193	ad	ad	123-28	_	_	_	_
+124-30	7194-7201	esempio	esempio.	123-29	_	Falling	_	_
+
+#Text=sì mh
+125-1	7202-7204	sì	sì	124-0	TO003	_	_	_
+125-2	7205-7207	mh	m::h	124-1	_	_	_	_
+
+#Text=per esempio
+126-1	7208-7211	per	\[per	125-0	TO003	_	*->30-1	*[30]
+126-2	7212-7219	esempio	esempio\],	125-1	_	weakly_rising	*->30-2	*[30]
+
+#Text=allora ah le cosi~ le cosidette rimesse
+127-1	7220-7226	allora	\[allora:\]	126-0	TO002	_	*->30-3	*[30]
+127-2	7227-7229	ah	a:h	126-1	_	_	_	_
+127-3	7230-7232	le	le	126-2	_	_	_	_
+127-4	7233-7238	cosi~	cosi~	126-3	_	_	_	_
+127-5	7239-7241	le	le	126-4	_	_	_	_
+127-6	7242-7251	cosidette	cosidette	126-5	_	_	_	_
+127-7	7252-7259	rimesse	rimesse,	126-6	_	weakly_rising	_	_
+
+#Text=ah sì giusto sì sì sì
+128-1	7260-7262	ah	ah	127-0	TO003	_	_	_
+128-2	7263-7265	sì	sì	127-1	_	_	_	_
+128-3	7266-7272	giusto	giusto	127-2	_	_	_	_
+128-4	7273-7275	sì	\[sì	127-3	_	_	*->31-1	*[31]
+128-5	7276-7278	sì	sì	127-4	_	_	*->31-2	*[31]
+128-6	7279-7281	sì	sì\].	127-5	_	Falling	*->31-3	*[31]
+
+#Text=le cosidette rimesse
+129-1	7282-7284	le	\[le	128-0	TO002	_	*->31-4	*[31]
+129-2	7285-7294	cosidette	coside\]tte	128-1	_	_	_	_
+129-2.1	7285-7291	coside	_	_	_	_	*->31-5	*[31]
+129-3	7295-7302	rimesse	rimesse,	128-2	_	weakly_rising	_	_
+
+#Text=hanno diverse funzioni certo non ce n' hanno solo una eh a seconda eh ma possono essere usate
+130-1	7303-7308	hanno	hanno	129-0	TO002	_	_	_
+130-2	7309-7316	diverse	diverse	129-1	_	_	_	_
+130-3	7317-7325	funzioni	funzioni.	129-2	_	Falling	_	_
+130-4	7326-7331	certo	certo	129-3	_	_	_	_
+130-5	7332-7335	non	non	129-4	_	_	_	_
+130-6	7336-7338	ce	ce	129-5	_	_	_	_
+130-7	7339-7341	n'	n'	129-6	_	_	_	_
+130-8	7342-7347	hanno	hanno	129-7	_	_	_	_
+130-9	7348-7352	solo	solo	129-8	_	_	_	_
+130-10	7353-7356	una	una	129-9	_	_	_	_
+130-11	7357-7359	eh	eh	129-10	_	_	_	_
+130-12	7360-7361	a	a	129-11	_	_	_	_
+130-13	7362-7369	seconda	seconda	129-12	_	_	_	_
+130-14	7370-7372	eh	eh	129-13	_	_	_	_
+130-15	7373-7375	ma	ma	129-14	_	_	_	_
+130-16	7376-7383	possono	possono	129-15	_	_	_	_
+130-17	7384-7390	essere	essere	129-16	_	_	_	_
+130-18	7391-7396	usate	usate,	129-17	_	weakly_rising	_	_
+
+#Text=sì x
+131-1	7397-7399	sì	\[°sì	130-0	TO003	_	*->32-1	*[32]
+131-2	7400-7401	x	xxx°\]	130-1	_	_	_	_
+131-2.1	7400-7403	x	_	_	_	_	*->32-2	*[32]
+
+#Text=una famiglia di cinque persone può decidere di inviare [PAUSE] i più giovani
+132-1	7402-7405	una	\[una	131-0	TO002	_	*->32-3	*[32]
+132-2	7406-7414	famiglia	fami\]glia	131-1	_	_	_	_
+132-2.1	7406-7410	fami	_	_	_	_	*->32-4	*[32]
+132-3	7415-7417	di	di	131-2	_	_	_	_
+132-4	7418-7424	cinque	cinque	131-3	_	_	_	_
+132-5	7425-7432	persone	persone	131-4	_	_	_	_
+132-6	7433-7436	può	può	131-5	_	_	_	_
+132-7	7437-7445	decidere	decidere	131-6	_	_	_	_
+132-8	7446-7448	di	di	131-7	_	_	_	_
+132-9	7449-7456	inviare	inviare	131-8	_	_	_	_
+132-10	7457-7464	[PAUSE]	(.)	131-9	_	_	_	_
+132-11	7465-7466	i	i	131-10	_	_	_	_
+132-12	7467-7470	più	più	131-11	_	_	_	_
+132-13	7471-7478	giovani	giovani,	131-12	_	weakly_rising	_	_
+
+#Text=a a
+133-1	7479-7480	a	a:	132-0	TO002	_	_	_
+133-2	7481-7482	a	a:::	132-1	_	_	_	_
+
+#Text=in un [PAUSE] all' estero diciamo do~ dove [PAUSE] dove ci sono maggiori opportunità di lavoro dove si può soprattutto procacciarsi [PAUSE] magari anche una [PAUSE] una moneta che ha un alto valore di scambio
+134-1	7483-7485	in	in	133-0	TO002	_	_	_
+134-2	7486-7488	un	un	133-1	_	_	_	_
+134-3	7489-7496	[PAUSE]	(.)	133-2	_	_	_	_
+134-4	7497-7501	all'	all'	133-3	_	_	_	_
+134-5	7502-7508	estero	estero	133-4	_	_	_	_
+134-6	7509-7516	diciamo	diciamo	133-5	_	_	_	_
+134-7	7517-7520	do~	do~	133-6	_	_	_	_
+134-8	7521-7525	dove	dove	133-7	_	_	_	_
+134-9	7526-7533	[PAUSE]	(.)	133-8	_	_	_	_
+134-10	7534-7538	dove	dove	133-9	_	_	_	_
+134-11	7539-7541	ci	ci	133-10	_	_	_	_
+134-12	7542-7546	sono	sono	133-11	_	_	_	_
+134-13	7547-7555	maggiori	maggiori	133-12	_	_	_	_
+134-14	7556-7567	opportunità	opportunità	133-13	_	_	_	_
+134-15	7568-7570	di	di	133-14	_	_	_	_
+134-16	7571-7577	lavoro	lavoro,	133-15	_	weakly_rising	_	_
+134-17	7578-7582	dove	dove	133-16	_	_	_	_
+134-18	7583-7585	si	si	133-17	_	_	_	_
+134-19	7586-7589	può	può	133-18	_	_	_	_
+134-20	7590-7601	soprattutto	soprattutto	133-19	_	_	_	_
+134-21	7602-7614	procacciarsi	procacciarsi	133-20	_	_	_	_
+134-22	7615-7622	[PAUSE]	(.)	133-21	_	_	_	_
+134-23	7623-7629	magari	magari	133-22	_	_	_	_
+134-24	7630-7635	anche	anche	133-23	_	_	_	_
+134-25	7636-7639	una	una:	133-24	_	_	_	_
+134-26	7640-7647	[PAUSE]	(.)	133-25	_	_	_	_
+134-27	7648-7651	una	una	133-26	_	_	_	_
+134-28	7652-7658	moneta	moneta	133-27	_	_	_	_
+134-29	7659-7662	che	che	133-28	_	_	_	_
+134-30	7663-7665	ha	ha	133-29	_	_	_	_
+134-31	7666-7668	un	un	133-30	_	_	_	_
+134-32	7669-7673	alto	alto	133-31	_	_	_	_
+134-33	7674-7680	valore	valore	133-32	_	_	_	_
+134-34	7681-7683	di	di	133-33	_	_	_	_
+134-35	7684-7691	scambio	scambio,	133-34	_	weakly_rising	_	_
+
+#Text=rispetto a quella locale
+135-1	7692-7700	rispetto	rispetto	134-0	TO002	_	_	_
+135-2	7701-7702	a	a	134-1	_	_	_	_
+135-3	7703-7709	quella	quella	134-2	_	_	_	_
+135-4	7710-7716	locale	locale,	134-3	_	weakly_rising	_	_
+
+#Text=sì
+136-1	7717-7719	sì	sì.	135-0	TO003	Falling	_	_
+
+#Text=e con cui
+137-1	7720-7721	e	e	136-0	TO002	_	_	_
+137-2	7722-7725	con	con	136-1	_	_	_	_
+137-3	7726-7729	cui	cui,	136-2	_	weakly_rising	_	_
+
+#Text=posso mh soddisfare o posso
+138-1	7730-7735	posso	\[posso:	137-0	TO002	_	*->33-1	*[33]
+138-2	7736-7738	mh	m:h\]	137-1	_	_	*->33-2	*[33]
+138-3	7739-7749	soddisfare	soddisfare	137-2	_	_	_	_
+138-4	7750-7751	o	o	137-3	_	_	_	_
+138-5	7752-7757	posso	posso	137-4	_	_	_	_
+
+#Text=sì sì è vero
+139-1	7758-7760	sì	\[sì	138-0	TO003	_	*->33-3	*[33]
+139-2	7761-7763	sì	sì	138-1	_	_	*->33-4	*[33]
+139-3	7764-7765	è	è	138-2	_	_	*->33-5	*[33]
+139-4	7766-7770	vero	vero\].	138-3	_	Falling	*->33-6	*[33]
+
+#Text=eh mh
+140-1	7771-7773	eh	e:h	139-0	TO002	_	_	_
+140-2	7774-7776	mh	m:h	139-1	_	_	_	_
+
+#Text=rimborsare il debito [PAUSE] che altrimenti mi terrebbe diciamo assoggettato a al
+141-1	7777-7787	rimborsare	rimborsare	140-0	TO002	_	_	_
+141-2	7788-7790	il	il	140-1	_	_	_	_
+141-3	7791-7797	debito	debito	140-2	_	_	_	_
+141-4	7798-7805	[PAUSE]	(.)	140-3	_	_	_	_
+141-5	7806-7809	che	che	140-4	_	_	_	_
+141-6	7810-7820	altrimenti	altrimenti	140-5	_	_	_	_
+141-7	7821-7823	mi	mi	140-6	_	_	_	_
+141-8	7824-7832	terrebbe	terrebbe	140-7	_	_	_	_
+141-9	7833-7840	diciamo	diciamo	140-8	_	_	_	_
+141-10	7841-7853	assoggettato	assoggettato	140-9	_	_	_	_
+141-11	7854-7855	a	a	140-10	_	_	_	_
+141-12	7856-7858	al	a:l,	140-11	_	weakly_rising	_	_
+
+#Text=alla persona
+142-1	7859-7863	alla	alla	141-0	TO002	_	_	_
+142-2	7864-7871	persona	persona.	141-1	_	Falling	_	_
+
+#Text=sì infatti eh
+143-1	7872-7874	sì	sì	142-0	TO003	_	_	_
+143-2	7875-7882	infatti	infatti\[	142-1	_	_	_	_
+143-3	7883-7885	eh	e:h\]	142-2	_	_	*->34-1	*[34]
+
+#Text=allo strozzino quello che abbiamo deciso di chiamare strozzino x che potrebbe non esserlo [PAUSE] ecco ((ride))
+144-1	7886-7890	allo	\[allo	143-0	TO002	_	*->34-2	*[34]
+144-2	7891-7900	strozzino	strozzino\].	143-1	_	Falling	*->34-3	*[34]
+144-3	7901-7907	quello	quello	143-2	_	_	_	_
+144-4	7908-7911	che	che	143-3	_	_	_	_
+144-5	7912-7919	abbiamo	abbiamo	143-4	_	_	_	_
+144-6	7920-7926	deciso	deciso	143-5	_	_	_	_
+144-7	7927-7929	di	di	143-6	_	_	_	_
+144-8	7930-7938	chiamare	chiamare	143-7	_	_	_	_
+144-9	7939-7948	strozzino	strozzino	143-8	_	_	_	_
+144-10	7949-7950	x	xx	143-9	_	_	_	_
+144-11	7951-7954	che	\[che	143-10	_	_	*->35-1	*[35]
+144-12	7955-7963	potrebbe	potrebbe	143-11	_	_	*->35-2	*[35]
+144-13	7964-7967	non	non	143-12	_	_	*->35-3	*[35]
+144-14	7968-7975	esserlo	esserlo	143-13	_	_	*->35-4	*[35]
+144-15	7976-7983	[PAUSE]	(.)	143-14	_	_	_	_
+144-15.1	7976-7979	[PA	_	_	_	_	*->35-5	*[35]
+144-16	7984-7988	ecco	ecco\].	143-15	_	Falling	*->35-6	*[35]
+144-17	7989-7997	((ride))	((ride))	143-16	_	_	_	_
+
+#Text=sì sì ma io sono andato subito sul [PAUSE] sul tragico e così
+145-1	7998-8000	sì	\[sì	144-0	TO003	_	*->35-7	*[35]
+145-2	8001-8003	sì	sì	144-1	_	_	*->35-8	*[35]
+145-3	8004-8006	ma	ma	144-2	_	_	*->35-9	*[35]
+145-4	8007-8009	io	io:	144-3	_	_	*->35-10	*[35]
+145-5	8010-8014	sono	sono	144-4	_	_	*->35-11	*[35]
+145-6	8015-8021	andato	andato	144-5	_	_	*->35-12	*[35]
+145-7	8022-8028	subito	subito	144-6	_	_	*->35-13	*[35]
+145-8	8029-8032	sul	su:l\]	144-7	_	_	*->35-14	*[35]
+145-9	8033-8040	[PAUSE]	(.)	144-8	_	_	_	_
+145-10	8041-8044	sul	sul	144-9	_	_	_	_
+145-11	8045-8052	tragico	tragico	144-10	_	_	_	_
+145-12	8053-8054	e	e	144-11	_	_	_	_
+145-13	8055-8059	così	così.	144-12	_	Falling	_	_
+
+#Text=mh però c' è anche questa realtà comunque che va considerata perché
+146-1	8060-8062	mh	mh	145-0	TO003	_	_	_
+146-2	8063-8067	però	però	145-1	_	_	_	_
+146-3	8068-8070	c'	c'	145-2	_	_	_	_
+146-4	8071-8072	è	è	145-3	_	_	_	_
+146-5	8073-8078	anche	anche	145-4	_	_	_	_
+146-6	8079-8085	questa	questa	145-5	_	_	_	_
+146-7	8086-8092	realtà	realtà	145-6	_	_	_	_
+146-8	8093-8101	comunque	comunque	145-7	_	_	_	_
+146-9	8102-8105	che	che	145-8	_	_	_	_
+146-10	8106-8108	va	va	145-9	_	_	_	_
+146-11	8109-8120	considerata	considerata	145-10	_	_	_	_
+146-12	8121-8127	perché	perché:	145-11	_	_	_	_
+
+#Text=e comunque a questo proposito sì mi viene in mente che eh nel caso delle rimesse infatti si parla propriamente di transnazionalismo
+147-1	8128-8129	e	e	146-0	TO003	_	_	_
+147-2	8130-8138	comunque	comunque	146-1	_	_	_	_
+147-3	8139-8140	a	a	146-2	_	_	_	_
+147-4	8141-8147	questo	questo	146-3	_	_	_	_
+147-5	8148-8157	proposito	proposito	146-4	_	_	_	_
+147-6	8158-8160	sì	sì	146-5	_	_	_	_
+147-7	8161-8163	mi	mi	146-6	_	_	_	_
+147-8	8164-8169	viene	viene	146-7	_	_	_	_
+147-9	8170-8172	in	in	146-8	_	_	_	_
+147-10	8173-8178	mente	mente	146-9	_	_	_	_
+147-11	8179-8182	che	che:	146-10	_	_	_	_
+147-12	8183-8185	eh	e:h	146-11	_	_	_	_
+147-13	8186-8189	nel	nel	146-12	_	_	_	_
+147-14	8190-8194	caso	caso	146-13	_	_	_	_
+147-15	8195-8200	delle	delle	146-14	_	_	_	_
+147-16	8201-8208	rimesse	rimesse	146-15	_	_	_	_
+147-17	8209-8216	infatti	infatti	146-16	_	_	_	_
+147-18	8217-8219	si	si	146-17	_	_	_	_
+147-19	8220-8225	parla	parla	146-18	_	_	_	_
+147-20	8226-8238	propriamente	propriamente	146-19	_	_	_	_
+147-21	8239-8241	di	di	146-20	_	_	_	_
+147-22	8242-8259	transnazionalismo	transnazionalismo,	146-21	_	weakly_rising	_	_
+
+#Text=cioè dei legami che si creano tra lo stato di origine del profugo e lo stato in cui il profugo si trasferisce per chiedere [PAUSE] per trovare lavoro mh chiedere l' asilo politico [PAUSE] o per mille altri motivi
+148-1	8260-8264	cioè	cioè	147-0	TO003	_	_	_
+148-2	8265-8268	dei	dei	147-1	_	_	_	_
+148-3	8269-8275	legami	lega:mi,	147-2	_	weakly_rising	_	_
+148-4	8276-8279	che	che	147-3	_	_	_	_
+148-5	8280-8282	si	si	147-4	_	_	_	_
+148-6	8283-8289	creano	creano	147-5	_	_	_	_
+148-7	8290-8293	tra	tra	147-6	_	_	_	_
+148-8	8294-8296	lo	lo	147-7	_	_	_	_
+148-9	8297-8302	stato	stato	147-8	_	_	_	_
+148-10	8303-8305	di	di	147-9	_	_	_	_
+148-11	8306-8313	origine	origine	147-10	_	_	_	_
+148-12	8314-8317	del	del	147-11	_	_	_	_
+148-13	8318-8325	profugo	profugo	147-12	_	_	_	_
+148-14	8326-8327	e	e:	147-13	_	_	_	_
+148-15	8328-8330	lo	lo	147-14	_	_	_	_
+148-16	8331-8336	stato	stato	147-15	_	_	_	_
+148-17	8337-8339	in	in	147-16	_	_	_	_
+148-18	8340-8343	cui	cui	147-17	_	_	_	_
+148-19	8344-8346	il	il	147-18	_	_	_	_
+148-20	8347-8354	profugo	profugo	147-19	_	_	_	_
+148-21	8355-8357	si	si	147-20	_	_	_	_
+148-22	8358-8369	trasferisce	trasferisce	147-21	_	_	_	_
+148-23	8370-8373	per	per	147-22	_	_	_	_
+148-24	8374-8382	chiedere	chiedere:	147-23	_	_	_	_
+148-25	8383-8390	[PAUSE]	(.)	147-24	_	_	_	_
+148-26	8391-8394	per	per	147-25	_	_	_	_
+148-27	8395-8402	trovare	trovare	147-26	_	_	_	_
+148-28	8403-8409	lavoro	lavoro,	147-27	_	weakly_rising	_	_
+148-29	8410-8412	mh	m:h	147-28	_	_	_	_
+148-30	8413-8421	chiedere	chiedere	147-29	_	_	_	_
+148-31	8422-8424	l'	l'	147-30	_	_	_	_
+148-32	8425-8430	asilo	asilo	147-31	_	_	_	_
+148-33	8431-8439	politico	politico:,	147-32	_	weakly_rising	_	_
+148-34	8440-8447	[PAUSE]	(.)	147-33	_	_	_	_
+148-35	8448-8449	o	\[o:	147-34	_	_	*->36-1	*[36]
+148-36	8450-8453	per	per	147-35	_	_	*->36-2	*[36]
+148-37	8454-8459	mille	mille	147-36	_	_	*->36-3	*[36]
+148-38	8460-8465	altri	altri	147-37	_	_	*->36-4	*[36]
+148-39	8466-8472	motivi	motivi\].	147-38	_	Falling	*->36-5	*[36]
+
+#Text=eh quando si parla di legami inter-transnazionale si parla sì di legami tra tra tra stati [PAUSE] situati molto lontani li uno rispetto all' altro ma anche di legam~ [PAUSE] si parla di legami transnazionali anche tra le famiglie o di famiglie transnazionali
+149-1	8473-8475	eh	\[eh	148-0	TO002	_	*->36-6	*[36]
+149-2	8476-8482	quando	quando	148-1	_	_	*->36-7	*[36]
+149-3	8483-8485	si	si	148-2	_	_	*->36-8	*[36]
+149-4	8486-8491	parla	parla	148-3	_	_	*->36-9	*[36]
+149-5	8492-8494	di	di	148-4	_	_	*->36-10	*[36]
+149-6	8495-8501	legami	legami	148-5	_	_	*->36-11	*[36]
+149-7	8502-8522	inter-transnazionale	int\]er-transnazionale	148-6	_	_	_	_
+149-7.1	8502-8505	int	_	_	_	_	*->36-12	*[36]
+149-8	8523-8525	si	si	148-7	_	_	_	_
+149-9	8526-8531	parla	parla	148-8	_	_	_	_
+149-10	8532-8534	sì	sì	148-9	_	_	_	_
+149-11	8535-8537	di	di	148-10	_	_	_	_
+149-12	8538-8544	legami	legami	148-11	_	_	_	_
+149-13	8545-8548	tra	tra	148-12	_	_	_	_
+149-14	8549-8552	tra	tra	148-13	_	_	_	_
+149-15	8553-8556	tra	tra	148-14	_	_	_	_
+149-16	8557-8562	stati	stati	148-15	_	_	_	_
+149-17	8563-8570	[PAUSE]	(.)	148-16	_	_	_	_
+149-18	8571-8578	situati	situati	148-17	_	_	_	_
+149-19	8579-8584	molto	molto	148-18	_	_	_	_
+149-20	8585-8592	lontani	lontani	148-19	_	_	_	_
+149-21	8593-8595	li	li	148-20	_	_	_	_
+149-22	8596-8599	uno	uno	148-21	_	_	_	_
+149-23	8600-8608	rispetto	rispetto	148-22	_	_	_	_
+149-24	8609-8613	all'	all'	148-23	_	_	_	_
+149-25	8614-8619	altro	altro	148-24	_	_	_	_
+149-26	8620-8622	ma	ma	148-25	_	_	_	_
+149-27	8623-8628	anche	anche	148-26	_	_	_	_
+149-28	8629-8631	di	di	148-27	_	_	_	_
+149-29	8632-8638	legam~	legam~	148-28	_	_	_	_
+149-30	8639-8646	[PAUSE]	(.)	148-29	_	_	_	_
+149-31	8647-8649	si	si	148-30	_	_	_	_
+149-32	8650-8655	parla	parla	148-31	_	_	_	_
+149-33	8656-8658	di	di	148-32	_	_	_	_
+149-34	8659-8665	legami	legami	148-33	_	_	_	_
+149-35	8666-8680	transnazionali	transnazionali	148-34	_	_	_	_
+149-36	8681-8686	anche	anche	148-35	_	_	_	_
+149-37	8687-8690	tra	tra	148-36	_	_	_	_
+149-38	8691-8693	le	le	148-37	_	_	_	_
+149-39	8694-8702	famiglie	famiglie	148-38	_	_	_	_
+149-40	8703-8704	o	o	148-39	_	_	_	_
+149-41	8705-8707	di	di	148-40	_	_	_	_
+149-42	8708-8716	famiglie	famiglie	148-41	_	_	_	_
+149-43	8717-8731	transnazionali	transnazionali.	148-42	_	Falling	_	_
+
+#Text=sì
+150-1	8732-8734	sì	sì.	149-0	TO003	Falling	_	_
+
+#Text=all' in~ [PAUSE] tra le~
+151-1	8735-8739	all'	all'	150-0	TO002	_	_	_
+151-2	8740-8743	in~	in~	150-1	_	_	_	_
+151-3	8744-8751	[PAUSE]	(.)	150-2	_	_	_	_
+151-4	8752-8755	tra	tra	150-3	_	_	_	_
+151-5	8756-8759	le~	le~	150-4	_	_	_	_
+
+#Text=tra le quali diciamo [PAUSE] la relazione è sostanziata dal eh
+152-1	8760-8763	tra	tra	151-0	TO002	_	_	_
+152-2	8764-8766	le	le	151-1	_	_	_	_
+152-3	8767-8772	quali	quali	151-2	_	_	_	_
+152-4	8773-8780	diciamo	diciamo	151-3	_	_	_	_
+152-5	8781-8788	[PAUSE]	(.)	151-4	_	_	_	_
+152-6	8789-8791	la	la	151-5	_	_	_	_
+152-7	8792-8801	relazione	relazione	151-6	_	_	_	_
+152-8	8802-8803	è	è	151-7	_	_	_	_
+152-9	8804-8815	sostanziata	sostanziata	151-8	_	_	_	_
+152-10	8816-8819	dal	dal	151-9	_	_	_	_
+152-11	8820-8822	eh	e::h,	151-10	_	weakly_rising	_	_
+
+#Text=dallo scambio
+153-1	8823-8828	dallo	dallo	152-0	TO002	_	_	_
+153-2	8829-8836	scambio	scambio,	152-1	_	weakly_rising	_	_
+
+#Text=di beni molto materiali tra cui quelli economici appunto le rimesse
+154-1	8837-8839	di	di	153-0	TO002	_	_	_
+154-2	8840-8844	beni	beni	153-1	_	_	_	_
+154-3	8845-8850	molto	molto	153-2	_	_	_	_
+154-4	8851-8860	materiali	materiali	153-3	_	_	_	_
+154-5	8861-8864	tra	tra	153-4	_	_	_	_
+154-6	8865-8868	cui	cui	153-5	_	_	_	_
+154-7	8869-8875	quelli	quelli	153-6	_	_	_	_
+154-8	8876-8885	economici	economici	153-7	_	_	_	_
+154-9	8886-8893	appunto	appunto	153-8	_	_	_	_
+154-10	8894-8896	le	le	153-9	_	_	_	_
+154-11	8897-8904	rimesse	rimesse.	153-10	_	Falling	_	_
+
+#Text=ed è quello che mantiene il legame
+155-1	8905-8907	ed	ed	154-0	TO002	_	_	_
+155-2	8908-8909	è	è	154-1	_	_	_	_
+155-3	8910-8916	quello	quello	154-2	_	_	_	_
+155-4	8917-8920	che	che	154-3	_	_	_	_
+155-5	8921-8929	mantiene	mantiene	154-4	_	_	_	_
+155-6	8930-8932	il	il	154-5	_	_	_	_
+155-7	8933-8939	legame	legame.	154-6	_	Falling	_	_
+
+#Text=è quello che mantiene [PAUSE] eh la logica
+156-1	8940-8941	è	è	155-0	TO002	_	_	_
+156-2	8942-8948	quello	quello	155-1	_	_	_	_
+156-3	8949-8952	che	che	155-2	_	_	_	_
+156-4	8953-8961	mantiene	mantiene	155-3	_	_	_	_
+156-5	8962-8969	[PAUSE]	(.)	155-4	_	_	_	_
+156-6	8970-8972	eh	eh	155-5	_	_	_	_
+156-7	8973-8975	la	la	155-6	_	_	_	_
+156-8	8976-8982	logica	logica,	155-7	_	weakly_rising	_	_
+
+#Text=dell' immigrazione attiva
+157-1	8983-8988	dell'	dell'	156-0	TO002	_	_	_
+157-2	8989-9001	immigrazione	immigrazione	156-1	_	_	_	_
+157-3	9002-9008	attiva	attiva.	156-2	_	Falling	_	_
+
+#Text=anche in delle condizioni
+158-1	9009-9014	anche	anche	157-0	TO002	_	_	_
+158-2	9015-9017	in	in	157-1	_	_	_	_
+158-3	9018-9023	delle	delle	157-2	_	_	_	_
+158-4	9024-9034	condizioni	condizioni,	157-3	_	weakly_rising	_	_
+
+#Text=che ai nostri l' immigrato qui ora
+159-1	9035-9038	che	che	158-0	TO002	_	_	_
+159-2	9039-9041	ai	ai	158-1	_	_	_	_
+159-3	9042-9048	nostri	nostri	158-2	_	_	_	_
+159-4	9049-9051	l'	l'	158-3	_	_	_	_
+159-5	9052-9061	immigrato	immigrato	158-4	_	_	_	_
+159-6	9062-9065	qui	qui	158-5	_	_	_	_
+159-7	9066-9069	ora	o:ra,	158-6	_	weakly_rising	_	_
+
+#Text=ah vive delle condizioni cioè di estrema povertà rispetto ai nostri standard
+160-1	9070-9072	ah	a:::h	159-0	TO002	_	_	_
+160-2	9073-9077	vive	vive.	159-1	_	Falling	_	_
+160-3	9078-9083	delle	delle	159-2	_	_	_	_
+160-4	9084-9094	condizioni	condizioni	159-3	_	_	_	_
+160-5	9095-9099	cioè	cioè	159-4	_	_	_	_
+160-6	9100-9102	di	di::	159-5	_	_	_	_
+160-7	9103-9110	estrema	estrema	159-6	_	_	_	_
+160-8	9111-9118	povertà	povertà	159-7	_	_	_	_
+160-9	9119-9127	rispetto	rispetto	159-8	_	_	_	_
+160-10	9128-9130	ai	ai	159-9	_	_	_	_
+160-11	9131-9137	nostri	nostri	159-10	_	_	_	_
+160-12	9138-9146	standard	standard.	159-11	_	Falling	_	_
+
+#Text=però è un modo lo stesso di procacciarsi quei soldi
+161-1	9147-9151	però	però	160-0	TO002	_	_	_
+161-2	9152-9153	è	è	160-1	_	_	_	_
+161-3	9154-9156	un	un	160-2	_	_	_	_
+161-4	9157-9161	modo	modo	160-3	_	_	_	_
+161-5	9162-9164	lo	lo	160-4	_	_	_	_
+161-6	9165-9171	stesso	stesso	160-5	_	_	_	_
+161-7	9172-9174	di	di	160-6	_	_	_	_
+161-8	9175-9187	procacciarsi	procacciarsi	160-7	_	_	_	_
+161-9	9188-9192	quei	quei	160-8	_	_	_	_
+161-10	9193-9198	soldi	sol\[di\],	160-9	_	weakly_rising	_	_
+161-10.1	9196-9201	di	_	_	_	_	*->37-1	*[37]
+
+#Text=sì
+162-1	9199-9201	sì	\[sì\].	161-0	TO003	Falling	*->37-2	*[37]
+
+#Text=quelle diciamo [PAUSE] quella lì che permette poi alla famiglia
+163-1	9202-9208	quelle	quelle	162-0	TO002	_	_	_
+163-2	9209-9216	diciamo	diciamo	162-1	_	_	_	_
+163-3	9217-9224	[PAUSE]	(.)	162-2	_	_	_	_
+163-4	9225-9231	quella	quella	162-3	_	_	_	_
+163-5	9232-9234	lì	lì	162-4	_	_	_	_
+163-6	9235-9238	che	che	162-5	_	_	_	_
+163-7	9239-9247	permette	permette	162-6	_	_	_	_
+163-8	9248-9251	poi	poi	162-7	_	_	_	_
+163-9	9252-9256	alla	alla	162-8	_	_	_	_
+163-10	9257-9265	famiglia	famiglia,	162-9	_	weakly_rising	_	_
+
+#Text=che è rimasta
+164-1	9266-9269	che	che	163-0	TO002	_	_	_
+164-2	9270-9271	è	è	163-1	_	_	_	_
+164-3	9272-9279	rimasta	rimasta,	163-2	_	weakly_rising	_	_
+
+#Text=di mh una certa mobil~ di mantenere una certa mobilità sociale
+165-1	9280-9282	di	di:	164-0	TO002	_	_	_
+165-2	9283-9285	mh	\[mh	164-1	_	_	*->38-1	*[38]
+165-3	9286-9289	una	una	164-2	_	_	*->38-2	*[38]
+165-4	9290-9295	certa	certa	164-3	_	_	*->38-3	*[38]
+165-5	9296-9302	mobil~	mobil~\]	164-4	_	_	*->38-4	*[38]
+165-6	9303-9305	di	di	164-5	_	_	_	_
+165-7	9306-9315	mantenere	mantenere	164-6	_	_	_	_
+165-8	9316-9319	una	una	164-7	_	_	_	_
+165-9	9320-9325	certa	certa	164-8	_	_	_	_
+165-10	9326-9334	mobilità	mobilità	164-9	_	_	_	_
+165-11	9335-9342	sociale	sociale	164-10	_	_	_	_
+
+#Text=sì di poter
+166-1	9343-9345	sì	\[sì	165-0	TO003	_	*->38-5	*[38]
+166-2	9346-9348	di	di	165-1	_	_	*->38-6	*[38]
+166-3	9349-9354	poter	pote:r\],	165-2	_	weakly_rising	*->38-7	*[38]
+
+#Text=perché il debito viene contratto non solo nella situazione di [PAUSE] enorme difficoltà no di penuria [PAUSE] eh
+167-1	9355-9361	perché	perché	166-0	TO002	_	_	_
+167-2	9362-9364	il	il	166-1	_	_	_	_
+167-3	9365-9371	debito	debito	166-2	_	_	_	_
+167-4	9372-9377	viene	viene	166-3	_	_	_	_
+167-5	9378-9387	contratto	contratto	166-4	_	_	_	_
+167-6	9388-9391	non	non	166-5	_	_	_	_
+167-7	9392-9396	solo	solo	166-6	_	_	_	_
+167-8	9397-9402	nella	nella	166-7	_	_	_	_
+167-9	9403-9413	situazione	situazione	166-8	_	_	_	_
+167-10	9414-9416	di	di	166-9	_	_	_	_
+167-11	9417-9424	[PAUSE]	(.)	166-10	_	_	_	_
+167-12	9425-9431	enorme	enorme	166-11	_	_	_	_
+167-13	9432-9442	difficoltà	difficoltà	166-12	_	_	_	_
+167-14	9443-9445	no	no	166-13	_	_	_	_
+167-15	9446-9448	di	di	166-14	_	_	_	_
+167-16	9449-9456	penuria	penuria	166-15	_	_	_	_
+167-17	9457-9464	[PAUSE]	(.)	166-16	_	_	_	_
+167-18	9465-9467	eh	eh.	166-17	_	Falling	_	_
+
+#Text=il debito è contratto x semplicemente anche per [PAUSE] in un' ottica di mobilità sociale
+168-1	9468-9470	il	il	167-0	TO002	_	_	_
+168-2	9471-9477	debito	debito	167-1	_	_	_	_
+168-3	9478-9479	è	è	167-2	_	_	_	_
+168-4	9480-9489	contratto	contratto	167-3	_	_	_	_
+168-5	9490-9491	x	\[xx	167-4	_	_	_	_
+168-5.1	9490-9492	x	_	_	_	_	*->39-1	*[39]
+168-6	9492-9505	semplicemente	semplicemente	167-5	_	_	*->39-2	*[39]
+168-7	9506-9511	anche	anche\]	167-6	_	_	*->39-3	*[39]
+168-8	9512-9515	per	per	167-7	_	_	_	_
+168-9	9516-9523	[PAUSE]	(.)	167-8	_	_	_	_
+168-10	9524-9526	in	in	167-9	_	_	_	_
+168-11	9527-9530	un'	un'	167-10	_	_	_	_
+168-12	9531-9537	ottica	ottica	167-11	_	_	_	_
+168-13	9538-9540	di	di	167-12	_	_	_	_
+168-14	9541-9549	mobilità	\[mobilità	167-13	_	_	*->40-1	*[40]
+168-15	9550-9557	sociale	sociale\].	167-14	_	Falling	*->40-2	*[40]
+
+#Text=ah sì sì certo
+169-1	9558-9560	ah	\[ah	168-0	TO003	_	*->39-4	*[39]
+169-2	9561-9563	sì	sì	168-1	_	_	*->39-5	*[39]
+169-3	9564-9566	sì	sì	168-2	_	_	*->39-6	*[39]
+169-4	9567-9572	certo	certo\].	168-3	_	Falling	*->39-7	*[39]
+
+#Text=sì sì per esempio ci sono i cosidetti [PAUSE] si parla ad esempio di povertà moderata di povertà assoluta perché almeno nel caso della povertà assoluta proprio non si può fare a meno
+170-1	9573-9575	sì	\[sì	169-0	TO003	_	*->40-3	*[40]
+170-2	9576-9578	sì	sì	169-1	_	_	*->40-4	*[40]
+170-3	9579-9582	per	per	169-2	_	_	*->40-5	*[40]
+170-4	9583-9590	esempio	esempio\]	169-3	_	_	*->40-6	*[40]
+170-5	9591-9593	ci	ci	169-4	_	_	_	_
+170-6	9594-9598	sono	sono	169-5	_	_	_	_
+170-7	9599-9600	i	i	169-6	_	_	_	_
+170-8	9601-9610	cosidetti	cosidetti:	169-7	_	_	_	_
+170-9	9611-9618	[PAUSE]	(.)	169-8	_	_	_	_
+170-10	9619-9621	si	si	169-9	_	_	_	_
+170-11	9622-9627	parla	parla	169-10	_	_	_	_
+170-12	9628-9630	ad	ad	169-11	_	_	_	_
+170-13	9631-9638	esempio	esempio	169-12	_	_	_	_
+170-14	9639-9641	di	di	169-13	_	_	_	_
+170-15	9642-9649	povertà	povertà	169-14	_	_	_	_
+170-16	9650-9658	moderata	moderata	169-15	_	_	_	_
+170-17	9659-9661	di	di	169-16	_	_	_	_
+170-18	9662-9669	povertà	povertà	169-17	_	_	_	_
+170-19	9670-9678	assoluta	assoluta	169-18	_	_	_	_
+170-20	9679-9685	perché	perché	169-19	_	_	_	_
+170-21	9686-9692	almeno	>almeno	169-20	_	_	_	_
+170-22	9693-9696	nel	nel	169-21	_	_	_	_
+170-23	9697-9701	caso	caso	169-22	_	_	_	_
+170-24	9702-9707	della	della<	169-23	_	_	_	_
+170-25	9708-9715	povertà	povertà	169-24	_	_	_	_
+170-26	9716-9724	assoluta	assoluta,	169-25	_	weakly_rising	_	_
+170-27	9725-9732	proprio	proprio	169-26	_	_	_	_
+170-28	9733-9736	non	non	169-27	_	_	_	_
+170-29	9737-9739	si	si	169-28	_	_	_	_
+170-30	9740-9743	può	può	169-29	_	_	_	_
+170-31	9744-9748	fare	fare	169-30	_	_	_	_
+170-32	9749-9750	a	a	169-31	_	_	_	_
+170-33	9751-9755	meno	meno,	169-32	_	weakly_rising	_	_
+
+#Text=ad esempio nean~ anche nel caso della
+171-1	9756-9758	ad	ad	170-0	TO003	_	_	_
+171-2	9759-9766	esempio	esempio	170-1	_	_	_	_
+171-3	9767-9772	nean~	nean~	170-2	_	_	_	_
+171-4	9773-9778	anche	\[anche	170-3	_	_	*->41-1	*[41]
+171-5	9779-9782	nel	nel	170-4	_	_	*->41-2	*[41]
+171-6	9783-9787	caso	caso	170-5	_	_	*->41-3	*[41]
+171-7	9788-9793	della	della:\]	170-6	_	_	*->41-4	*[41]
+
+#Text=che è calcolata a quanto quindi come
+172-1	9794-9797	che	\[che	171-0	TO002	_	*->41-5	*[41]
+172-2	9798-9799	è	è	171-1	_	_	*->41-6	*[41]
+172-3	9800-9809	calcolata	calcolata\]	171-2	_	_	*->41-7	*[41]
+172-4	9810-9811	a	a	171-3	_	_	_	_
+172-5	9812-9818	quanto	quanto	171-4	_	_	_	_
+172-6	9819-9825	quindi	\[quindi	171-5	_	_	*->42-1	*[42]
+172-7	9826-9830	come	come\].	171-6	_	Falling	*->42-2	*[42]
+
+#Text=ah uno virgola venticinque dollari al giorno
+173-1	9831-9833	ah	\[ah	172-0	TO003	_	*->42-3	*[42]
+173-2	9834-9837	uno	\]uno	172-1	_	_	_	_
+173-3	9838-9845	virgola	virgola	172-2	_	_	_	_
+173-4	9846-9857	venticinque	venticinque	172-3	_	_	_	_
+173-5	9858-9865	dollari	dollari	172-4	_	_	_	_
+173-6	9866-9868	al	\[a::l	172-5	_	_	*->43-1	*[43]
+173-7	9869-9875	giorno	giorno\].	172-6	_	Falling	*->43-2	*[43]
+
+#Text=pro capite
+174-1	9876-9879	pro	\[pro	173-0	TO002	_	*->43-3	*[43]
+174-2	9880-9886	capite	capite\].	173-1	_	Falling	*->43-4	*[43]
+
+#Text=ah
+175-1	9887-9889	ah	\[ah\]	174-0	TO002	_	*->44-1	*[44]
+
+#Text=sì sì pro capite
+176-1	9890-9892	sì	\[sì	175-0	TO003	_	*->44-2	*[44]
+176-2	9893-9895	sì	sì\]	175-1	_	_	*->44-3	*[44]
+176-3	9896-9899	pro	pro	175-2	_	_	_	_
+176-4	9900-9906	capite	capite.	175-3	_	Falling	_	_
+
+#Text=e invece appunto di povertà moderata si parla nel caso dei due dollari
+177-1	9907-9908	e	e	176-0	TO003	_	_	_
+177-2	9909-9915	invece	invece	176-1	_	_	_	_
+177-3	9916-9923	appunto	appunto	176-2	_	_	_	_
+177-4	9924-9926	di	di	176-3	_	_	_	_
+177-5	9927-9934	povertà	povertà	176-4	_	_	_	_
+177-6	9935-9943	moderata	moderata	176-5	_	_	_	_
+177-7	9944-9946	si	si	176-6	_	_	_	_
+177-8	9947-9952	parla	parla	176-7	_	_	_	_
+177-9	9953-9956	nel	nel	176-8	_	_	_	_
+177-10	9957-9961	caso	caso	176-9	_	_	_	_
+177-11	9962-9965	dei	dei	176-10	_	_	_	_
+177-12	9966-9969	due	due	176-11	_	_	_	_
+177-13	9970-9977	dollari	dollari,	176-12	_	weakly_rising	_	_
+
+#Text=al giorno pro capite
+178-1	9978-9980	al	a:l	177-0	TO003	_	_	_
+178-2	9981-9987	giorno	giorno	177-1	_	_	_	_
+178-3	9988-9991	pro	pro	177-2	_	_	_	_
+178-4	9992-9998	capite	capite.	177-3	_	Falling	_	_
+
+#Text=eh ad esempio appunto anche nel un caso di indebitamento può avvenire nel se si parla di povertà moderata
+179-1	9999-10001	eh	e:h	178-0	TO003	_	_	_
+179-2	10002-10004	ad	ad	178-1	_	_	_	_
+179-3	10005-10012	esempio	esempio	178-2	_	_	_	_
+179-4	10013-10020	appunto	appunto	178-3	_	_	_	_
+179-5	10021-10026	anche	anche	178-4	_	_	_	_
+179-6	10027-10030	nel	nel	178-5	_	_	_	_
+179-7	10031-10033	un	u:n	178-6	_	_	_	_
+179-8	10034-10038	caso	caso	178-7	_	_	_	_
+179-9	10039-10041	di	di	178-8	_	_	_	_
+179-10	10042-10055	indebitamento	indebitamento	178-9	_	_	_	_
+179-11	10056-10059	può	può	178-10	_	_	_	_
+179-12	10060-10068	avvenire	avvenire	178-11	_	_	_	_
+179-13	10069-10072	nel	nel	178-12	_	_	_	_
+179-14	10073-10075	se	se	178-13	_	_	_	_
+179-15	10076-10078	si	si	178-14	_	_	_	_
+179-16	10079-10084	parla	parla	178-15	_	_	_	_
+179-17	10085-10087	di	di	178-16	_	_	_	_
+179-18	10088-10095	povertà	povertà	178-17	_	_	_	_
+179-19	10096-10104	moderata	moderata	178-18	_	_	_	_
+
+#Text=perché anche in quel caso eh pur non essendo proprio in una situazione eh
+180-1	10105-10111	perché	perché	179-0	TO003	_	_	_
+180-2	10112-10117	anche	anche	179-1	_	_	_	_
+180-3	10118-10120	in	in	179-2	_	_	_	_
+180-4	10121-10125	quel	quel	179-3	_	_	_	_
+180-5	10126-10130	caso	caso	179-4	_	_	_	_
+180-6	10131-10133	eh	eh	179-5	_	_	_	_
+180-7	10134-10137	pur	pur	179-6	_	_	_	_
+180-8	10138-10141	non	non	179-7	_	_	_	_
+180-9	10142-10149	essendo	essendo	179-8	_	_	_	_
+180-10	10150-10157	proprio	proprio	179-9	_	_	_	_
+180-11	10158-10160	in	in	179-10	_	_	_	_
+180-12	10161-10164	una	una	179-11	_	_	_	_
+180-13	10165-10175	situazione	situazione	179-12	_	_	_	_
+180-14	10176-10178	eh	e:h	179-13	_	_	_	_
+
+#Text=assolutamente degradata la persona non riesce a mantenere gli standard di vita minimi che la società impone
+181-1	10179-10192	assolutamente	assolutamente	180-0	TO003	_	_	_
+181-2	10193-10202	degradata	degradata,	180-1	_	weakly_rising	_	_
+181-3	10203-10205	la	la	180-2	_	_	_	_
+181-4	10206-10213	persona	persona	180-3	_	_	_	_
+181-5	10214-10217	non	non	180-4	_	_	_	_
+181-6	10218-10224	riesce	riesce	180-5	_	_	_	_
+181-7	10225-10226	a	a	180-6	_	_	_	_
+181-8	10227-10236	mantenere	mantenere	180-7	_	_	_	_
+181-9	10237-10240	gli	gli	180-8	_	_	_	_
+181-10	10241-10249	standard	standard	180-9	_	_	_	_
+181-11	10250-10252	di	di	180-10	_	_	_	_
+181-12	10253-10257	vita	vita	180-11	_	_	_	_
+181-13	10258-10264	minimi	minimi	180-12	_	_	_	_
+181-14	10265-10268	che	che	180-13	_	_	_	_
+181-15	10269-10271	la	la	180-14	_	_	_	_
+181-16	10272-10279	società	società	180-15	_	_	_	_
+181-17	10280-10286	impone	impo:ne.	180-16	_	Falling	_	_
+
+#Text=non a caso purtroppo ancora oggi molte persone vivono in un sottoscala
+182-1	10287-10290	non	non	181-0	TO003	_	_	_
+182-2	10291-10292	a	a	181-1	_	_	_	_
+182-3	10293-10297	caso	caso	181-2	_	_	_	_
+182-4	10298-10307	purtroppo	purtroppo	181-3	_	_	_	_
+182-5	10308-10314	ancora	ancora	181-4	_	_	_	_
+182-6	10315-10319	oggi	oggi	181-5	_	_	_	_
+182-7	10320-10325	molte	molte	181-6	_	_	_	_
+182-8	10326-10333	persone	persone	181-7	_	_	_	_
+182-9	10334-10340	vivono	vivono	181-8	_	_	_	_
+182-10	10341-10343	in	in	181-9	_	_	_	_
+182-11	10344-10346	un	un	181-10	_	_	_	_
+182-12	10347-10357	sottoscala	sottoscala	181-11	_	_	_	_
+
+#Text=il che è indice del fatto che che non c' è appunto
+183-1	10358-10360	il	il	182-0	TO003	_	_	_
+183-2	10361-10364	che	che	182-1	_	_	_	_
+183-3	10365-10366	è	è	182-2	_	_	_	_
+183-4	10367-10373	indice	indice	182-3	_	_	_	_
+183-5	10374-10377	del	del	182-4	_	_	_	_
+183-6	10378-10383	fatto	fatto	182-5	_	_	_	_
+183-7	10384-10387	che	che	182-6	_	_	_	_
+183-8	10388-10391	che	che	182-7	_	_	_	_
+183-9	10392-10395	non	non	182-8	_	_	_	_
+183-10	10396-10398	c'	c'	182-9	_	_	_	_
+183-11	10399-10400	è	è	182-10	_	_	_	_
+183-12	10401-10408	appunto	\[appunto:\]	182-11	_	_	*->45-1	*[45]
+
+#Text=posso interromperla
+184-1	10409-10414	posso	\[posso	183-0	TO002	_	_	_
+184-2	10415-10428	interromperla	interromperla,	183-1	_	weakly_rising	_	_
+
+#Text=sì sì prego
+185-1	10429-10431	sì	\[sì	184-0	TO003	_	*->46-1	*[46]
+185-2	10432-10434	sì	sì\]	184-1	_	_	*->46-2	*[46]
+185-3	10435-10440	prego	prego.	184-2	_	Falling	_	_
+
+#Text=((il_docente_interrompe_interrogazione_per_consultarsi_con_collega))
+186-1	10441-10509	((il_docente_interrompe_interrogazione_per_consultarsi_con_collega))	((il_docente_interrompe_interrogazione_per_consultarsi_con_collega))	185-0	TO002	_	_	_
+
+#Text=okay quest~ è preparato sto ragazzo
+187-1	10510-10514	okay	okay	186-0	???	_	_	_
+187-2	10515-10521	quest~	quest~	186-1	_	_	_	_
+187-3	10522-10523	è	è	186-2	_	_	_	_
+187-4	10524-10533	preparato	preparato	186-3	_	_	_	_
+187-5	10534-10537	sto	sto	186-4	_	_	_	_
+187-6	10538-10545	ragazzo	ragazzo,	186-5	_	weakly_rising	_	_
+
+#Text=ah
+188-1	10546-10548	ah	a:h	187-0	TO002	_	_	_
+
+#Text=mh
+189-1	10549-10551	mh	m:h	188-0	TO002	_	_	_
+
+#Text=((ride))
+190-1	10552-10560	((ride))	((ride))	189-0	TO003	_	_	_
+
+#Text=eh sì
+191-1	10561-10563	eh	°eh	190-0	TO003	_	_	_
+191-2	10564-10566	sì	sì.°	190-1	_	Falling	_	_
+
+#Text=((ride))
+192-1	10567-10575	((ride))	((ride))	191-0	TO003	_	_	_
+
+#Text=x avrei potuto farle una domanda per
+193-1	10576-10577	x	xxx	192-0	TO002	_	_	_
+193-2	10578-10583	avrei	avrei	192-1	_	_	_	_
+193-3	10584-10590	potuto	potuto	192-2	_	_	_	_
+193-4	10591-10596	farle	farle	192-3	_	_	_	_
+193-5	10597-10600	una	una	192-4	_	_	_	_
+193-6	10601-10608	domanda	domanda	192-5	_	_	_	_
+193-7	10609-10612	per	\[pe:r\]	192-6	_	_	*->48-1	*[48]
+
+#Text=cose brutte m' ha detto professore
+194-1	10613-10617	cose	\[cose\]	193-0	???	_	*->48-2	*[48]
+194-2	10618-10624	brutte	brutte	193-1	_	_	_	_
+194-3	10625-10627	m'	m'(	193-2	_	_	_	_
+194-4	10628-10630	ha	ha	193-3	_	_	_	_
+194-5	10631-10636	detto	detto	193-4	_	_	_	_
+194-6	10637-10647	professore	professore	193-5	_	_	_	_
+
+#Text=((ride))
+195-1	10648-10656	((ride))	((ride))	194-0	TO003	_	_	_
+
+#Text=sono ancora in tempo per ritirare
+196-1	10657-10661	sono	sono	195-0	TO003	_	_	_
+196-2	10662-10668	ancora	ancora	195-1	_	_	_	_
+196-3	10669-10671	in	in	195-2	_	_	_	_
+196-4	10672-10677	tempo	tempo	195-3	_	_	_	_
+196-5	10678-10681	per	per	195-4	_	_	_	_
+196-6	10682-10690	ritirare	ritirare	195-5	_	_	_	_
+
+#Text=((ride))
+197-1	10691-10699	((ride))	((ride))	196-0	TO003	_	_	_
+
+#Text=no
+198-1	10700-10702	no	no.	197-0	TO002	Falling	_	_
+
+#Text=uh x tra il diciassette e il diciotto non so se
+199-1	10703-10705	uh	uh	198-0	TO002	_	_	_
+199-2	10706-10707	x	xx	198-1	_	_	_	_
+199-3	10708-10711	tra	tra	198-2	_	_	_	_
+199-4	10712-10714	il	il	198-3	_	_	_	_
+199-5	10715-10726	diciassette	diciassette	198-4	_	_	_	_
+199-6	10727-10728	e	e	198-5	_	_	_	_
+199-7	10729-10731	il	il	198-6	_	_	_	_
+199-8	10732-10740	diciotto	diciotto	198-7	_	_	_	_
+199-9	10741-10744	non	non	198-8	_	_	_	_
+199-10	10745-10747	so	so	198-9	_	_	_	_
+199-11	10748-10750	se	se:	198-10	_	_	_	_
+
+#Text=ah sì per fare un azzardo un rischio ((ride))
+200-1	10751-10753	ah	ah	199-0	TO003	_	_	_
+200-2	10754-10756	sì	sì	199-1	_	_	_	_
+200-3	10757-10760	per	per	199-2	_	_	_	_
+200-4	10761-10765	fare	fare	199-3	_	_	_	_
+200-5	10766-10768	un	un	199-4	_	_	_	_
+200-6	10769-10776	azzardo	azzardo	199-5	_	_	_	_
+200-7	10777-10779	un	un	199-6	_	_	_	_
+200-8	10780-10787	rischio	rischio	199-7	_	_	_	_
+200-9	10788-10796	((ride))	((ride))	199-8	_	_	_	_
+
+#Text=((ride))
+201-1	10797-10805	((ride))	((ride))	200-0	TO002	_	_	_
+
+#Text=eh
+202-1	10806-10808	eh	e:h	201-0	TO002	_	_	_
+
+#Text=mh sì ora non so perché siamo andati finiti nell' immigrazione
+203-1	10809-10811	mh	m:h	202-0	TO002	_	_	_
+203-2	10812-10814	sì	sì	202-1	_	_	_	_
+203-3	10815-10818	ora	ora	202-2	_	_	_	_
+203-4	10819-10822	non	non	202-3	_	_	_	_
+203-5	10823-10825	so	so	202-4	_	_	_	_
+203-6	10826-10832	perché	perché	202-5	_	_	_	_
+203-7	10833-10838	siamo	siamo	202-6	_	_	_	_
+203-8	10839-10845	andati	andati	202-7	_	_	_	_
+203-9	10846-10852	finiti	finiti	202-8	_	_	_	_
+203-10	10853-10858	nell'	nell'	202-9	_	_	_	_
+203-11	10859-10871	immigrazione	immigrazione:	202-10	_	_	_	_
+
+#Text=((ride))
+204-1	10872-10880	((ride))	((ride))	203-0	TO003	_	_	_
+
+#Text=eh
+205-1	10881-10883	eh	e::h	204-0	TO002	_	_	_
+
+#Text=un' altra parte del libro suxx io non so più capa~ son più incapace di far domande non so più che
+206-1	10884-10887	un'	un'	205-0	TO002	_	_	_
+206-2	10888-10893	altra	altra	205-1	_	_	_	_
+206-3	10894-10899	parte	parte	205-2	_	_	_	_
+206-4	10900-10903	del	del	205-3	_	_	_	_
+206-5	10904-10909	libro	libro	205-4	_	_	_	_
+206-6	10910-10914	suxx	suxx	205-5	_	_	_	_
+206-7	10915-10917	io	io	205-6	_	_	_	_
+206-8	10918-10921	non	non	205-7	_	_	_	_
+206-9	10922-10924	so	so	205-8	_	_	_	_
+206-10	10925-10928	più	più	205-9	_	_	_	_
+206-11	10929-10934	capa~	capa~	205-10	_	_	_	_
+206-12	10935-10938	son	son	205-11	_	_	_	_
+206-13	10939-10942	più	più	205-12	_	_	_	_
+206-14	10943-10951	incapace	incapace	205-13	_	_	_	_
+206-15	10952-10954	di	di	205-14	_	_	_	_
+206-16	10955-10958	far	far	205-15	_	_	_	_
+206-17	10959-10966	domande	domande	205-16	_	_	_	_
+206-18	10967-10970	non	non	205-17	_	_	_	_
+206-19	10971-10973	so	so	205-18	_	_	_	_
+206-20	10974-10977	più	più	205-19	_	_	_	_
+206-21	10978-10981	che	che::	205-20	_	_	_	_
+
+#Text=che domande fare
+207-1	10982-10985	che	che	206-0	TO002	_	_	_
+207-2	10986-10993	domande	domande	206-1	_	_	_	_
+207-3	10994-10998	fare	fare.	206-2	_	Falling	_	_
+
+#Text=eh mh
+208-1	10999-11001	eh	e:h	207-0	TO003	_	_	_
+208-2	11002-11004	mh	mh	207-1	_	_	_	_
+
+#Text=((ride))
+209-1	11005-11013	((ride))	((ride))	208-0	TO003	_	_	_
+
+#Text=no dicevo un' altra parte che non che non mi è piaciuta o
+210-1	11014-11016	no	no	209-0	TO003	_	_	_
+210-2	11017-11023	dicevo	dicevo	209-1	_	_	_	_
+210-3	11024-11027	un'	un'	209-2	_	_	_	_
+210-4	11028-11033	altra	altra	209-3	_	_	_	_
+210-5	11034-11039	parte	parte	209-4	_	_	_	_
+210-6	11040-11043	che	che:	209-5	_	_	_	_
+210-7	11044-11047	non	no:n	209-6	_	_	_	_
+210-8	11048-11051	che	che	209-7	_	_	_	_
+210-9	11052-11055	non	non	209-8	_	_	_	_
+210-10	11056-11058	mi	mi	209-9	_	_	_	_
+210-11	11059-11060	è	è	209-10	_	_	_	_
+210-12	11061-11069	piaciuta	piaciuta	209-11	_	_	_	_
+210-13	11070-11071	o	o::	209-12	_	_	_	_
+
+#Text=sì che non è piaciuta così faccio una domanda
+211-1	11072-11074	sì	sì	210-0	TO002	_	_	_
+211-2	11075-11078	che	che	210-1	_	_	_	_
+211-3	11079-11082	non	non	210-2	_	_	_	_
+211-4	11083-11084	è	è	210-3	_	_	_	_
+211-5	11085-11093	piaciuta	piaciuta	210-4	_	_	_	_
+211-6	11094-11098	così	così	210-5	_	_	_	_
+211-7	11099-11105	faccio	faccio	210-6	_	_	_	_
+211-8	11106-11109	una	una	210-7	_	_	_	_
+211-9	11110-11117	domanda	domanda:	210-8	_	_	_	_
+
+#Text=((ride))
+212-1	11118-11126	((ride))	((ride))	211-0	TO003	_	_	_
+
+#Text=beh eh ((ride))
+213-1	11127-11130	beh	beh	212-0	TO003	_	_	_
+213-2	11131-11133	eh	e:h	212-1	_	_	_	_
+213-3	11134-11142	((ride))	((ride))	212-2	_	_	_	_
+
+#Text=no cioè un ce un certi mh
+214-1	11143-11145	no	no	213-0	TO003	_	_	_
+214-2	11146-11150	cioè	cioè	213-1	_	_	_	_
+214-3	11151-11153	un	un	213-2	_	_	_	_
+214-4	11154-11156	ce	ce	213-3	_	_	_	_
+214-5	11157-11159	un	un	213-4	_	_	_	_
+214-6	11160-11165	certi	certi	213-5	_	_	_	_
+214-7	11166-11168	mh	mh	213-6	_	_	_	_
+
+#Text=cioè a un certo punto secondo me è difficile da da comprendere
+215-1	11169-11173	cioè	cioè	214-0	TO003	_	_	_
+215-2	11174-11175	a	a	214-1	_	_	_	_
+215-3	11176-11178	un	un	214-2	_	_	_	_
+215-4	11179-11184	certo	certo	214-3	_	_	_	_
+215-5	11185-11190	punto	punto	214-4	_	_	_	_
+215-6	11191-11198	secondo	secondo	214-5	_	_	_	_
+215-7	11199-11201	me	me:	214-6	_	_	_	_
+215-8	11202-11203	è	è	214-7	_	_	_	_
+215-9	11204-11213	difficile	difficile	214-8	_	_	_	_
+215-10	11214-11216	da	da	214-9	_	_	_	_
+215-11	11217-11219	da	da	214-10	_	_	_	_
+215-12	11220-11231	comprendere	comprendere	214-11	_	_	_	_
+
+#Text=infatti ad esempio nel caso del rescaling o delle smart city
+216-1	11232-11239	infatti	infatti	215-0	TO003	_	_	_
+216-2	11240-11242	ad	ad	215-1	_	_	_	_
+216-3	11243-11250	esempio	esempio	215-2	_	_	_	_
+216-4	11251-11254	nel	nel	215-3	_	_	_	_
+216-5	11255-11259	caso	caso	215-4	_	_	_	_
+216-6	11260-11263	del	del	215-5	_	_	_	_
+216-7	11264-11273	rescaling	rescaling	215-6	_	_	_	_
+216-8	11274-11275	o	o	215-7	_	_	_	_
+216-9	11276-11281	delle	delle	215-8	_	_	_	_
+216-10	11282-11287	smart	smart	215-9	_	_	_	_
+216-11	11288-11292	city	city	215-10	_	_	_	_
+
+#Text=ho dovuto rileggere tre o quattro volte lo stesso paragrafo perché non capivo bene dove volesse andare a parare
+217-1	11293-11295	ho	ho	216-0	TO003	_	_	_
+217-2	11296-11302	dovuto	dovuto	216-1	_	_	_	_
+217-3	11303-11312	rileggere	rileggere	216-2	_	_	_	_
+217-4	11313-11316	tre	tre	216-3	_	_	_	_
+217-5	11317-11318	o	o	216-4	_	_	_	_
+217-6	11319-11326	quattro	quattro	216-5	_	_	_	_
+217-7	11327-11332	volte	volte	216-6	_	_	_	_
+217-8	11333-11335	lo	lo	216-7	_	_	_	_
+217-9	11336-11342	stesso	stesso	216-8	_	_	_	_
+217-10	11343-11352	paragrafo	paragrafo	216-9	_	_	_	_
+217-11	11353-11359	perché	perché	216-10	_	_	_	_
+217-12	11360-11363	non	non	216-11	_	_	_	_
+217-13	11364-11370	capivo	capivo	216-12	_	_	_	_
+217-14	11371-11375	bene	bene	216-13	_	_	_	_
+217-15	11376-11380	dove	dove	216-14	_	_	_	_
+217-16	11381-11388	volesse	volesse	216-15	_	_	_	_
+217-17	11389-11395	andare	andare	216-16	_	_	_	_
+217-18	11396-11397	a	a	216-17	_	_	_	_
+217-19	11398-11404	parare	parare.	216-18	_	Falling	_	_
+
+#Text=e questo appunto fa parte dei difetti perché
+218-1	11405-11406	e	e	217-0	TO003	_	_	_
+218-2	11407-11413	questo	questo	217-1	_	_	_	_
+218-3	11414-11421	appunto	appunto	217-2	_	_	_	_
+218-4	11422-11424	fa	fa	217-3	_	_	_	_
+218-5	11425-11430	parte	parte	217-4	_	_	_	_
+218-6	11431-11434	dei	dei	217-5	_	_	_	_
+218-7	11435-11442	difetti	difetti	217-6	_	_	_	_
+218-8	11443-11449	perché	perché	217-7	_	_	_	_
+
+#Text=mh il fatto di dover mh doverci stare più del dovuto su un paragrafo o cosa è
+219-1	11450-11452	mh	m:h	218-0	TO003	_	_	_
+219-2	11453-11455	il	il	218-1	_	_	_	_
+219-3	11456-11461	fatto	fatto	218-2	_	_	_	_
+219-4	11462-11464	di	di	218-3	_	_	_	_
+219-5	11465-11470	dover	dover	218-4	_	_	_	_
+219-6	11471-11473	mh	mh	218-5	_	_	_	_
+219-7	11474-11481	doverci	doverci	218-6	_	_	_	_
+219-8	11482-11487	stare	stare	218-7	_	_	_	_
+219-9	11488-11491	più	più	218-8	_	_	_	_
+219-10	11492-11495	del	del	218-9	_	_	_	_
+219-11	11496-11502	dovuto	dovuto	218-10	_	_	_	_
+219-12	11503-11505	su	su	218-11	_	_	_	_
+219-13	11506-11508	un	un	218-12	_	_	_	_
+219-14	11509-11518	paragrafo	paragrafo	218-13	_	_	_	_
+219-15	11519-11520	o	o	218-14	_	_	_	_
+219-16	11521-11525	cosa	cosa	218-15	_	_	_	_
+219-17	11526-11527	è	è:	218-16	_	_	_	_
+
+#Text=o anche ad esempio anche la differenza potrà sembrare una banalità ma la differenza tra anche tra scala geografica e cartografica
+220-1	11528-11529	o	o	219-0	TO003	_	_	_
+220-2	11530-11535	anche	anche	219-1	_	_	_	_
+220-3	11536-11538	ad	ad	219-2	_	_	_	_
+220-4	11539-11546	esempio	esempio	219-3	_	_	_	_
+220-5	11547-11552	anche	anche	219-4	_	_	_	_
+220-6	11553-11555	la	la	219-5	_	_	_	_
+220-7	11556-11566	differenza	differenza	219-6	_	_	_	_
+220-8	11567-11572	potrà	potrà	219-7	_	_	_	_
+220-9	11573-11581	sembrare	sembrare	219-8	_	_	_	_
+220-10	11582-11585	una	una	219-9	_	_	_	_
+220-11	11586-11594	banalità	banalità	219-10	_	_	_	_
+220-12	11595-11597	ma	ma	219-11	_	_	_	_
+220-13	11598-11600	la	la	219-12	_	_	_	_
+220-14	11601-11611	differenza	differenza	219-13	_	_	_	_
+220-15	11612-11615	tra	tra	219-14	_	_	_	_
+220-16	11616-11621	anche	\[anche	219-15	_	_	*->49-1	*[49]
+220-17	11622-11625	tra	tra	219-16	_	_	*->49-2	*[49]
+220-18	11626-11631	scala	sca\]la	219-17	_	_	_	_
+220-18.1	11626-11629	sca	_	_	_	_	*->49-3	*[49]
+220-19	11632-11642	geografica	geografica	219-18	_	_	_	_
+220-20	11643-11644	e	e	219-19	_	_	_	_
+220-21	11645-11657	cartografica	cartografica	219-20	_	_	_	_
+
+#Text=a unxxx
+221-1	11658-11659	a	\[a	220-0	TO002	_	*->49-4	*[49]
+221-2	11660-11665	unxxx	unxxx\]	220-1	_	_	*->49-5	*[49]
+
+#Text=ho dovuto rileggerla cinque o sei volte perché non perché non era subito così [PAUSE] x immediata
+222-1	11666-11668	ho	ho	221-0	TO003	_	_	_
+222-2	11669-11675	dovuto	dovuto	221-1	_	_	_	_
+222-3	11676-11686	rileggerla	rileggerla	221-2	_	_	_	_
+222-4	11687-11693	cinque	cinque	221-3	_	_	_	_
+222-5	11694-11695	o	o	221-4	_	_	_	_
+222-6	11696-11699	sei	sei	221-5	_	_	_	_
+222-7	11700-11705	volte	volte	221-6	_	_	_	_
+222-8	11706-11712	perché	perché:	221-7	_	_	_	_
+222-9	11713-11716	non	non	221-8	_	_	_	_
+222-10	11717-11723	perché	perché	221-9	_	_	_	_
+222-11	11724-11727	non	non	221-10	_	_	_	_
+222-12	11728-11731	era	era	221-11	_	_	_	_
+222-13	11732-11738	subito	subito	221-12	_	_	_	_
+222-14	11739-11743	così	così	221-13	_	_	_	_
+222-15	11744-11751	[PAUSE]	(.)	221-14	_	_	_	_
+222-16	11752-11753	x	\[\]	221-15	_	_	_	_
+222-17	11754-11763	immediata	immediata:	221-16	_	_	_	_
+
+#Text=sì
+223-1	11764-11766	sì	\[sì\].	222-0	TO002	Falling	*->50-1	*[50]
+
+#Text=poi dopo sono a vedere un po' gli appunti allora ho capito meglio le eh
+224-1	11767-11770	poi	poi	223-0	TO003	_	_	_
+224-2	11771-11775	dopo	dopo	223-1	_	_	_	_
+224-3	11776-11780	sono	sono	223-2	_	_	_	_
+224-4	11781-11782	a	a	223-3	_	_	_	_
+224-5	11783-11789	vedere	vedere	223-4	_	_	_	_
+224-6	11790-11792	un	un	223-5	_	_	_	_
+224-7	11793-11796	po'	po'	223-6	_	_	_	_
+224-8	11797-11800	gli	gli	223-7	_	_	_	_
+224-9	11801-11808	appunti	appunti	223-8	_	_	_	_
+224-10	11809-11815	allora	allora	223-9	_	_	_	_
+224-11	11816-11818	ho	ho	223-10	_	_	_	_
+224-12	11819-11825	capito	capito	223-11	_	_	_	_
+224-13	11826-11832	meglio	meglio	223-12	_	_	_	_
+224-14	11833-11835	le	le:	223-13	_	_	_	_
+224-15	11836-11838	eh	eh	223-14	_	_	_	_
+
+#Text=però le dico basandoci solo sul libro
+225-1	11839-11843	però	però	224-0	TO003	_	_	_
+225-2	11844-11846	le	(le)	224-1	_	_	_	_
+225-3	11847-11851	dico	dico	224-2	_	_	_	_
+225-4	11852-11861	basandoci	basandoci	224-3	_	_	_	_
+225-5	11862-11866	solo	solo	224-4	_	_	_	_
+225-6	11867-11870	sul	\[sul	224-5	_	_	*->51-1	*[51]
+225-7	11871-11876	libro	li\]bro:	224-6	_	_	_	_
+225-7.1	11871-11873	li	_	_	_	_	*->51-2	*[51]
+
+#Text=sì
+226-1	11877-11879	sì	\[sì\].	225-0	TO002	Falling	*->51-3	*[51]
+
+#Text=quindi ci dice anche da quanto tempo stiamo parlando
+227-1	11880-11886	quindi	quindi	226-0	TO002	_	_	_
+227-2	11887-11889	ci	ci	226-1	_	_	_	_
+227-3	11890-11894	dice	dice	226-2	_	_	_	_
+227-4	11895-11900	anche	anche	226-3	_	_	_	_
+227-5	11901-11903	da	da	226-4	_	_	_	_
+227-6	11904-11910	quanto	quanto	226-5	_	_	_	_
+227-7	11911-11916	tempo	tempo	226-6	_	_	_	_
+227-8	11917-11923	stiamo	stiamo	226-7	_	_	_	_
+227-9	11924-11932	parlando	parlando	226-8	_	_	_	_
+
+#Text=eh
+228-1	11933-11935	eh	e::h	227-0	TO002	_	_	_
+
+#Text=abbiamo ancora altri venti minuti di soxxxx ((ride)) x
+229-1	11936-11943	abbiamo	abbiamo	228-0	TO002	_	_	_
+229-2	11944-11950	ancora	ancora	228-1	_	_	_	_
+229-3	11951-11956	altri	altri	228-2	_	_	_	_
+229-4	11957-11962	venti	venti	228-3	_	_	_	_
+229-5	11963-11969	minuti	minuti	228-4	_	_	_	_
+229-6	11970-11972	di	di	228-5	_	_	_	_
+229-7	11973-11979	soxxxx	soxxxx	228-6	_	_	_	_
+229-8	11980-11988	((ride))	((ride))	228-7	_	_	_	_
+229-9	11989-11990	x	xxxx	228-8	_	_	_	_
+
+#Text=((ride))
+230-1	11991-11999	((ride))	((ride))	229-0	TO003	_	_	_
+
+#Text=ma a cosa serve la scala alla fine
+231-1	12000-12002	ma	ma	230-0	TO002	_	_	_
+231-2	12003-12004	a	a	230-1	_	_	_	_
+231-3	12005-12009	cosa	cosa	230-2	_	_	_	_
+231-4	12010-12015	serve	serve	230-3	_	_	_	_
+231-5	12016-12018	la	la	230-4	_	_	_	_
+231-6	12019-12024	scala	scala	230-5	_	_	_	_
+231-7	12025-12029	alla	alla	230-6	_	_	_	_
+231-8	12030-12034	fine	fine	230-7	_	_	_	_
+
+#Text=cioè indipendentemente da quello
+232-1	12035-12039	cioè	cioè	231-0	TO002	_	_	_
+232-2	12040-12057	indipendentemente	indipendentemente	231-1	_	_	_	_
+232-3	12058-12060	da	da	231-2	_	_	_	_
+232-4	12061-12067	quello	quello:	231-3	_	_	_	_
+
+#Text=o come l' ha capita lei
+233-1	12068-12069	o	o	232-0	TO002	_	_	_
+233-2	12070-12074	come	come	232-1	_	_	_	_
+233-3	12075-12077	l'	l'	232-2	_	_	_	_
+233-4	12078-12080	ha	ha	232-3	_	_	_	_
+233-5	12081-12087	capita	capita	232-4	_	_	_	_
+233-6	12088-12091	lei	lei	232-5	_	_	_	_
+
+#Text=mh
+234-1	12092-12094	mh	mh	233-0	TO003	_	_	_
+
+#Text=o come se ne è parlato là non lo so o
+235-1	12095-12096	o	o	234-0	TO002	_	_	_
+235-2	12097-12101	come	come	234-1	_	_	_	_
+235-3	12102-12104	se	se	234-2	_	_	_	_
+235-4	12105-12107	ne	ne	234-3	_	_	_	_
+235-5	12108-12109	è	è	234-4	_	_	_	_
+235-6	12110-12117	parlato	parlato	234-5	_	_	_	_
+235-7	12118-12120	là	là	234-6	_	_	_	_
+235-8	12121-12124	non	non	234-7	_	_	_	_
+235-9	12125-12127	lo	lo	234-8	_	_	_	_
+235-10	12128-12130	so	so	234-9	_	_	_	_
+235-11	12131-12132	o	o:	234-10	_	_	_	_
+
+#Text=eh
+236-1	12133-12135	eh	e::h	235-0	TO002	_	_	_
+
+#Text=l' utilità di questa
+237-1	12136-12138	l'	l'	236-0	TO002	_	_	_
+237-2	12139-12146	utilità	utilità	236-1	_	_	_	_
+237-3	12147-12149	di	di	236-2	_	_	_	_
+237-4	12150-12156	questa	questa:	236-3	_	_	_	_
+
+#Text=di questo concetto di scala che
+238-1	12157-12159	di	di	237-0	TO002	_	_	_
+238-2	12160-12166	questo	questo	237-1	_	_	_	_
+238-3	12167-12175	concetto	concetto	237-2	_	_	_	_
+238-4	12176-12178	di	di	237-3	_	_	_	_
+238-5	12179-12184	scala	scala	237-4	_	_	_	_
+238-6	12185-12188	che	che	237-5	_	_	_	_
+
+#Text=in reatà poi non è neanche su~ più soltato geografico ma certo nasce nella allora
+239-1	12189-12191	in	in	238-0	TO002	_	_	_
+239-2	12192-12197	reatà	reatà	238-1	_	_	_	_
+239-3	12198-12201	poi	poi	238-2	_	_	_	_
+239-4	12202-12205	non	non	238-3	_	_	_	_
+239-5	12206-12207	è	è	238-4	_	_	_	_
+239-6	12208-12215	neanche	neanche	238-5	_	_	_	_
+239-7	12216-12219	su~	su~	238-6	_	_	_	_
+239-8	12220-12223	più	più	238-7	_	_	_	_
+239-9	12224-12231	soltato	soltato	238-8	_	_	_	_
+239-10	12232-12242	geografico	geografico	238-9	_	_	_	_
+239-11	12243-12245	ma	ma	238-10	_	_	_	_
+239-12	12246-12251	certo	certo	238-11	_	_	_	_
+239-13	12252-12257	nasce	nasce	238-12	_	_	_	_
+239-14	12258-12263	nella	nella:	238-13	_	_	_	_
+239-15	12264-12270	allora	allora	238-14	_	_	_	_
+
+#Text=nella in geografia e nasce nel
+240-1	12271-12276	nella	nella:	239-0	TO002	_	_	_
+240-2	12277-12279	in	in	239-1	_	_	_	_
+240-3	12280-12289	geografia	geografia	239-2	_	_	_	_
+240-4	12290-12291	e	e	239-3	_	_	_	_
+240-5	12292-12297	nasce	nasce	239-4	_	_	_	_
+240-6	12298-12301	nel	nel	239-5	_	_	_	_
+
+#Text=in riferimento
+241-1	12302-12304	in	in	240-0	TO002	_	_	_
+241-2	12305-12316	riferimento	riferimento:::	240-1	_	_	_	_
+
+#Text=in riferimento alla a un~ a una scala
+242-1	12317-12319	in	in	241-0	TO002	_	_	_
+242-2	12320-12331	riferimento	riferimento	241-1	_	_	_	_
+242-3	12332-12336	alla	alla	241-2	_	_	_	_
+242-4	12337-12338	a	a	241-3	_	_	_	_
+242-5	12339-12342	un~	un~	241-4	_	_	_	_
+242-6	12343-12344	a	a	241-5	_	_	_	_
+242-7	12345-12348	una	una	241-6	_	_	_	_
+242-8	12349-12354	scala	scala:	241-7	_	_	_	_
+
+#Text=alla scala cartografica perché la scala si costruisce su una riduzione della realtà no
+243-1	12355-12359	alla	alla	242-0	TO002	_	_	_
+243-2	12360-12365	scala	scala	242-1	_	_	_	_
+243-3	12366-12378	cartografica	cartografica	242-2	_	_	_	_
+243-4	12379-12385	perché	perché	242-3	_	_	_	_
+243-5	12386-12388	la	la	242-4	_	_	_	_
+243-6	12389-12394	scala	scala	242-5	_	_	_	_
+243-7	12395-12397	si	si	242-6	_	_	_	_
+243-8	12398-12408	costruisce	costruisce	242-7	_	_	_	_
+243-9	12409-12411	su	su	242-8	_	_	_	_
+243-10	12412-12415	una	una	242-9	_	_	_	_
+243-11	12416-12425	riduzione	riduzione	242-10	_	_	_	_
+243-12	12426-12431	della	della	242-11	_	_	_	_
+243-13	12432-12438	realtà	realtà	242-12	_	_	_	_
+243-14	12439-12441	no	no	242-13	_	_	_	_
+
+#Text=e che nello stesso tempo
+244-1	12442-12443	e	e	243-0	TO002	_	_	_
+244-2	12444-12447	che	che	243-1	_	_	_	_
+244-3	12448-12453	nello	nello	243-2	_	_	_	_
+244-4	12454-12460	stesso	stesso	243-3	_	_	_	_
+244-5	12461-12466	tempo	tempo	243-4	_	_	_	_
+
+#Text=intende appunto di essere una [PAUSE] una riduzione simbolica
+245-1	12467-12474	intende	intende	244-0	TO002	_	_	_
+245-2	12475-12482	appunto	appunto	244-1	_	_	_	_
+245-3	12483-12485	di	di	244-2	_	_	_	_
+245-4	12486-12492	essere	essere	244-3	_	_	_	_
+245-5	12493-12496	una	una:	244-4	_	_	_	_
+245-6	12497-12504	[PAUSE]	(.)	244-5	_	_	_	_
+245-7	12505-12508	una	una	244-6	_	_	_	_
+245-8	12509-12518	riduzione	riduzione	244-7	_	_	_	_
+245-9	12519-12528	simbolica	simbolica	244-8	_	_	_	_
+
+#Text=eh
+246-1	12529-12531	eh	e::h	245-0	TO002	_	_	_
+
+#Text=per reale
+247-1	12532-12535	per	per	246-0	TO002	_	_	_
+247-2	12536-12541	reale	reale	246-1	_	_	_	_
+
+#Text=della della
+248-1	12542-12547	della	della	247-0	TO002	_	_	_
+248-2	12548-12553	della	della:	247-1	_	_	_	_
+
+#Text=della terra
+249-1	12554-12559	della	della	248-0	TO002	_	_	_
+249-2	12560-12565	terra	terra	248-1	_	_	_	_
+
+#Text=sì
+250-1	12566-12568	sì	sì	249-0	TO003	_	_	_
+
+#Text=allora [PAUSE] uh
+251-1	12569-12575	allora	allora	250-0	TO002	_	_	_
+251-2	12576-12583	[PAUSE]	(.)	250-1	_	_	_	_
+251-3	12584-12586	uh	u:h	250-2	_	_	_	_
+
+#Text=lei come [PAUSE] a cosa può [PAUSE] a cosa può servire a cosa serve come è utilizzata
+252-1	12587-12590	lei	lei	251-0	TO002	_	_	_
+252-2	12591-12595	come	come	251-1	_	_	_	_
+252-3	12596-12603	[PAUSE]	(.)	251-2	_	_	_	_
+252-4	12604-12605	a	a	251-3	_	_	_	_
+252-5	12606-12610	cosa	cosa	251-4	_	_	_	_
+252-6	12611-12614	può	può	251-5	_	_	_	_
+252-7	12615-12622	[PAUSE]	(.)	251-6	_	_	_	_
+252-8	12623-12624	a	a	251-7	_	_	_	_
+252-9	12625-12629	cosa	cosa	251-8	_	_	_	_
+252-10	12630-12633	può	può	251-9	_	_	_	_
+252-11	12634-12641	servire	servire	251-10	_	_	_	_
+252-12	12642-12643	a	a	251-11	_	_	_	_
+252-13	12644-12648	cosa	cosa	251-12	_	_	_	_
+252-14	12649-12654	serve	serve	251-13	_	_	_	_
+252-15	12655-12659	come	come	251-14	_	_	_	_
+252-16	12660-12661	è	è	251-15	_	_	_	_
+252-17	12662-12672	utilizzata	utilizzata:	251-16	_	_	_	_
+
+#Text=ma ad esempio a me viene in mente una definizione molto carina che invece diceva il libro e
+253-1	12673-12675	ma	ma	252-0	TO003	_	_	_
+253-2	12676-12678	ad	ad	252-1	_	_	_	_
+253-3	12679-12686	esempio	esempio	252-2	_	_	_	_
+253-4	12687-12688	a	a	252-3	_	_	_	_
+253-5	12689-12691	me	me	252-4	_	_	_	_
+253-6	12692-12697	viene	viene	252-5	_	_	_	_
+253-7	12698-12700	in	in	252-6	_	_	_	_
+253-8	12701-12706	mente	mente	252-7	_	_	_	_
+253-9	12707-12710	una	una	252-8	_	_	_	_
+253-10	12711-12722	definizione	definizione	252-9	_	_	_	_
+253-11	12723-12728	molto	molto	252-10	_	_	_	_
+253-12	12729-12735	carina	carina	252-11	_	_	_	_
+253-13	12736-12739	che	che	252-12	_	_	_	_
+253-14	12740-12746	invece	invece	252-13	_	_	_	_
+253-15	12747-12753	diceva	diceva	252-14	_	_	_	_
+253-16	12754-12756	il	il	252-15	_	_	_	_
+253-17	12757-12762	libro	libro	252-16	_	_	_	_
+253-18	12763-12764	e	e:	252-17	_	_	_	_
+
+#Text=che il lavoro del geografo si basa soprattutto su
+254-1	12765-12768	che	che	253-0	TO003	_	_	_
+254-2	12769-12771	il	il	253-1	_	_	_	_
+254-3	12772-12778	lavoro	lavoro	253-2	_	_	_	_
+254-4	12779-12782	del	del	253-3	_	_	_	_
+254-5	12783-12791	geografo	geografo	253-4	_	_	_	_
+254-6	12792-12794	si	si	253-5	_	_	_	_
+254-7	12795-12799	basa	basa	253-6	_	_	_	_
+254-8	12800-12811	soprattutto	soprattutto	253-7	_	_	_	_
+254-9	12812-12814	su	su:	253-8	_	_	_	_
+
+#Text=un motto molto particolare che è [PAUSE] eh pensa globalmente e agisci localmente
+255-1	12815-12817	un	un	254-0	TO003	_	_	_
+255-2	12818-12823	motto	motto	254-1	_	_	_	_
+255-3	12824-12829	molto	molto	254-2	_	_	_	_
+255-4	12830-12841	particolare	particolare	254-3	_	_	_	_
+255-5	12842-12845	che	che	254-4	_	_	_	_
+255-6	12846-12847	è	è	254-5	_	_	_	_
+255-7	12848-12855	[PAUSE]	(.)	254-6	_	_	_	_
+255-8	12856-12858	eh	eh	254-7	_	_	_	_
+255-9	12859-12864	pensa	pensa	254-8	_	_	_	_
+255-10	12865-12876	globalmente	globalmente	254-9	_	_	_	_
+255-11	12877-12878	e	e	254-10	_	_	_	_
+255-12	12879-12885	agisci	\[agisci\]	254-11	_	_	*->52-1	*[52]
+255-13	12886-12896	localmente	localmente	254-12	_	_	_	_
+
+#Text=uh
+256-1	12897-12899	uh	\[uh\]	255-0	TO002	_	*->52-2	*[52]
+
+#Text=mh
+257-1	12900-12902	mh	mh	256-0	TO002	_	_	_
+
+#Text=e ad esempio a me ha fatto ha colpito molto
+258-1	12903-12904	e	e	257-0	TO003	_	_	_
+258-2	12905-12907	ad	ad	257-1	_	_	_	_
+258-3	12908-12915	esempio	esempio	257-2	_	_	_	_
+258-4	12916-12917	a	a	257-3	_	_	_	_
+258-5	12918-12920	me	me	257-4	_	_	_	_
+258-6	12921-12923	ha	ha	257-5	_	_	_	_
+258-7	12924-12929	fatto	fatto	257-6	_	_	_	_
+258-8	12930-12932	ha	ha	257-7	_	_	_	_
+258-9	12933-12940	colpito	colpito	257-8	_	_	_	_
+258-10	12941-12946	molto	molto:	257-9	_	_	_	_
+
+#Text=questo motto particolare perché
+259-1	12947-12953	questo	questo	258-0	TO003	_	_	_
+259-2	12954-12959	motto	motto	258-1	_	_	_	_
+259-3	12960-12971	particolare	particolare	258-2	_	_	_	_
+259-4	12972-12978	perché	perché	258-3	_	_	_	_
+
+#Text=con la scala ad esempio noi
+260-1	12979-12982	con	con	259-0	TO003	_	_	_
+260-2	12983-12985	la	la	259-1	_	_	_	_
+260-3	12986-12991	scala	scala	259-2	_	_	_	_
+260-4	12992-12994	ad	ad	259-3	_	_	_	_
+260-5	12995-13002	esempio	esempio	259-4	_	_	_	_
+260-6	13003-13006	noi	noi	259-5	_	_	_	_
+
+#Text=possiamo appunto basarci su di essa per vedere un andamento
+261-1	13007-13015	possiamo	possiamo	260-0	TO003	_	_	_
+261-2	13016-13023	appunto	appunto	260-1	_	_	_	_
+261-3	13024-13031	basarci	basarci	260-2	_	_	_	_
+261-4	13032-13034	su	su	260-3	_	_	_	_
+261-5	13035-13037	di	di	260-4	_	_	_	_
+261-6	13038-13042	essa	essa	260-5	_	_	_	_
+261-7	13043-13046	per	per	260-6	_	_	_	_
+261-8	13047-13053	vedere	vedere	260-7	_	_	_	_
+261-9	13054-13056	un	un	260-8	_	_	_	_
+261-10	13057-13066	andamento	andamento	260-9	_	_	_	_
+
+#Text=globale generale di un determinato fenomeno
+262-1	13067-13074	globale	globale	261-0	TO003	_	_	_
+262-2	13075-13083	generale	generale	261-1	_	_	_	_
+262-3	13084-13086	di	di	261-2	_	_	_	_
+262-4	13087-13089	un	un	261-3	_	_	_	_
+262-5	13090-13101	determinato	determinato	261-4	_	_	_	_
+262-6	13102-13110	fenomeno	fenomeno	261-5	_	_	_	_
+
+#Text=e poi soprattutto mh trarre le conclusioni
+263-1	13111-13112	e	e	262-0	TO003	_	_	_
+263-2	13113-13116	poi	poi	262-1	_	_	_	_
+263-3	13117-13128	soprattutto	soprattutto	262-2	_	_	_	_
+263-4	13129-13131	mh	mh	262-3	_	_	_	_
+263-5	13132-13138	trarre	trarre	262-4	_	_	_	_
+263-6	13139-13141	le	le	262-5	_	_	_	_
+263-7	13142-13153	conclusioni	conclusioni:	262-6	_	_	_	_
+
+#Text=di ambito locale ad esempio
+264-1	13154-13156	di	di	263-0	TO003	_	_	_
+264-2	13157-13163	ambito	ambito	263-1	_	_	_	_
+264-3	13164-13170	locale	locale	263-2	_	_	_	_
+264-4	13171-13173	ad	ad	263-3	_	_	_	_
+264-5	13174-13181	esempio	esempio:	263-4	_	_	_	_
+
+#Text=eh anche per quanto riguarda una coscienza civica che
+265-1	13182-13184	eh	e:h	264-0	TO003	_	_	_
+265-2	13185-13190	anche	anche	264-1	_	_	_	_
+265-3	13191-13194	per	per	264-2	_	_	_	_
+265-4	13195-13201	quanto	quanto	264-3	_	_	_	_
+265-5	13202-13210	riguarda	riguarda	264-4	_	_	_	_
+265-6	13211-13214	una	una	264-5	_	_	_	_
+265-7	13215-13224	coscienza	coscienza	264-6	_	_	_	_
+265-8	13225-13231	civica	civica:	264-7	_	_	_	_
+265-9	13232-13235	che	che	264-8	_	_	_	_
+
+#Text=si impone di dire che cosa [PAUSE] posso fare io adesso per migliorare il luogo dove vivo o che cosa dovrebbero fare le istituzioni per migliorarlo
+266-1	13236-13238	si	si	265-0	TO003	_	_	_
+266-2	13239-13245	impone	impone	265-1	_	_	_	_
+266-3	13246-13248	di	di	265-2	_	_	_	_
+266-4	13249-13253	dire	dire	265-3	_	_	_	_
+266-5	13254-13257	che	che	265-4	_	_	_	_
+266-6	13258-13262	cosa	cosa	265-5	_	_	_	_
+266-7	13263-13270	[PAUSE]	(.)	265-6	_	_	_	_
+266-8	13271-13276	posso	posso	265-7	_	_	_	_
+266-9	13277-13281	fare	fare	265-8	_	_	_	_
+266-10	13282-13284	io	io	265-9	_	_	_	_
+266-11	13285-13291	adesso	adesso	265-10	_	_	_	_
+266-12	13292-13295	per	per	265-11	_	_	_	_
+266-13	13296-13306	migliorare	migliorare:	265-12	_	_	_	_
+266-14	13307-13309	il	il	265-13	_	_	_	_
+266-15	13310-13315	luogo	luogo	265-14	_	_	_	_
+266-16	13316-13320	dove	dove	265-15	_	_	_	_
+266-17	13321-13325	vivo	vivo	265-16	_	_	_	_
+266-18	13326-13327	o	o:	265-17	_	_	_	_
+266-19	13328-13331	che	che	265-18	_	_	_	_
+266-20	13332-13336	cosa	cosa	265-19	_	_	_	_
+266-21	13337-13347	dovrebbero	dovrebbero	265-20	_	_	_	_
+266-22	13348-13352	fare	fare	265-21	_	_	_	_
+266-23	13353-13355	le	le	265-22	_	_	_	_
+266-24	13356-13367	istituzioni	istituzioni	265-23	_	_	_	_
+266-25	13368-13371	per	per	265-24	_	_	_	_
+266-26	13372-13383	migliorarlo	migliorarlo:	265-25	_	_	_	_
+
+#Text=ehm
+267-1	13384-13387	ehm	e:hm	266-0	TO003	_	_	_
+
+#Text=ad esempio anche utilizzando uno strumento molto utile come il gis questo
+268-1	13388-13390	ad	ad	267-0	TO003	_	_	_
+268-2	13391-13398	esempio	esempio	267-1	_	_	_	_
+268-3	13399-13404	anche	anche	267-2	_	_	_	_
+268-4	13405-13416	utilizzando	utilizzando	267-3	_	_	_	_
+268-5	13417-13420	uno	uno	267-4	_	_	_	_
+268-6	13421-13430	strumento	strumento	267-5	_	_	_	_
+268-7	13431-13436	molto	molto	267-6	_	_	_	_
+268-8	13437-13442	utile	utile	267-7	_	_	_	_
+268-9	13443-13447	come	come	267-8	_	_	_	_
+268-10	13448-13450	il	il	267-9	_	_	_	_
+268-11	13451-13454	gis	(gis)	267-10	_	_	_	_
+268-12	13455-13461	questo	questo	267-11	_	_	_	_
+
+#Text=può essere messo in pratica in maniera
+269-1	13462-13465	può	può	268-0	TO003	_	_	_
+269-2	13466-13472	essere	essere	268-1	_	_	_	_
+269-3	13473-13478	messo	messo	268-2	_	_	_	_
+269-4	13479-13481	in	in	268-3	_	_	_	_
+269-5	13482-13489	pratica	pratica	268-4	_	_	_	_
+269-6	13490-13492	in	in	268-5	_	_	_	_
+269-7	13493-13500	maniera	maniera	268-6	_	_	_	_
+
+#Text=eh eh ma concretamente noi
+270-1	13501-13503	eh	eh	269-0	TO002	_	_	_
+270-2	13504-13506	eh	eh	269-1	_	_	_	_
+270-3	13507-13509	ma	ma	269-2	_	_	_	_
+270-4	13510-13523	concretamente	con\[cretame\]nte	269-3	_	_	_	_
+270-4.1	13513-13523	cretame	_	_	_	_	*->53-1	*[53]
+270-5	13524-13527	noi	noi,	269-4	_	weakly_rising	_	_
+
+#Text=molto
+271-1	13528-13533	molto	\[molto:\]	270-0	TO003	_	*->53-2	*[53]
+
+#Text=cioè quando ragioniamo a scala
+272-1	13534-13538	cioè	cioè	271-0	TO002	_	_	_
+272-2	13539-13545	quando	quando	271-1	_	_	_	_
+272-3	13546-13556	ragioniamo	ragioniamo	271-2	_	_	_	_
+272-4	13557-13558	a	a	271-3	_	_	_	_
+272-5	13559-13564	scala	scala,	271-4	_	weakly_rising	_	_
+
+#Text=un ragionamento a scala globale e un ragionamento a scala locale
+273-1	13565-13567	un	un	272-0	TO002	_	_	_
+273-2	13568-13580	ragionamento	ragionamento	272-1	_	_	_	_
+273-3	13581-13582	a	a	272-2	_	_	_	_
+273-4	13583-13588	scala	scala	272-3	_	_	_	_
+273-5	13589-13596	globale	globale	272-4	_	_	_	_
+273-6	13597-13598	e	e	272-5	_	_	_	_
+273-7	13599-13601	un	un	272-6	_	_	_	_
+273-8	13602-13614	ragionamento	ragionamento	272-7	_	_	_	_
+273-9	13615-13616	a	a	272-8	_	_	_	_
+273-10	13617-13622	scala	scala	272-9	_	_	_	_
+273-11	13623-13629	locale	locale,	272-10	_	weakly_rising	_	_
+
+#Text=mh
+274-1	13630-13632	mh	mh	273-0	TO003	_	_	_
+
+#Text=che cosa vuol di~ le istituzioni di cui parla
+275-1	13633-13636	che	che	274-0	TO002	_	_	_
+275-2	13637-13641	cosa	cosa	274-1	_	_	_	_
+275-3	13642-13646	vuol	vuol	274-2	_	_	_	_
+275-4	13647-13650	di~	di~	274-3	_	_	_	_
+275-5	13651-13653	le	le	274-4	_	_	_	_
+275-6	13654-13665	istituzioni	istituzioni	274-5	_	_	_	_
+275-7	13666-13668	di	di	274-6	_	_	_	_
+275-8	13669-13672	cui	cui	274-7	_	_	_	_
+275-9	13673-13678	parla	parla	274-8	_	_	_	_
+
+#Text=a diverse riprese insomma questxx
+276-1	13679-13680	a	a	275-0	TO002	_	_	_
+276-2	13681-13688	diverse	diverse	275-1	_	_	_	_
+276-3	13689-13696	riprese	riprese	275-2	_	_	_	_
+276-4	13697-13704	insomma	insomma	275-3	_	_	_	_
+276-5	13705-13712	questxx	questxx	275-4	_	_	_	_
+
+#Text=diversamente
+277-1	13713-13725	diversamente	diversamente	276-0	TO002	_	_	_
+
+#Text=il libro a che scala agiscono
+278-1	13726-13728	il	il	277-0	TO002	_	_	_
+278-2	13729-13734	libro	libro.	277-1	_	Falling	_	_
+278-3	13735-13736	a	a	277-2	_	_	_	_
+278-4	13737-13740	che	che	277-3	_	_	_	_
+278-5	13741-13746	scala	scala	277-4	_	_	_	_
+278-6	13747-13755	agiscono	agiscono	277-5	_	_	_	_
+
+#Text=per esempio
+279-1	13756-13759	per	per	278-0	TO002	_	_	_
+279-2	13760-13767	esempio	esempio,	278-1	_	weakly_rising	_	_
+
+#Text=le istitu~ beh soprattutto a scala globale
+280-1	13768-13770	le	le	279-0	TO003	_	_	_
+280-2	13771-13778	istitu~	istitu~	279-1	_	_	_	_
+280-3	13779-13782	beh	\[beh\]	279-1bis	_	_	*->54-1	*[54]
+280-4	13783-13794	soprattutto	soprattutto	279-2	_	_	_	_
+280-5	13795-13796	a	a	279-3	_	_	_	_
+280-6	13797-13802	scala	scala	279-4	_	_	_	_
+280-7	13803-13810	globale	global\[e::\]	279-5	_	_	_	_
+280-7.1	13809-13816	e	_	_	_	_	*->55-1	*[55]
+
+#Text=mh
+281-1	13811-13813	mh	\[mh\]	280-0	TO002	_	*->54-2	*[54]
+
+#Text=quali
+282-1	13814-13819	quali	\[quali\]	281-0	TO002	_	*->55-2	*[55]
+
+#Text=beh ad esempio la world trade organization è a scala globale
+283-1	13820-13823	beh	beh	282-0	TO003	_	_	_
+283-2	13824-13826	ad	ad	282-1	_	_	_	_
+283-3	13827-13834	esempio	esempio	282-2	_	_	_	_
+283-4	13835-13837	la	la	282-3	_	_	_	_
+283-5	13838-13843	world	world	282-4	_	_	_	_
+283-6	13844-13849	trade	trade	282-5	_	_	_	_
+283-7	13850-13862	organization	organization	282-6	_	_	_	_
+283-8	13863-13864	è	è	282-7	_	_	_	_
+283-9	13865-13866	a	a	282-8	_	_	_	_
+283-10	13867-13872	scala	scala	282-9	_	_	_	_
+283-11	13873-13880	globale	globale:	282-10	_	_	_	_
+
+#Text=eh la banca mondiale e il fondo monetario internazionale sono tutte istituzioni che agiscono
+284-1	13881-13883	eh	e:h	283-0	TO003	_	_	_
+284-2	13884-13886	la	la	283-1	_	_	_	_
+284-3	13887-13892	banca	banca	283-2	_	_	_	_
+284-4	13893-13901	mondiale	mondiale	283-3	_	_	_	_
+284-5	13902-13903	e	e	283-4	_	_	_	_
+284-6	13904-13906	il	il	283-5	_	_	_	_
+284-7	13907-13912	fondo	fondo	283-6	_	_	_	_
+284-8	13913-13922	monetario	monetario	283-7	_	_	_	_
+284-9	13923-13937	internazionale	internazionale,	283-8	_	weakly_rising	_	_
+284-10	13938-13942	sono	sono	283-9	_	_	_	_
+284-11	13943-13948	tutte	tutte	283-10	_	_	_	_
+284-12	13949-13960	istituzioni	istituzioni	283-11	_	_	_	_
+284-13	13961-13964	che	che	283-12	_	_	_	_
+284-14	13965-13973	agiscono	agiscono:	283-13	_	_	_	_
+
+#Text=in scala globale [PAUSE] l' onu o
+285-1	13974-13976	in	\[in\]	284-0	TO003	_	*->56-1	*[56]
+285-2	13977-13982	scala	scala	284-1	_	_	_	_
+285-3	13983-13990	globale	glo\[bale:	284-2	_	_	_	_
+285-3.1	13986-13993	bale	_	_	_	_	*->57-1	*[57]
+285-4	13991-13998	[PAUSE]	(.)	284-3	_	_	_	_
+285-4.1	13991-13994	[PA	_	_	_	_	*->57-2	*[57]
+285-5	13999-14001	l'	l'	284-4	_	_	*->57-3	*[57]
+285-6	14002-14005	onu	o\]nu:	284-5	_	_	_	_
+285-6.1	14002-14003	o	_	_	_	_	*->57-4	*[57]
+285-7	14006-14007	o	o::	284-6	_	_	_	_
+
+#Text=i~ in
+286-1	14008-14010	i~	\[i~	285-0	TO002	_	*->56-2	*[56]
+286-2	14011-14013	in	in\]	285-1	_	_	*->56-3	*[56]
+
+#Text=in quest~ i i
+287-1	14014-14016	in	\[in	286-0	TO002	_	*->57-5	*[57]
+287-2	14017-14023	quest~	quest~	286-1	_	_	*->57-6	*[57]
+287-3	14024-14025	i	i	286-2	_	_	*->57-7	*[57]
+287-4	14026-14027	i	i\]	286-3	_	_	*->57-8	*[57]
+
+#Text=molte altre organizzazioni
+288-1	14028-14033	molte	molte	287-0	TO003	_	_	_
+288-2	14034-14039	altre	altre	287-1	_	_	_	_
+288-3	14040-14054	organizzazioni	organizzazioni:	287-2	_	_	_	_
+
+#Text=eh si concentrano soprattutto eh mh sulla scala globale appunto non tanto su quella locale particolare
+289-1	14055-14057	eh	e:h	288-0	TO003	_	_	_
+289-2	14058-14060	si	si	288-1	_	_	_	_
+289-3	14061-14072	concentrano	concentrano	288-2	_	_	_	_
+289-4	14073-14084	soprattutto	soprattutto	288-3	_	_	_	_
+289-5	14085-14087	eh	e::h	288-4	_	_	_	_
+289-6	14088-14090	mh	mh	288-5	_	_	_	_
+289-7	14091-14096	sulla	sulla	288-6	_	_	_	_
+289-8	14097-14102	scala	scala	288-7	_	_	_	_
+289-9	14103-14110	globale	globale	288-8	_	_	_	_
+289-10	14111-14118	appunto	appunto.	288-9	_	Falling	_	_
+289-11	14119-14122	non	non	288-10	_	_	_	_
+289-12	14123-14128	tanto	tanto	288-11	_	_	_	_
+289-13	14129-14131	su	su	288-12	_	_	_	_
+289-14	14132-14138	quella	quella	288-13	_	_	_	_
+289-15	14139-14145	locale	locale:	288-14	_	_	_	_
+289-16	14146-14157	particolare	particolare:	288-15	_	_	_	_
+
+#Text=eppure con interventi
+290-1	14158-14164	eppure	eppure	289-0	TO002	_	_	_
+290-2	14165-14168	con	con	289-1	_	_	_	_
+290-3	14169-14179	interventi	interventi,	289-2	_	weakly_rising	_	_
+
+#Text=far bene locale no
+291-1	14180-14183	far	fa(r)	290-0	TO002	_	_	_
+291-2	14184-14188	bene	bene	290-1	_	_	_	_
+291-3	14189-14195	locale	locale	290-2	_	_	_	_
+291-4	14196-14198	no	no,	290-3	_	weakly_rising	_	_
+
+#Text=sì è vero questo è anche vero
+292-1	14199-14201	sì	sì	291-0	TO003	_	_	_
+292-2	14202-14203	è	è	291-1	_	_	_	_
+292-3	14204-14208	vero	vero	291-2	_	_	_	_
+292-4	14209-14215	questo	questo	291-3	_	_	_	_
+292-5	14216-14217	è	è	291-4	_	_	_	_
+292-6	14218-14223	anche	anche	291-5	_	_	_	_
+292-7	14224-14228	vero	vero	291-6	_	_	_	_
+
+#Text=eh
+293-1	14229-14231	eh	e::h	292-0	TO003	_	_	_
+
+#Text=beh potrebbe essere che appunto
+294-1	14232-14235	beh	beh	293-0	TO003	_	_	_
+294-2	14236-14244	potrebbe	potrebbe	293-1	_	_	_	_
+294-3	14245-14251	essere	essere	293-2	_	_	_	_
+294-4	14252-14255	che	che	293-3	_	_	_	_
+294-5	14256-14263	appunto	appunto	293-4	_	_	_	_
+
+#Text=queste stesse istituzioni
+295-1	14264-14270	queste	queste	294-0	TO003	_	_	_
+295-2	14271-14277	stesse	stesse	294-1	_	_	_	_
+295-3	14278-14289	istituzioni	istituzioni,	294-2	_	weakly_rising	_	_
+
+#Text=eh mh
+296-1	14290-14292	eh	e:h	295-0	TO003	_	_	_
+296-2	14293-14295	mh	mh	295-1	_	_	_	_
+
+#Text=utilizzino la scala eh globale
+297-1	14296-14306	utilizzino	utilizzino	296-0	TO003	_	_	_
+297-2	14307-14309	la	la	296-1	_	_	_	_
+297-3	14310-14315	scala	scala	296-2	_	_	_	_
+297-4	14316-14318	eh	eh	296-3	_	_	_	_
+297-5	14319-14326	globale	globale:	296-4	_	_	_	_
+
+#Text=per eh come parametro potrebbe essere
+298-1	14327-14330	per	per	297-0	TO003	_	_	_
+298-2	14331-14333	eh	e:h	297-1	_	_	_	_
+298-3	14334-14338	come	come	297-2	_	_	_	_
+298-4	14339-14348	parametro	parametro	297-3	_	_	_	_
+298-5	14349-14357	potrebbe	potrebbe	297-4	_	_	_	_
+298-6	14358-14364	essere	essere,	297-5	_	weakly_rising	_	_
+
+#Text=eh
+299-1	14365-14367	eh	e::h	298-0	TO003	_	_	_
+
+#Text=per verificare appunto un andamento di un determinato fenomeno
+300-1	14368-14371	per	per	299-0	TO003	_	_	_
+300-2	14372-14382	verificare	verificare	299-1	_	_	_	_
+300-3	14383-14390	appunto	appunto	299-2	_	_	_	_
+300-4	14391-14393	un	un	299-3	_	_	_	_
+300-5	14394-14403	andamento	andamento:	299-4	_	_	_	_
+300-6	14404-14406	di	di	299-5	_	_	_	_
+300-7	14407-14409	un	un	299-6	_	_	_	_
+300-8	14410-14421	determinato	determinato	299-7	_	_	_	_
+300-9	14422-14430	fenomeno	fenomeno	299-8	_	_	_	_
+
+#Text=ma poi cer~ cercano di agire a scala locale
+301-1	14431-14433	ma	ma	300-0	TO003	_	_	_
+301-2	14434-14437	poi	poi:	300-1	_	_	_	_
+301-3	14438-14442	cer~	cer~	300-2	_	_	_	_
+301-4	14443-14450	cercano	cercano	300-3	_	_	_	_
+301-5	14451-14453	di	di	300-4	_	_	_	_
+301-6	14454-14459	agire	agire	300-5	_	_	_	_
+301-7	14460-14461	a	a	300-6	_	_	_	_
+301-8	14462-14467	scala	scala	300-7	_	_	_	_
+301-9	14468-14474	locale	locale	300-8	_	_	_	_
+
+#Text=mh sperando che questo influenzi appunto la scala globale
+302-1	14475-14477	mh	mh	301-0	TO003	_	_	_
+302-2	14478-14486	sperando	sperando	301-1	_	_	_	_
+302-3	14487-14490	che	che	301-2	_	_	_	_
+302-4	14491-14497	questo	questo	301-3	_	_	_	_
+302-5	14498-14507	influenzi	influenzi	301-4	_	_	_	_
+302-6	14508-14515	appunto	appunto	301-5	_	_	_	_
+302-7	14516-14518	la	la	301-6	_	_	_	_
+302-8	14519-14524	scala	scala	301-7	_	_	_	_
+302-9	14525-14532	globale	globale	301-8	_	_	_	_
+
+#Text=è un ragionamento un po' contorto lo capisco
+303-1	14533-14534	è	è	302-0	TO003	_	_	_
+303-2	14535-14537	un	un	302-1	_	_	_	_
+303-3	14538-14550	ragionamento	ragionamento	302-2	_	_	_	_
+303-4	14551-14553	un	un	302-3	_	_	_	_
+303-5	14554-14557	po'	po'	302-4	_	_	_	_
+303-6	14558-14566	contorto	contorto	302-5	_	_	_	_
+303-7	14567-14569	lo	\[lo	302-6	_	_	*->58-1	*[58]
+303-8	14570-14577	capisco	capisco\]	302-7	_	_	*->58-2	*[58]
+
+#Text=no no è perché è contorto il ragionamento su cui si basa ((ride)) il modo in cui ((ride))
+304-1	14578-14580	no	\[no	303-0	TO002	_	*->58-3	*[58]
+304-2	14581-14583	no	no\]	303-1	_	_	*->58-4	*[58]
+304-3	14584-14585	è	è	303-2	_	_	_	_
+304-4	14586-14592	perché	perché	303-3	_	_	_	_
+304-5	14593-14594	è	è	303-4	_	_	_	_
+304-6	14595-14603	contorto	contorto	303-5	_	_	_	_
+304-7	14604-14606	il	il	303-6	_	_	_	_
+304-8	14607-14619	ragionamento	ragionamento	303-7	_	_	_	_
+304-9	14620-14622	su	su	303-8	_	_	_	_
+304-10	14623-14626	cui	cui	303-9	_	_	_	_
+304-11	14627-14629	si	si	303-10	_	_	_	_
+304-12	14630-14634	basa	basa	303-11	_	_	_	_
+304-13	14635-14643	((ride))	((ride))	303-12	_	_	_	_
+304-14	14644-14646	il	il	303-13	_	_	_	_
+304-15	14647-14651	modo	modo	303-14	_	_	_	_
+304-16	14652-14654	in	in	303-15	_	_	_	_
+304-17	14655-14658	cui	cui	303-16	_	_	_	_
+304-18	14659-14667	((ride))	((ride))	303-17	_	_	_	_
+
+#Text=((ride))
+305-1	14668-14676	((ride))	((ride))	304-0	TO003	_	_	_
+
+#Text=le istuzioni globali agiscono nella realtà effettivamente però
+306-1	14677-14679	le	le	305-0	TO002	_	_	_
+306-2	14680-14689	istuzioni	istuzioni	305-1	_	_	_	_
+306-3	14690-14697	globali	globali	305-2	_	_	_	_
+306-4	14698-14706	agiscono	agiscono	305-3	_	_	_	_
+306-5	14707-14712	nella	nella	305-4	_	_	_	_
+306-6	14713-14719	realtà	realtà	305-5	_	_	_	_
+306-7	14720-14734	effettivamente	effettivamente	305-6	_	_	_	_
+306-8	14735-14739	però	però,	305-7	_	weakly_rising	_	_
+
+#Text=senz' altro eh eh ha colto uno degli aspetti del eh
+307-1	14740-14745	senz'	\[senz'	306-0	TO002	_	*->59-1	*[59]
+307-2	14746-14751	altro	altro\]	306-1	_	_	*->59-2	*[59]
+307-3	14752-14754	eh	eh	306-2	_	_	_	_
+307-4	14755-14757	eh	eh	306-3	_	_	_	_
+307-5	14758-14760	ha	ha	306-4	_	_	_	_
+307-6	14761-14766	colto	colto	306-5	_	_	_	_
+307-7	14767-14770	uno	uno	306-6	_	_	_	_
+307-8	14771-14776	degli	degli	306-7	_	_	_	_
+307-9	14777-14784	aspetti	aspetti	306-8	_	_	_	_
+307-10	14785-14788	del	del	306-9	_	_	_	_
+307-11	14789-14791	eh	e::h	306-10	_	_	_	_
+
+#Text=oppure
+308-1	14792-14798	oppure	\[°oppure°\]	307-0	TO003	_	*->59-3	*[59]
+
+#Text=del modo di agire
+309-1	14799-14802	del	del	308-0	TO002	_	_	_
+309-2	14803-14807	modo	modo	308-1	_	_	_	_
+309-3	14808-14810	di	di	308-2	_	_	_	_
+309-4	14811-14816	agire	agire	308-3	_	_	_	_
+
+#Text=eh dell' istituzione globale
+310-1	14817-14819	eh	e::h	309-0	TO002	_	_	_
+310-2	14820-14825	dell'	dell'	309-1	_	_	_	_
+310-3	14826-14837	istituzione	istituzione	309-2	_	_	_	_
+310-4	14838-14845	globale	globale.	309-3	_	Falling	_	_
+
+#Text=ah quello di [PAUSE] in effetti non a caso tutti questi indici
+311-1	14846-14848	ah	a::h	310-0	TO002	_	_	_
+311-2	14849-14855	quello	quello	310-1	_	_	_	_
+311-3	14856-14858	di	di	310-2	_	_	_	_
+311-4	14859-14866	[PAUSE]	(.)	310-3	_	_	_	_
+311-5	14867-14869	in	in	310-4	_	_	_	_
+311-6	14870-14877	effetti	effetti	310-5	_	_	_	_
+311-7	14878-14881	non	non	310-6	_	_	_	_
+311-8	14882-14883	a	a	310-7	_	_	_	_
+311-9	14884-14888	caso	caso	310-8	_	_	_	_
+311-10	14889-14894	tutti	tutti	310-9	_	_	_	_
+311-11	14895-14901	questi	questi	310-10	_	_	_	_
+311-12	14902-14908	indici	indici:	310-11	_	_	_	_
+
+#Text=mh
+312-1	14909-14911	mh	mh	311-0	TO003	_	_	_
+
+#Text=ora a parte che si è parlato di indice a proposito dello sviluppo eh
+313-1	14912-14915	ora	ora	312-0	TO002	_	_	_
+313-2	14916-14917	a	a	312-1	_	_	_	_
+313-3	14918-14923	parte	parte	312-2	_	_	_	_
+313-4	14924-14927	che	che	312-3	_	_	_	_
+313-5	14928-14930	si	si	312-4	_	_	_	_
+313-6	14931-14932	è	è	312-5	_	_	_	_
+313-7	14933-14940	parlato	parlato	312-6	_	_	_	_
+313-8	14941-14943	di	di	312-7	_	_	_	_
+313-9	14944-14950	indice	indice	312-8	_	_	_	_
+313-10	14951-14952	a	a	312-9	_	_	_	_
+313-11	14953-14962	proposito	proposito	312-10	_	_	_	_
+313-12	14963-14968	dello	dello	312-11	_	_	_	_
+313-13	14969-14977	sviluppo	sviluppo	312-12	_	_	_	_
+313-14	14978-14980	eh	e:h	312-13	_	_	_	_
+
+#Text=ah siano
+314-1	14981-14983	ah	a:h	313-0	TO002	_	_	_
+314-2	14984-14989	siano	siano	313-1	_	_	_	_
+
+#Text=eh siano degli indici elaborati
+315-1	14990-14992	eh	e::h	314-0	TO002	_	_	_
+315-2	14993-14998	siano	siano	314-1	_	_	_	_
+315-3	14999-15004	degli	degli	314-2	_	_	_	_
+315-4	15005-15011	indici	indici	314-3	_	_	_	_
+315-5	15012-15021	elaborati	elaborati	314-4	_	_	_	_
+
+#Text=eh e pensatixx
+316-1	15022-15024	eh	e:h	315-0	TO002	_	_	_
+316-2	15025-15026	e	e	315-1	_	_	_	_
+316-3	15027-15036	pensatixx	pensatixx	315-2	_	_	_	_
+
+#Text=inizialmente all' interno di istituzioni globali
+317-1	15037-15049	inizialmente	inizialmente	316-0	TO002	_	_	_
+317-2	15050-15054	all'	all'	316-1	_	_	_	_
+317-3	15055-15062	interno	interno	316-2	_	_	_	_
+317-4	15063-15065	di	di	316-3	_	_	_	_
+317-5	15066-15077	istituzioni	istituzioni	316-4	_	_	_	_
+317-6	15078-15085	globali	globali	316-5	_	_	_	_
+
+#Text=eh a partire dall' onu o
+318-1	15086-15088	eh	eh	317-0	TO002	_	_	_
+318-2	15089-15090	a	a	317-1	_	_	_	_
+318-3	15091-15098	partire	partire	317-2	_	_	_	_
+318-4	15099-15104	dall'	dall'	317-3	_	_	_	_
+318-5	15105-15108	onu	onu	317-4	_	_	_	_
+318-6	15109-15110	o	\[o::::\]	317-5	_	_	*->60-1	*[60]
+
+#Text=mh
+319-1	15111-15113	mh	\[mh\]	318-0	TO003	_	*->60-2	*[60]
+
+#Text=che questi indici effettivamente o indicatori vengano effettivamente usati per monitorare
+320-1	15114-15117	che	che	319-0	TO002	_	_	_
+320-2	15118-15124	questi	questi	319-1	_	_	_	_
+320-3	15125-15131	indici	indici	319-2	_	_	_	_
+320-4	15132-15146	effettivamente	effettivamente	319-3	_	_	_	_
+320-5	15147-15148	o	o	319-4	_	_	_	_
+320-6	15149-15159	indicatori	indicatori	319-5	_	_	_	_
+320-7	15160-15167	vengano	vengano:	319-6	_	_	_	_
+320-8	15168-15182	effettivamente	effettivamente	319-7	_	_	_	_
+320-9	15183-15188	usati	usati	319-8	_	_	_	_
+320-10	15189-15192	per	per	319-9	_	_	_	_
+320-11	15193-15203	monitorare	monitorare	319-10	_	_	_	_
+
+#Text=eh ma anche per dare degli indirizzi
+321-1	15204-15206	eh	e:h	320-0	TO002	_	_	_
+321-2	15207-15209	ma	ma	320-1	_	_	_	_
+321-3	15210-15215	anche	anche	320-2	_	_	_	_
+321-4	15216-15219	per	per	320-3	_	_	_	_
+321-5	15220-15224	dare	dare	320-4	_	_	_	_
+321-6	15225-15230	degli	degli	320-5	_	_	_	_
+321-7	15231-15240	indirizzi	indirizzi	320-6	_	_	_	_
+
+#Text=quindi
+322-1	15241-15247	quindi	quindi,	321-0	TO002	weakly_rising	_	_
+
+#Text=tutti questi strumenti che a noi ci devono rappresentare la realtà
+323-1	15248-15253	tutti	tutti	322-0	TO002	_	_	_
+323-2	15254-15260	questi	questi	322-1	_	_	_	_
+323-3	15261-15270	strumenti	strumenti	322-2	_	_	_	_
+323-4	15271-15274	che	che	322-3	_	_	_	_
+323-5	15275-15276	a	a	322-4	_	_	_	_
+323-6	15277-15280	noi	noi	322-5	_	_	_	_
+323-7	15281-15283	ci	(ci	322-6	_	_	_	_
+323-8	15284-15290	devono	devono)	322-7	_	_	_	_
+323-9	15291-15304	rappresentare	rappresentare	322-8	_	_	_	_
+323-10	15305-15307	la	la	322-9	_	_	_	_
+323-11	15308-15314	realtà	realtà:	322-10	_	_	_	_
+
+#Text=in realtà sono degli strumenti come si direbbe in eh
+324-1	15315-15317	in	in	323-0	TO002	_	_	_
+324-2	15318-15324	realtà	realtà	323-1	_	_	_	_
+324-3	15325-15329	sono	sono	323-2	_	_	_	_
+324-4	15330-15335	degli	degli	323-3	_	_	_	_
+324-5	15336-15345	strumenti	strumenti	323-4	_	_	_	_
+324-6	15346-15350	come	come	323-5	_	_	_	_
+324-7	15351-15353	si	si	323-6	_	_	_	_
+324-8	15354-15361	direbbe	direbbe	323-7	_	_	_	_
+324-9	15362-15364	in	in	323-8	_	_	_	_
+324-10	15365-15367	eh	e::h	323-9	_	_	_	_
+
+#Text=con un termine diciamo mh
+325-1	15368-15371	con	con	324-0	TO002	_	_	_
+325-2	15372-15374	un	un	324-1	_	_	_	_
+325-3	15375-15382	termine	termine	324-2	_	_	_	_
+325-4	15383-15390	diciamo	diciamo::	324-3	_	_	_	_
+325-5	15391-15393	mh	mh	324-4	_	_	_	_
+
+#Text=ormai entrato anche nelle scienze sociali diciamo di origine linguistica performativi servono per [PAUSE] fare delle cose
+326-1	15394-15399	ormai	ormai	325-0	TO002	_	_	_
+326-2	15400-15407	entrato	entrato	325-1	_	_	_	_
+326-3	15408-15413	anche	anche	325-2	_	_	_	_
+326-4	15414-15419	nelle	nelle	325-3	_	_	_	_
+326-5	15420-15427	scienze	scienze	325-4	_	_	_	_
+326-6	15428-15435	sociali	sociali,	325-5	_	weakly_rising	_	_
+326-7	15436-15443	diciamo	diciamo	325-6	_	_	_	_
+326-8	15444-15446	di	(di	325-7	_	_	_	_
+326-9	15447-15454	origine	origine)	325-8	_	_	_	_
+326-10	15455-15466	linguistica	linguistica	325-9	_	_	_	_
+326-11	15467-15479	performativi	performativi	325-10	_	_	_	_
+326-12	15480-15487	servono	servono	325-11	_	_	_	_
+326-13	15488-15491	per	per	325-12	_	_	_	_
+326-14	15492-15499	[PAUSE]	(.)	325-13	_	_	_	_
+326-15	15500-15504	fare	fare	325-14	_	_	_	_
+326-16	15505-15510	delle	delle	325-15	_	_	_	_
+326-17	15511-15515	cose	cose.	325-16	_	Falling	_	_
+
+#Text=eh
+327-1	15516-15518	eh	eh	326-0	TO002	_	_	_
+
+#Text=quindi nel momento in cui
+328-1	15519-15525	quindi	quindi	327-0	TO002	_	_	_
+328-2	15526-15529	nel	nel	327-1	_	_	_	_
+328-3	15530-15537	momento	momento	327-2	_	_	_	_
+328-4	15538-15540	in	in	327-3	_	_	_	_
+328-5	15541-15544	cui	cui	327-4	_	_	_	_
+
+#Text=il monitoraggio io attivo il monitoraggio su un certo fenomeno [PAUSE] la povertà
+329-1	15545-15547	il	il	328-0	TO002	_	_	_
+329-2	15548-15560	monitoraggio	monitoraggio	328-1	_	_	_	_
+329-3	15561-15563	io	io	328-2	_	_	_	_
+329-4	15564-15570	attivo	attivo	328-3	_	_	_	_
+329-5	15571-15573	il	il	328-4	_	_	_	_
+329-6	15574-15586	monitoraggio	monitoraggio	328-5	_	_	_	_
+329-7	15587-15589	su	su	328-6	_	_	_	_
+329-8	15590-15592	un	un	328-7	_	_	_	_
+329-9	15593-15598	certo	certo	328-8	_	_	_	_
+329-10	15599-15607	fenomeno	fenomeno	328-9	_	_	_	_
+329-11	15608-15615	[PAUSE]	(.)	328-10	_	_	_	_
+329-12	15616-15618	la	la	328-11	_	_	_	_
+329-13	15619-15626	povertà	povertà,	328-12	_	weakly_rising	_	_
+
+#Text=eh
+330-1	15627-15629	eh	e:h	329-0	TO002	_	_	_
+
+#Text=eh
+331-1	15630-15632	eh	e::h	330-0	TO002	_	_	_
+
+#Text=e cerco di nello stesso tempo x
+332-1	15633-15634	e	(e)	331-0	TO002	_	_	_
+332-2	15635-15640	cerco	cerco	331-1	_	_	_	_
+332-3	15641-15643	di	di	331-2	_	_	_	_
+332-4	15644-15649	nello	nello	331-3	_	_	_	_
+332-5	15650-15656	stesso	stesso	331-4	_	_	_	_
+332-6	15657-15662	tempo	tempo	331-5	_	_	_	_
+332-7	15663-15664	x	xxx	331-6	_	_	_	_
+
+#Text=metto in atto delle delle politiche
+333-1	15665-15670	metto	metto	332-0	TO002	_	_	_
+333-2	15671-15673	in	in	332-1	_	_	_	_
+333-3	15674-15678	atto	atto	332-2	_	_	_	_
+333-4	15679-15684	delle	delle	332-3	_	_	_	_
+333-5	15685-15690	delle	delle	332-4	_	_	_	_
+333-6	15691-15700	politiche	politiche,	332-5	_	weakly_rising	_	_
+
+#Text=e dei dispositivi istituzionali per [PAUSE] intervenire locamente su quel fenomeno in quel in quel dato [PAUSE] in quel dato str~
+334-1	15701-15702	e	e	333-0	TO002	_	_	_
+334-2	15703-15706	dei	dei	333-1	_	_	_	_
+334-3	15707-15718	dispositivi	dispositivi	333-2	_	_	_	_
+334-4	15719-15732	istituzionali	istituzionali	333-3	_	_	_	_
+334-5	15733-15736	per	pe:r	333-4	_	_	_	_
+334-6	15737-15744	[PAUSE]	(.)	333-5	_	_	_	_
+334-7	15745-15756	intervenire	intervenire	333-6	_	_	_	_
+334-8	15757-15766	locamente	locamente	333-7	_	_	_	_
+334-9	15767-15769	su	su	333-8	_	_	_	_
+334-10	15770-15774	quel	quel	333-9	_	_	_	_
+334-11	15775-15783	fenomeno	fenomeno	333-10	_	_	_	_
+334-12	15784-15786	in	in	333-11	_	_	_	_
+334-13	15787-15791	quel	quel	333-12	_	_	_	_
+334-14	15792-15794	in	in	333-13	_	_	_	_
+334-15	15795-15799	quel	quel	333-14	_	_	_	_
+334-16	15800-15804	dato	dato	333-15	_	_	_	_
+334-17	15805-15812	[PAUSE]	(.)	333-16	_	_	_	_
+334-18	15813-15815	in	in	333-17	_	_	_	_
+334-19	15816-15820	quel	quel	333-18	_	_	_	_
+334-20	15821-15825	dato	dato:	333-19	_	_	_	_
+334-21	15826-15830	str~	str~	333-20	_	_	_	_
+
+#Text=quindi
+335-1	15831-15837	quindi	quindi	334-0	TO002	_	_	_
+
+#Text=oppure [PAUSE] mi è anche venuta [PAUSE] ad esempio in mente un' altra cosa
+336-1	15838-15844	oppure	oppure	335-0	TO003	_	_	_
+336-2	15845-15852	[PAUSE]	(.)	335-1	_	_	_	_
+336-3	15853-15855	mi	mi	335-2	_	_	_	_
+336-4	15856-15857	è	è	335-3	_	_	_	_
+336-5	15858-15863	anche	anche	335-4	_	_	_	_
+336-6	15864-15870	venuta	venuta	335-5	_	_	_	_
+336-7	15871-15878	[PAUSE]	(.)	335-6	_	_	_	_
+336-8	15879-15881	ad	ad	335-7	_	_	_	_
+336-9	15882-15889	esempio	esempio	335-8	_	_	_	_
+336-10	15890-15892	in	in	335-9	_	_	_	_
+336-11	15893-15898	mente	mente	335-10	_	_	_	_
+336-12	15899-15902	un'	un'	335-11	_	_	_	_
+336-13	15903-15908	altra	altra	335-12	_	_	_	_
+336-14	15909-15913	cosa	cosa	335-13	_	_	_	_
+
+#Text=eh se si parla di europa che non è una istituzione [PAUSE] globale ma comunque continentale sì
+337-1	15914-15916	eh	e:h	336-0	TO003	_	_	_
+337-2	15917-15919	se	se	336-1	_	_	_	_
+337-3	15920-15922	si	si	336-2	_	_	_	_
+337-4	15923-15928	parla	parla	336-3	_	_	_	_
+337-5	15929-15931	di	di	336-4	_	_	_	_
+337-6	15932-15938	europa	europa	336-5	_	_	_	_
+337-7	15939-15942	che	che	336-6	_	_	_	_
+337-8	15943-15946	non	non	336-7	_	_	_	_
+337-9	15947-15948	è	è	336-8	_	_	_	_
+337-10	15949-15952	una	una	336-9	_	_	_	_
+337-11	15953-15964	istituzione	istituzione	336-10	_	_	_	_
+337-12	15965-15972	[PAUSE]	(.)	336-11	_	_	_	_
+337-13	15973-15980	globale	globale	336-12	_	_	_	_
+337-14	15981-15983	ma	ma	336-13	_	_	_	_
+337-15	15984-15992	comunque	comunque	336-14	_	_	_	_
+337-16	15993-16005	continentale	continentale	336-15	_	_	_	_
+337-17	16006-16008	sì	sì	336-16	_	_	_	_
+
+#Text=ad esempio certe eh
+338-1	16009-16011	ad	ad	337-0	TO003	_	_	_
+338-2	16012-16019	esempio	esempio:	337-1	_	_	_	_
+338-3	16020-16025	certe	certe:	337-2	_	_	_	_
+338-4	16026-16028	eh	e:h	337-3	_	_	_	_
+
+#Text=certe direttive della [PAUSE] banca della bi ci e
+339-1	16029-16034	certe	certe	338-0	TO003	_	_	_
+339-2	16035-16044	direttive	direttive	338-1	_	_	_	_
+339-3	16045-16050	della	della:	338-2	_	_	_	_
+339-4	16051-16058	[PAUSE]	(.)	338-3	_	_	_	_
+339-5	16059-16064	banca	banca	338-4	_	_	_	_
+339-6	16065-16070	della	della	338-5	_	_	_	_
+339-7	16071-16073	bi	bi	338-6	_	_	_	_
+339-8	16074-16076	ci	ci	338-7	_	_	_	_
+339-9	16077-16078	e	e,	338-8	_	weakly_rising	_	_
+
+#Text=eh mh poi hanno proprio delle ripercussioni sulla vita quotidiana della gente
+340-1	16079-16081	eh	e:h	339-0	TO003	_	_	_
+340-2	16082-16084	mh	mh	339-1	_	_	_	_
+340-3	16085-16088	poi	poi	339-2	_	_	_	_
+340-4	16089-16094	hanno	hanno	339-3	_	_	_	_
+340-5	16095-16102	proprio	proprio	339-4	_	_	_	_
+340-6	16103-16108	delle	delle	339-5	_	_	_	_
+340-7	16109-16122	ripercussioni	ripercussioni	339-6	_	_	_	_
+340-8	16123-16128	sulla	sulla	339-7	_	_	_	_
+340-9	16129-16133	vita	vita	339-8	_	_	_	_
+340-10	16134-16144	quotidiana	quotidiana	339-9	_	_	_	_
+340-11	16145-16150	della	della	339-10	_	_	_	_
+340-12	16151-16156	gente	gente:.	339-11	_	Falling	_	_
+
+#Text=ad esempio possiamo vedere [PAUSE] anche il libro ne faceva ne riportava una foto
+341-1	16157-16159	ad	ad	340-0	TO003	_	_	_
+341-2	16160-16167	esempio	esempio	340-1	_	_	_	_
+341-3	16168-16176	possiamo	possiamo	340-2	_	_	_	_
+341-4	16177-16183	vedere	vedere:	340-3	_	_	_	_
+341-5	16184-16191	[PAUSE]	(.)	340-4	_	_	_	_
+341-6	16192-16197	anche	anche	340-5	_	_	_	_
+341-7	16198-16200	il	il	340-6	_	_	_	_
+341-8	16201-16206	libro	libro	340-7	_	_	_	_
+341-9	16207-16209	ne	ne	340-8	_	_	_	_
+341-10	16210-16216	faceva	faceva:	340-9	_	_	_	_
+341-11	16217-16219	ne	ne	340-10	_	_	_	_
+341-12	16220-16229	riportava	riportava	340-11	_	_	_	_
+341-13	16230-16233	una	un:a	340-12	_	_	_	_
+341-14	16234-16238	foto	foto	340-13	_	_	_	_
+
+#Text=l' immagina della la protesta degl~ degli agricoltori italiani che
+342-1	16239-16241	l'	l'	341-0	TO003	_	_	_
+342-2	16242-16250	immagina	immagina	341-1	_	_	_	_
+342-3	16251-16256	della	della	341-2	_	_	_	_
+342-4	16257-16259	la	la	341-3	_	_	_	_
+342-5	16260-16268	protesta	protesta	341-4	_	_	_	_
+342-6	16269-16274	degl~	degl~	341-5	_	_	_	_
+342-7	16275-16280	degli	degli	341-6	_	_	_	_
+342-8	16281-16292	agricoltori	agricoltori	341-7	_	_	_	_
+342-9	16293-16301	italiani	italiani,	341-8	_	weakly_rising	_	_
+342-10	16302-16305	che	che:	341-9	_	_	_	_
+
+#Text=eh
+343-1	16306-16308	eh	eh	342-0	TO002	_	_	_
+
+#Text=degli allevatori che hanno avuto delle mh delle
+344-1	16309-16314	degli	degli	343-0	TO003	_	_	_
+344-2	16315-16325	allevatori	allevatori	343-1	_	_	_	_
+344-3	16326-16329	che	che	343-2	_	_	_	_
+344-4	16330-16335	hanno	hanno	343-3	_	_	_	_
+344-5	16336-16341	avuto	avuto	343-4	_	_	_	_
+344-6	16342-16347	delle	delle	343-5	_	_	_	_
+344-7	16348-16350	mh	m:h	343-6	_	_	_	_
+344-8	16351-16356	delle	delle:	343-7	_	_	_	_
+
+#Text=una imposizione per quanto riguarda la produzione [PAUSE] eh del latte
+345-1	16357-16360	una	una	344-0	TO003	_	_	_
+345-2	16361-16372	imposizione	imposizione	344-1	_	_	_	_
+345-3	16373-16376	per	per	344-2	_	_	_	_
+345-4	16377-16383	quanto	quanto	344-3	_	_	_	_
+345-5	16384-16392	riguarda	riguarda	344-4	_	_	_	_
+345-6	16393-16395	la	la	344-5	_	_	_	_
+345-7	16396-16406	produzione	produzione	344-6	_	_	_	_
+345-8	16407-16414	[PAUSE]	(.)	344-7	_	_	_	_
+345-9	16415-16417	eh	eh	344-8	_	_	_	_
+345-10	16418-16421	del	del	344-9	_	_	_	_
+345-11	16422-16427	latte	latte	344-10	_	_	_	_
+
+#Text=ecco ad esempio in quel caso decide [PAUSE] è un vertice a decidere
+346-1	16428-16432	ecco	ecco	345-0	TO003	_	_	_
+346-2	16433-16435	ad	ad	345-1	_	_	_	_
+346-3	16436-16443	esempio	\[esempio\]	345-2	_	_	*->61-1	*[61]
+346-4	16444-16446	in	in	345-3	_	_	_	_
+346-5	16447-16451	quel	quel	345-4	_	_	_	_
+346-6	16452-16456	caso	caso	345-5	_	_	_	_
+346-7	16457-16463	decide	decide	345-6	_	_	_	_
+346-8	16464-16471	[PAUSE]	(.)	345-7	_	_	_	_
+346-9	16472-16473	è	è	345-8	_	_	_	_
+346-10	16474-16476	un	un	345-9	_	_	_	_
+346-11	16477-16484	vertice	vertice	345-10	_	_	_	_
+346-12	16485-16486	a	a	345-11	_	_	_	_
+346-13	16487-16495	decidere	decidere	345-12	_	_	_	_
+
+#Text=certo
+347-1	16496-16501	certo	\[certo\]	346-0	TO002	_	*->61-2	*[61]
+
+#Text=ma poi le ripercussioni
+348-1	16502-16504	ma	ma	347-0	TO003	_	_	_
+348-2	16505-16508	poi	poi	347-1	_	_	_	_
+348-3	16509-16511	le	le	347-2	_	_	_	_
+348-4	16512-16525	ripercussioni	ripercussioni:	347-3	_	_	_	_
+
+#Text=sono invece dirette proprio nella scala locale della
+349-1	16526-16530	sono	sono	348-0	TO003	_	_	_
+349-2	16531-16537	invece	invece	348-1	_	_	_	_
+349-3	16538-16545	dirette	dirette	348-2	_	_	_	_
+349-4	16546-16553	proprio	proprio	348-3	_	_	_	_
+349-5	16554-16559	nella	nella	348-4	_	_	_	_
+349-6	16560-16565	scala	scala	348-5	_	_	_	_
+349-7	16566-16572	locale	locale	348-6	_	_	_	_
+349-8	16573-16578	della	della:	348-7	_	_	_	_
+
+#Text=della vita di tutti i giorni de~ [PAUSE] in questo caso degli allevatori della
+350-1	16579-16584	della	della	349-0	TO003	_	_	_
+350-2	16585-16589	vita	vita	349-1	_	_	_	_
+350-3	16590-16592	di	di	349-2	_	_	_	_
+350-4	16593-16598	tutti	tutti	349-3	_	_	_	_
+350-5	16599-16600	i	i	349-4	_	_	_	_
+350-6	16601-16607	giorni	giorni	349-5	_	_	_	_
+350-7	16608-16611	de~	de~	349-6	_	_	_	_
+350-8	16612-16619	[PAUSE]	(.)	349-7	_	_	_	_
+350-9	16620-16622	in	in	349-8	_	_	_	_
+350-10	16623-16629	questo	questo	349-9	_	_	_	_
+350-11	16630-16634	caso	caso	349-10	_	_	_	_
+350-12	16635-16640	degli	degli	349-11	_	_	_	_
+350-13	16641-16651	allevatori	allevatori	349-12	_	_	_	_
+350-14	16652-16657	della	della:	349-13	_	_	_	_
+
+#Text=ah
+351-1	16658-16660	ah	a:h	350-0	TO003	_	_	_
+
+#Text=di animali da [PAUSE] da latte
+352-1	16661-16663	di	di	351-0	TO003	_	_	_
+352-2	16664-16671	animali	animali	351-1	_	_	_	_
+352-3	16672-16674	da	da	351-2	_	_	_	_
+352-4	16675-16682	[PAUSE]	(.)	351-3	_	_	_	_
+352-5	16683-16685	da	da	351-4	_	_	_	_
+352-6	16686-16691	latte	latte	351-5	_	_	_	_
+
+#Text=sì in questo caso alla fine il libro
+353-1	16692-16694	sì	sì	352-0	TO002	_	_	_
+353-2	16695-16697	in	in	352-1	_	_	_	_
+353-3	16698-16704	questo	questo	352-2	_	_	_	_
+353-4	16705-16709	caso	caso	352-3	_	_	_	_
+353-5	16710-16714	alla	alla	352-4	_	_	_	_
+353-6	16715-16719	fine	fine	352-5	_	_	_	_
+353-7	16720-16722	il	il	352-6	_	_	_	_
+353-8	16723-16728	libro	libro::	352-7	_	_	_	_
+
+#Text=un passaggio insomma
+354-1	16729-16731	un	un	353-0	TO002	_	_	_
+354-2	16732-16741	passaggio	passaggio	353-1	_	_	_	_
+354-3	16742-16749	insomma	insomma	353-2	_	_	_	_
+
+#Text=appunto dove parla di glocali~ [PAUSE] di glocale o di glocalismo di risposte dello sviluppo locale
+355-1	16750-16757	appunto	appunto	354-0	TO002	_	_	_
+355-2	16758-16762	dove	dove	354-1	_	_	_	_
+355-3	16763-16768	parla	parla	354-2	_	_	_	_
+355-4	16769-16771	di	di	354-3	_	_	_	_
+355-5	16772-16780	glocali~	glocali~	354-4	_	_	_	_
+355-6	16781-16788	[PAUSE]	(.)	354-5	_	_	_	_
+355-7	16789-16791	di	di	354-6	_	_	_	_
+355-8	16792-16799	glocale	glocale	354-7	_	_	_	_
+355-9	16800-16801	o	o	354-8	_	_	_	_
+355-10	16802-16804	di	di	354-9	_	_	_	_
+355-11	16805-16815	glocalismo	glocalismo	354-10	_	_	_	_
+355-12	16816-16818	di	di	354-11	_	_	_	_
+355-13	16819-16827	risposte	risposte	354-12	_	_	_	_
+355-14	16828-16833	dello	dello	354-13	_	_	_	_
+355-15	16834-16842	sviluppo	sviluppo	354-14	_	_	_	_
+355-16	16843-16849	locale	locale:	354-15	_	_	_	_
+
+#Text=sì
+356-1	16850-16852	sì	sì	355-0	TO003	_	_	_
+
+#Text=cerca di tenere insieme questi due piani no
+357-1	16853-16858	cerca	cerca	356-0	TO002	_	_	_
+357-2	16859-16861	di	di	356-1	_	_	_	_
+357-3	16862-16868	tenere	tenere	356-2	_	_	_	_
+357-4	16869-16876	insieme	insieme	356-3	_	_	_	_
+357-5	16877-16883	questi	questi	356-4	_	_	_	_
+357-6	16884-16887	due	due	356-5	_	_	_	_
+357-7	16888-16893	piani	piani	356-6	_	_	_	_
+357-8	16894-16896	no	no	356-7	_	_	_	_
+
+#Text=sì è vero [PAUSE] s~ è vero
+358-1	16897-16899	sì	sì	357-0	TO003	_	_	_
+358-2	16900-16901	è	è	357-1	_	_	_	_
+358-3	16902-16906	vero	\[vero\]	357-2	_	_	*->62-1	*[62]
+358-4	16907-16914	[PAUSE]	(.)	357-3	_	_	_	_
+358-5	16915-16917	s~	s~	357-4	_	_	_	_
+358-6	16918-16919	è	è	357-5	_	_	_	_
+358-7	16920-16924	vero	vero	357-6	_	_	_	_
+
+#Text=come lo vedo
+359-1	16925-16929	come	\[(come	358-0	TO002	_	*->62-2	*[62]
+359-2	16930-16932	lo	lo	358-1	_	_	*->62-3	*[62]
+359-3	16933-16937	vedo	vedo)\]	358-2	_	_	*->62-4	*[62]
+
+#Text=eh beh ad esempio il mh caso del neolocalismo o localismo
+360-1	16938-16940	eh	e:h	359-0	TO003	_	_	_
+360-2	16941-16944	beh	beh	359-1	_	_	_	_
+360-3	16945-16947	ad	ad	359-2	_	_	_	_
+360-4	16948-16955	esempio	esempio	359-3	_	_	_	_
+360-5	16956-16958	il	il	359-4	_	_	_	_
+360-6	16959-16961	mh	mh	359-5	_	_	_	_
+360-7	16962-16966	caso	caso	359-6	_	_	_	_
+360-8	16967-16970	del	del	359-7	_	_	_	_
+360-9	16971-16983	neolocalismo	neolocalismo	359-8	_	_	_	_
+360-10	16984-16985	o	o:	359-9	_	_	_	_
+360-11	16986-16995	localismo	localismo,	359-10	_	weakly_rising	_	_
+
+#Text=eh si parla di eh mh
+361-1	16996-16998	eh	eh	360-0	TO003	_	_	_
+361-2	16999-17001	si	si	360-1	_	_	_	_
+361-3	17002-17007	parla	parla	360-2	_	_	_	_
+361-4	17008-17010	di	di	360-3	_	_	_	_
+361-5	17011-17013	eh	e::h	360-4	_	_	_	_
+361-6	17014-17016	mh	mh	360-5	_	_	_	_
+
+#Text=un sistema territoriale locale
+362-1	17017-17019	un	un	361-0	TO003	_	_	_
+362-2	17020-17027	sistema	sistema	361-1	_	_	_	_
+362-3	17028-17040	territoriale	territoriale	361-2	_	_	_	_
+362-4	17041-17047	locale	locale,	361-3	_	weakly_rising	_	_
+
+#Text=che cerca di come dice proprio il libro com~ [PAUSE] competere quasi con gli altri sistemi territoriali
+363-1	17048-17051	che	che	362-0	TO003	_	_	_
+363-2	17052-17057	cerca	cerca	362-1	_	_	_	_
+363-3	17058-17060	di	di	362-2	_	_	_	_
+363-4	17061-17065	come	>come	362-3	_	_	_	_
+363-5	17066-17070	dice	dice	362-4	_	_	_	_
+363-6	17071-17078	proprio	proprio	362-5	_	_	_	_
+363-7	17079-17081	il	il	362-6	_	_	_	_
+363-8	17082-17087	libro	libro<	362-7	_	_	_	_
+363-9	17088-17092	com~	com~	362-8	_	_	_	_
+363-10	17093-17100	[PAUSE]	(.)	362-9	_	_	_	_
+363-11	17101-17110	competere	competere	362-10	_	_	_	_
+363-12	17111-17116	quasi	quasi	362-11	_	_	_	_
+363-13	17117-17120	con	con	362-12	_	_	_	_
+363-14	17121-17124	gli	gli	362-13	_	_	_	_
+363-15	17125-17130	altri	altri	362-14	_	_	_	_
+363-16	17131-17138	sistemi	sistemi	362-15	_	_	_	_
+363-17	17139-17151	territoriali	territoriali	362-16	_	_	_	_
+
+#Text=per imporre la propria tradizione per eh mh
+364-1	17152-17155	per	per	363-0	TO003	_	_	_
+364-2	17156-17163	imporre	imporre	363-1	_	_	_	_
+364-3	17164-17166	la	la	363-2	_	_	_	_
+364-4	17167-17174	propria	propria:	363-3	_	_	_	_
+364-5	17175-17185	tradizione	tradizione	363-4	_	_	_	_
+364-6	17186-17189	per	per	363-5	_	_	_	_
+364-7	17190-17192	eh	e:h	363-6	_	_	_	_
+364-8	17193-17195	mh	m:h	363-7	_	_	_	_
+
+#Text=più che di imporre sì più eh
+365-1	17196-17199	più	\[più	364-0	TO002	_	*->63-1	*[63]
+365-2	17200-17203	che	che	364-1	_	_	*->63-2	*[63]
+365-3	17204-17206	di	di	364-2	_	_	*->63-3	*[63]
+365-4	17207-17214	imporre	imporre\]	364-3	_	_	*->63-4	*[63]
+365-5	17215-17217	sì	sì	364-4	_	_	_	_
+365-6	17218-17221	più	più	364-5	_	_	_	_
+365-7	17222-17224	eh	eh	364-6	_	_	_	_
+
+#Text=mettere in risalto
+366-1	17225-17232	mettere	\[mettere	365-0	TO003	_	*->63-5	*[63]
+366-2	17233-17235	in	in	365-1	_	_	*->63-6	*[63]
+366-3	17236-17243	risalto	risalto\]	365-2	_	_	*->63-7	*[63]
+
+#Text=eh sì volevo dire appunto
+367-1	17244-17246	eh	eh	366-0	TO003	_	_	_
+367-2	17247-17249	sì	sì	366-1	_	_	_	_
+367-3	17250-17256	volevo	volevo	366-2	_	_	_	_
+367-4	17257-17261	dire	dire	366-3	_	_	_	_
+367-5	17262-17269	appunto	\[appunto\]	366-4	_	_	*->64-1	*[64]
+
+#Text=sì
+368-1	17270-17272	sì	\[sì\]	367-0	TO002	_	*->65-1	*[65]
+
+#Text=mettere in risalto far mh
+369-1	17273-17280	mettere	mettere	368-0	TO003	_	_	_
+369-2	17281-17283	in	in	368-1	_	_	_	_
+369-3	17284-17291	risalto	risalto	368-2	_	_	_	_
+369-4	17292-17295	far	fa:r	368-3	_	_	_	_
+369-5	17296-17298	mh	mh	368-4	_	_	_	_
+
+#Text=far vedere che proprio che la sua tradizione esiste è concreta
+370-1	17299-17302	far	far	369-0	TO003	_	_	_
+370-2	17303-17309	vedere	vedere	369-1	_	_	_	_
+370-3	17310-17313	che	che	369-2	_	_	_	_
+370-4	17314-17321	proprio	proprio	369-3	_	_	_	_
+370-5	17322-17325	che	che	369-4	_	_	_	_
+370-6	17326-17328	la	la	369-5	_	_	_	_
+370-7	17329-17332	sua	sua	369-6	_	_	_	_
+370-8	17333-17343	tradizione	tradizione	369-7	_	_	_	_
+370-9	17344-17350	esiste	esiste	369-8	_	_	_	_
+370-10	17351-17352	è	è	369-9	_	_	_	_
+370-11	17353-17361	concreta	concreta,	369-10	_	weakly_rising	_	_
+
+#Text=elaborare sì
+371-1	17362-17371	elaborare	ela\[borare	370-0	TO002	_	_	_
+371-1.1	17365-17374	borare	_	_	_	_	*->66-1	*[66]
+371-2	17372-17374	sì	sì\]	370-1	_	_	*->66-2	*[66]
+
+#Text=ci sono molte isituzioni che
+372-1	17375-17377	ci	\[ci	371-0	TO003	_	*->66-3	*[66]
+372-2	17378-17382	sono	sono	371-1	_	_	*->66-4	*[66]
+372-3	17383-17388	molte	molte	371-2	_	_	*->66-5	*[66]
+372-4	17389-17399	isituzioni	isitu\]zioni	371-3	_	_	_	_
+372-4.1	17389-17394	isitu	_	_	_	_	*->66-6	*[66]
+372-5	17400-17403	che	che:	371-4	_	_	_	_
+
+#Text=ci tengono a promuoverla
+373-1	17404-17406	ci	ci	372-0	TO003	_	_	_
+373-2	17407-17414	tengono	tengono	372-1	_	_	_	_
+373-3	17415-17416	a	a	372-2	_	_	_	_
+373-4	17417-17428	promuoverla	promuoverla.	372-3	_	Falling	_	_
+
+#Text=e quindi in questo caso sì c' è una interazione diretta tra le multinazionali che
+374-1	17429-17430	e	e	373-0	TO003	_	_	_
+374-2	17431-17437	quindi	quindi:	373-1	_	_	_	_
+374-3	17438-17440	in	in	373-2	_	_	_	_
+374-4	17441-17447	questo	questo	373-3	_	_	_	_
+374-5	17448-17452	caso	caso	373-4	_	_	_	_
+374-6	17453-17455	sì	sì	373-5	_	_	_	_
+374-7	17456-17458	c'	c'	373-6	_	_	_	_
+374-8	17459-17460	è	è	373-7	_	_	_	_
+374-9	17461-17464	una	una	373-8	_	_	_	_
+374-10	17465-17476	interazione	interazione	373-9	_	_	_	_
+374-11	17477-17484	diretta	diretta	373-10	_	_	_	_
+374-12	17485-17488	tra	tra	373-11	_	_	_	_
+374-13	17489-17491	le	le	373-12	_	_	_	_
+374-14	17492-17506	multinazionali	multinazionali	373-13	_	_	_	_
+374-15	17507-17510	che	che	373-14	_	_	_	_
+
+#Text=che puntano al guadagno al mh
+375-1	17511-17514	che	che	374-0	TO003	_	_	_
+375-2	17515-17522	puntano	puntano	374-1	_	_	_	_
+375-3	17523-17525	al	al	374-2	_	_	_	_
+375-4	17526-17534	guadagno	guadagno	374-3	_	_	_	_
+375-5	17535-17537	al	al	374-4	_	_	_	_
+375-6	17538-17540	mh	mh	374-5	_	_	_	_
+
+#Text=alla mh attraverso appunto questo sito geografico
+376-1	17541-17545	alla	alla	375-0	TO003	_	_	_
+376-2	17546-17548	mh	m:h	375-1	_	_	_	_
+376-3	17549-17559	attraverso	attraverso	375-2	_	_	_	_
+376-4	17560-17567	appunto	appunto	375-3	_	_	_	_
+376-5	17568-17574	questo	questo	375-4	_	_	_	_
+376-6	17575-17579	sito	sito:	375-5	_	_	_	_
+376-7	17580-17590	geografico	geografico,	375-6	_	weakly_rising	_	_
+
+#Text=e invece le istituzioni locali
+377-1	17591-17592	e	e	376-0	TO003	_	_	_
+377-2	17593-17599	invece	invece	376-1	_	_	_	_
+377-3	17600-17602	le	le	376-2	_	_	_	_
+377-4	17603-17614	istituzioni	istituzioni	376-3	_	_	_	_
+377-5	17615-17621	locali	locali,	376-4	_	weakly_rising	_	_
+
+#Text=che tendono invece alla valor~ alla valorazzazione di questo sito
+378-1	17622-17625	che	che	377-0	TO003	_	_	_
+378-2	17626-17633	tendono	tendono	377-1	_	_	_	_
+378-3	17634-17640	invece	invece	377-2	_	_	_	_
+378-4	17641-17645	alla	alla	377-3	_	_	_	_
+378-5	17646-17652	valor~	valor~	377-4	_	_	_	_
+378-6	17653-17657	alla	alla	377-5	_	_	_	_
+378-7	17658-17672	valorazzazione	valorazzazione	377-6	_	_	_	_
+378-8	17673-17675	di	di	377-7	_	_	_	_
+378-9	17676-17682	questo	questo	377-8	_	_	_	_
+378-10	17683-17687	sito	\[sito\].	377-9	_	Falling	*->67-1	*[67]
+
+#Text=e perché è composto un sistema territoriale allora
+379-1	17688-17689	e	\[e	378-0	TO002	_	*->67-2	*[67]
+379-2	17690-17696	perché	perché\]	378-1	_	_	*->67-3	*[67]
+379-3	17697-17698	è	(è)	378-2	_	_	_	_
+379-4	17699-17707	composto	composto	378-3	_	_	_	_
+379-5	17708-17710	un	un	378-4	_	_	_	_
+379-6	17711-17718	sistema	sistema	378-5	_	_	_	_
+379-7	17719-17731	territoriale	territoriale	378-6	_	_	_	_
+379-8	17732-17738	allora	allora	378-7	_	_	_	_
+
+#Text=è composto da numerosi contesti
+380-1	17739-17740	è	è	379-0	TO003	_	_	_
+380-2	17741-17749	composto	composto	379-1	_	_	_	_
+380-3	17750-17752	da	da	379-2	_	_	_	_
+380-4	17753-17761	numerosi	numerosi	379-3	_	_	_	_
+380-5	17762-17770	contesti	contesti	379-4	_	_	_	_
+
+#Text=e c' è il contesto naturale in sé
+381-1	17771-17772	e	(e)	380-0	TO003	_	_	_
+381-2	17773-17775	c'	c'	380-1	_	_	_	_
+381-3	17776-17777	è	è	380-2	_	_	_	_
+381-4	17778-17780	il	il	380-3	_	_	_	_
+381-5	17781-17789	contesto	contesto	380-4	_	_	_	_
+381-6	17790-17798	naturale	naturale	380-5	_	_	_	_
+381-7	17799-17801	in	in	380-6	_	_	_	_
+381-8	17802-17804	sé	sé,	380-7	_	weakly_rising	_	_
+
+#Text=che è qualcosa che eh appunto mh
+382-1	17805-17808	che	che	381-0	TO003	_	_	_
+382-2	17809-17810	è	è	381-1	_	_	_	_
+382-3	17811-17819	qualcosa	qualcosa	381-2	_	_	_	_
+382-4	17820-17823	che	che:	381-3	_	_	_	_
+382-5	17824-17826	eh	e:h	381-4	_	_	_	_
+382-6	17827-17834	appunto	appunto	381-5	_	_	_	_
+382-7	17835-17837	mh	m:h	381-6	_	_	_	_
+
+#Text=è un unico nel suo genere
+383-1	17838-17839	è	è	382-0	TO003	_	_	_
+383-2	17840-17842	un	un	382-1	_	_	_	_
+383-3	17843-17848	unico	unico	382-2	_	_	_	_
+383-4	17849-17852	nel	nel	382-3	_	_	_	_
+383-5	17853-17856	suo	suo	382-4	_	_	_	_
+383-6	17857-17863	genere	genere.	382-5	_	Falling	_	_
+
+#Text=per esempio nel caso dell' unesco
+384-1	17864-17867	per	per	383-0	TO003	_	_	_
+384-2	17868-17875	esempio	esempio	383-1	_	_	_	_
+384-3	17876-17879	nel	nel	383-2	_	_	_	_
+384-4	17880-17884	caso	caso	383-3	_	_	_	_
+384-5	17885-17890	dell'	dell'	383-4	_	_	_	_
+384-6	17891-17897	unesco	unesco:	383-5	_	_	_	_
+
+#Text=eh l' ultimo territorio che è entrato è quello fortunatamente dove vivo io che sono le colline del monferrato
+385-1	17898-17900	eh	eh	384-0	TO003	_	_	_
+385-2	17901-17903	l'	l'	384-1	_	_	_	_
+385-3	17904-17910	ultimo	ultimo	384-2	_	_	_	_
+385-4	17911-17921	territorio	territorio	384-3	_	_	_	_
+385-5	17922-17925	che	che	384-4	_	_	_	_
+385-6	17926-17927	è	è	384-5	_	_	_	_
+385-7	17928-17935	entrato	entrato:	384-6	_	_	_	_
+385-8	17936-17937	è	è	384-7	_	_	_	_
+385-9	17938-17944	quello	quello	384-8	_	_	_	_
+385-10	17945-17959	fortunatamente	fortunatamente	384-9	_	_	_	_
+385-11	17960-17964	dove	dove	384-10	_	_	_	_
+385-12	17965-17969	vivo	vivo	384-11	_	_	_	_
+385-13	17970-17972	io	io	384-12	_	_	_	_
+385-14	17973-17976	che	che	384-13	_	_	_	_
+385-15	17977-17981	sono	sono	384-14	_	_	_	_
+385-16	17982-17984	le	le:	384-15	_	_	_	_
+385-17	17985-17992	colline	colline	384-16	_	_	_	_
+385-18	17993-17996	del	del	384-17	_	_	_	_
+385-19	17997-18007	monferrato	monferrato,	384-18	_	weakly_rising	_	_
+
+#Text=è entrato a far parte dell' unesco e quindi
+386-1	18008-18009	è	è	385-0	TO003	_	_	_
+386-2	18010-18017	entrato	entrato	385-1	_	_	_	_
+386-3	18018-18019	a	a	385-2	_	_	_	_
+386-4	18020-18023	far	far	385-3	_	_	_	_
+386-5	18024-18029	parte	parte	385-4	_	_	_	_
+386-6	18030-18035	dell'	dell'	385-5	_	_	_	_
+386-7	18036-18042	unesco	unesco	385-6	_	_	_	_
+386-8	18043-18044	e	e	385-7	_	_	_	_
+386-9	18045-18051	quindi	\[quindi\]	385-8	_	_	*->68-1	*[68]
+
+#Text=mh
+387-1	18052-18054	mh	\[mh\]	386-0	TO002	_	*->68-2	*[68]
+
+#Text=e quello è il capitale eh naturale
+388-1	18055-18056	e	e	387-0	TO003	_	_	_
+388-2	18057-18063	quello	quello	387-1	_	_	_	_
+388-3	18064-18065	è	è	387-2	_	_	_	_
+388-4	18066-18068	il	il	387-3	_	_	_	_
+388-5	18069-18077	capitale	capitale:	387-4	_	_	_	_
+388-6	18078-18080	eh	eh	387-5	_	_	_	_
+388-7	18081-18089	naturale	naturale.	387-6	_	Falling	_	_
+
+#Text=poi c' è ad esempio c~ si parla anche di capitale istituzionale che sono ad esempio potrebbe essere l' università di torino che
+389-1	18090-18093	poi	poi	388-0	TO003	_	_	_
+389-2	18094-18096	c'	c'	388-1	_	_	_	_
+389-3	18097-18098	è	è	388-2	_	_	_	_
+389-4	18099-18101	ad	ad	388-3	_	_	_	_
+389-5	18102-18109	esempio	esempio	388-4	_	_	_	_
+389-6	18110-18112	c~	c~	388-5	_	_	_	_
+389-7	18113-18115	si	si	388-6	_	_	_	_
+389-8	18116-18121	parla	parla	388-7	_	_	_	_
+389-9	18122-18127	anche	anche	388-8	_	_	_	_
+389-10	18128-18130	di	di	388-9	_	_	_	_
+389-11	18131-18139	capitale	capitale	388-10	_	_	_	_
+389-12	18140-18153	istituzionale	istituzionale	388-11	_	_	_	_
+389-13	18154-18157	che	che	388-12	_	_	_	_
+389-14	18158-18162	sono	sono	388-13	_	_	_	_
+389-15	18163-18165	ad	ad	388-14	_	_	_	_
+389-16	18166-18173	esempio	esempio:	388-15	_	_	_	_
+389-17	18174-18182	potrebbe	potrebbe	388-16	_	_	_	_
+389-18	18183-18189	essere	essere	388-17	_	_	_	_
+389-19	18190-18192	l'	l'	388-18	_	_	_	_
+389-20	18193-18203	università	università	388-19	_	_	_	_
+389-21	18204-18206	di	di	388-20	_	_	_	_
+389-22	18207-18213	torino	torino	388-21	_	_	_	_
+389-23	18214-18217	che	che	388-22	_	_	_	_
+
+#Text=si prende carico di
+390-1	18218-18220	si	si	389-0	TO003	_	_	_
+390-2	18221-18227	prende	prende	389-1	_	_	_	_
+390-3	18228-18234	carico	carico	389-2	_	_	_	_
+390-4	18235-18237	di	di	389-3	_	_	_	_
+
+#Text=fare delle ricerche su un
+391-1	18238-18242	fare	fare	390-0	TO003	_	_	_
+391-2	18243-18248	delle	delle	390-1	_	_	_	_
+391-3	18249-18257	ricerche	ricerche	390-2	_	_	_	_
+391-4	18258-18260	su	su	390-3	_	_	_	_
+391-5	18261-18263	un	u:n	390-4	_	_	_	_
+
+#Text=paesaggio del monferrato
+392-1	18264-18273	paesaggio	paesaggio	391-0	TO003	_	_	_
+392-2	18274-18277	del	del	391-1	_	_	_	_
+392-3	18278-18288	monferrato	monferrato	391-2	_	_	_	_
+
+#Text=eh poi ci sono anche le altre istituzioni eh a livello commerciale che sono quelle che [PAUSE] ad esempio agenzie pubblicitarie agenzie di turismo che cercano appunto di
+393-1	18289-18291	eh	eh	392-0	TO003	_	_	_
+393-2	18292-18295	poi	\[poi	392-1	_	_	*->69-1	*[69]
+393-3	18296-18298	ci	ci	392-2	_	_	*->69-2	*[69]
+393-4	18299-18303	sono	so\]no	392-3	_	_	_	_
+393-4.1	18299-18301	so	_	_	_	_	*->69-3	*[69]
+393-5	18304-18309	anche	anche	392-4	_	_	_	_
+393-6	18310-18312	le	le	392-5	_	_	_	_
+393-7	18313-18318	altre	altre	392-6	_	_	_	_
+393-8	18319-18330	istituzioni	istituzioni:	392-7	_	_	_	_
+393-9	18331-18333	eh	e:h	392-8	_	_	_	_
+393-10	18334-18335	a	a	392-9	_	_	_	_
+393-11	18336-18343	livello	livello	392-10	_	_	_	_
+393-12	18344-18355	commerciale	commerciale	392-11	_	_	_	_
+393-13	18356-18359	che	che	392-12	_	_	_	_
+393-14	18360-18364	sono	sono	392-13	_	_	_	_
+393-15	18365-18371	quelle	quelle	392-14	_	_	_	_
+393-16	18372-18375	che	che	392-15	_	_	_	_
+393-17	18376-18383	[PAUSE]	(.)	392-16	_	_	_	_
+393-18	18384-18386	ad	ad	392-17	_	_	_	_
+393-19	18387-18394	esempio	esempio:	392-18	_	_	_	_
+393-20	18395-18402	agenzie	agenzie	392-19	_	_	_	_
+393-21	18403-18416	pubblicitarie	pubblicitarie,	392-20	_	weakly_rising	_	_
+393-22	18417-18424	agenzie	agenzie	392-21	_	_	_	_
+393-23	18425-18427	di	di	392-22	_	_	_	_
+393-24	18428-18435	turismo	turismo	392-23	_	_	_	_
+393-25	18436-18439	che	che	392-24	_	_	_	_
+393-26	18440-18447	cercano	cercano	392-25	_	_	_	_
+393-27	18448-18455	appunto	appunto	392-26	_	_	_	_
+393-28	18456-18458	di	di	392-27	_	_	_	_
+
+#Text=mh
+394-1	18459-18461	mh	\[mh\]	393-0	TO002	_	*->69-4	*[69]
+
+#Text=valorizzare il luogo soprattutto per il turismo culturale
+395-1	18462-18473	valorizzare	valorizzare	394-0	TO003	_	_	_
+395-2	18474-18476	il	il	394-1	_	_	_	_
+395-3	18477-18482	luogo	luogo	394-2	_	_	_	_
+395-4	18483-18494	soprattutto	soprattutto	394-3	_	_	_	_
+395-5	18495-18498	per	per	394-4	_	_	_	_
+395-6	18499-18501	il	il	394-5	_	_	_	_
+395-7	18502-18509	turismo	turismo	394-6	_	_	_	_
+395-8	18510-18519	culturale	culturale.	394-7	_	Falling	_	_
+
+#Text=eh mh
+396-1	18520-18522	eh	e:h	395-0	TO003	_	_	_
+396-2	18523-18525	mh	mh	395-1	_	_	_	_
+
+#Text=appunto tutti questi capitali eh uniti insieme
+397-1	18526-18533	appunto	appunto	396-0	TO003	_	_	_
+397-2	18534-18539	tutti	tutti	396-1	_	_	_	_
+397-3	18540-18546	questi	questi	396-2	_	_	_	_
+397-4	18547-18555	capitali	capitali	396-3	_	_	_	_
+397-5	18556-18558	eh	e::h	396-4	_	_	_	_
+397-6	18559-18564	uniti	uniti	396-5	_	_	_	_
+397-7	18565-18572	insieme	insieme,	396-6	_	weakly_rising	_	_
+
+#Text=eh compongono quello che poi viene definito un sistema territoriale locale
+398-1	18573-18575	eh	e::h	397-0	TO003	_	_	_
+398-2	18576-18586	compongono	compongono	397-1	_	_	_	_
+398-3	18587-18593	quello	quello	397-2	_	_	_	_
+398-4	18594-18597	che	che	397-3	_	_	_	_
+398-5	18598-18601	poi	poi	397-4	_	_	_	_
+398-6	18602-18607	viene	viene	397-5	_	_	_	_
+398-7	18608-18616	definito	definito	397-6	_	_	_	_
+398-8	18617-18619	un	un	397-7	_	_	_	_
+398-9	18620-18627	sistema	sistema	397-8	_	_	_	_
+398-10	18628-18640	territoriale	territoriale	397-9	_	_	_	_
+398-11	18641-18647	locale	locale	397-10	_	_	_	_
+
+#Text=sì sì
+399-1	18648-18650	sì	sì	398-0	TO002	_	_	_
+399-2	18651-18653	sì	sì	398-1	_	_	_	_
+
+#Text=e anche se uh mh c' è mh secondo me c' è un mh lato negativo di questa faccenda
+400-1	18654-18655	e	\[e	399-0	TO003	_	*->70-1	*[70]
+400-2	18656-18661	anche	anche\]	399-1	_	_	*->70-2	*[70]
+400-3	18662-18664	se	se	399-2	_	_	_	_
+400-4	18665-18667	uh	uh	399-3	_	_	_	_
+400-5	18668-18670	mh	mh	399-4	_	_	_	_
+400-6	18671-18673	c'	c'	399-5	_	_	_	_
+400-7	18674-18675	è	è	399-6	_	_	_	_
+400-8	18676-18678	mh	m:h	399-7	_	_	_	_
+400-9	18679-18686	secondo	secondo	399-8	_	_	_	_
+400-10	18687-18689	me	me	399-9	_	_	_	_
+400-11	18690-18692	c'	c'	399-10	_	_	_	_
+400-12	18693-18694	è	è	399-11	_	_	_	_
+400-13	18695-18697	un	un	399-12	_	_	_	_
+400-14	18698-18700	mh	mh	399-13	_	_	_	_
+400-15	18701-18705	lato	lato	399-14	_	_	_	_
+400-16	18706-18714	negativo	negativo	399-15	_	_	_	_
+400-17	18715-18717	di	di	399-16	_	_	_	_
+400-18	18718-18724	questa	questa	399-17	_	_	_	_
+400-19	18725-18733	faccenda	faccenda	399-18	_	_	_	_
+
+#Text=certo certo
+401-1	18734-18739	certo	\[certo	400-0	TO002	_	*->70-3	*[70]
+401-2	18740-18745	certo	certo\]	400-1	_	_	*->70-4	*[70]
+
+#Text=un lato oscuro
+402-1	18746-18748	un	un	401-0	TO002	_	_	_
+402-2	18749-18753	lato	lato	401-1	_	_	_	_
+402-3	18754-18760	oscuro	oscur\[o:\]?	401-2	_	Rising	_	_
+402-3.1	18759-18765	o	_	_	_	_	*->71-1	*[71]
+
+#Text=sì un lato un po' oscuro ((ride))
+403-1	18761-18763	sì	\[sì\]	402-0	TO003	_	*->71-2	*[71]
+403-2	18764-18766	un	un	402-1	_	_	_	_
+403-3	18767-18771	lato	lato	402-2	_	_	_	_
+403-4	18772-18774	un	un	402-3	_	_	_	_
+403-5	18775-18778	po'	po'	402-4	_	_	_	_
+403-6	18779-18785	oscuro	oscu\[ro\]	402-5	_	_	_	_
+403-6.1	18783-18789	ro	_	_	_	_	*->72-1	*[72]
+403-7	18786-18794	((ride))	((ride))	402-6	_	_	_	_
+
+#Text=the dark side of the
+404-1	18795-18798	the	the	403-0	TO002	_	_	_
+404-2	18799-18803	dark	dark	403-1	_	_	_	_
+404-3	18804-18808	side	side	403-2	_	_	_	_
+404-4	18809-18811	of	of	403-3	_	_	_	_
+404-5	18812-18815	the	the	403-4	_	_	_	_
+
+#Text=sistema territoriale
+405-1	18816-18823	sistema	sistema	404-0	TO003	_	_	_
+405-2	18824-18836	territoriale	territoriale	404-1	_	_	_	_
+
+#Text=perché mh o mh
+406-1	18837-18843	perché	perché	405-0	TO003	_	_	_
+406-2	18844-18846	mh	m:h	405-1	_	_	_	_
+406-3	18847-18848	o	o	405-2	_	_	_	_
+406-4	18849-18851	mh	m:h	405-3	_	_	_	_
+
+#Text=ho letto che alcuni paesi pur di poter rientrare in questo ingranaggio
+407-1	18852-18854	ho	ho	406-0	TO003	_	_	_
+407-2	18855-18860	letto	letto	406-1	_	_	_	_
+407-3	18861-18864	che	che	406-2	_	_	_	_
+407-4	18865-18871	alcuni	alcuni:	406-3	_	_	_	_
+407-5	18872-18877	paesi	paesi	406-4	_	_	_	_
+407-6	18878-18881	pur	pur	406-5	_	_	_	_
+407-7	18882-18884	di	di	406-6	_	_	_	_
+407-8	18885-18890	poter	poter	406-7	_	_	_	_
+407-9	18891-18900	rientrare	rientrare	406-8	_	_	_	_
+407-10	18901-18903	in	in	406-9	_	_	_	_
+407-11	18904-18910	questo	questo	406-10	_	_	_	_
+407-12	18911-18922	ingranaggio	ingranaggio::	406-11	_	_	_	_
+
+#Text=a scala globale
+408-1	18923-18924	a	a	407-0	TO003	_	_	_
+408-2	18925-18930	scala	scala	407-1	_	_	_	_
+408-3	18931-18938	globale	globale	407-2	_	_	_	_
+
+#Text=ma [PAUSE] ma locale
+409-1	18939-18941	ma	ma	408-0	TO003	_	_	_
+409-2	18942-18949	[PAUSE]	(.)	408-1	_	_	_	_
+409-3	18950-18952	ma	ma	408-2	_	_	_	_
+409-4	18953-18959	locale	locale,	408-3	_	weakly_rising	_	_
+
+#Text=inventano una tradizione
+410-1	18960-18969	inventano	inventano	409-0	TO003	_	_	_
+410-2	18970-18973	una	una	409-1	_	_	_	_
+410-3	18974-18984	tradizione	tradizione	409-2	_	_	_	_
+
+#Text=cioè la riesumano
+411-1	18985-18989	cioè	cioè	410-0	TO003	_	_	_
+411-2	18990-18992	la	la	410-1	_	_	_	_
+411-3	18993-19002	riesumano	riesumano,	410-2	_	weakly_rising	_	_
+
+#Text=dal nulla dove da dove non c' era questa tradizione
+412-1	19003-19006	dal	dal	411-0	TO003	_	_	_
+412-2	19007-19012	nulla	nulla	411-1	_	_	_	_
+412-3	19013-19017	dove	dove	411-2	_	_	_	_
+412-4	19018-19020	da	da	411-3	_	_	_	_
+412-5	19021-19025	dove	dove	411-4	_	_	_	_
+412-6	19026-19029	non	non	411-5	_	_	_	_
+412-7	19030-19032	c'	c'	411-6	_	_	_	_
+412-8	19033-19036	era	era	411-7	_	_	_	_
+412-9	19037-19043	questa	questa	411-8	_	_	_	_
+412-10	19044-19054	tradizione	tradizione.	411-9	_	Falling	_	_
+
+#Text=e quindi di per sè secondo me è una cosa
+413-1	19055-19056	e	e	412-0	TO003	_	_	_
+413-2	19057-19063	quindi	quindi	412-1	_	_	_	_
+413-3	19064-19066	di	di	412-2	_	_	_	_
+413-4	19067-19070	per	per	412-3	_	_	_	_
+413-5	19071-19073	sè	sè	412-4	_	_	_	_
+413-6	19074-19081	secondo	secondo	412-5	_	_	_	_
+413-7	19082-19084	me	me	412-6	_	_	_	_
+413-8	19085-19086	è	è	412-7	_	_	_	_
+413-9	19087-19090	una	una	412-8	_	_	_	_
+413-10	19091-19095	cosa	cosa	412-9	_	_	_	_
+
+#Text=parecchio negativa eh
+414-1	19096-19105	parecchio	parecchio	413-0	TO003	_	_	_
+414-2	19106-19114	negativa	negativa	413-1	_	_	_	_
+414-3	19115-19117	eh	e:h	413-2	_	_	_	_
+
+#Text=controproducente inventare una tradizione che
+415-1	19118-19134	controproducente	controproducente	414-0	TO003	_	_	_
+415-2	19135-19144	inventare	inventare	414-1	_	_	_	_
+415-3	19145-19148	una	una	414-2	_	_	_	_
+415-4	19149-19159	tradizione	tradizione	414-3	_	_	_	_
+415-5	19160-19163	che	che	414-4	_	_	_	_
+
+#Text=non c' è nella realtà non c' è mai stata non ha mai avuto attestazioni storiche
+416-1	19164-19167	non	non	415-0	TO003	_	_	_
+416-2	19168-19170	c'	c'	415-1	_	_	_	_
+416-3	19171-19172	è	è	415-2	_	_	_	_
+416-4	19173-19178	nella	nella	415-3	_	_	_	_
+416-5	19179-19185	realtà	realtà	415-4	_	_	_	_
+416-6	19186-19189	non	non	415-5	_	_	_	_
+416-7	19190-19192	c'	c'	415-6	_	_	_	_
+416-8	19193-19194	è	è	415-7	_	_	_	_
+416-9	19195-19198	mai	mai	415-8	_	_	_	_
+416-10	19199-19204	stata	stata	415-9	_	_	_	_
+416-11	19205-19208	non	non	415-10	_	_	_	_
+416-12	19209-19211	ha	ha	415-11	_	_	_	_
+416-13	19212-19215	mai	mai	415-12	_	_	_	_
+416-14	19216-19221	avuto	avuto	415-13	_	_	_	_
+416-15	19222-19234	attestazioni	attestazioni	415-14	_	_	_	_
+416-16	19235-19243	storiche	storiche:	415-15	_	_	_	_
+
+#Text=quando d' altra parte invece ci sono molte di queste tradizioni
+417-1	19244-19250	quando	quando	416-0	TO003	_	_	_
+417-2	19251-19253	d'	d'	416-1	_	_	_	_
+417-3	19254-19259	altra	altra	416-2	_	_	_	_
+417-4	19260-19265	parte	parte	416-3	_	_	_	_
+417-5	19266-19272	invece	invece	416-4	_	_	_	_
+417-6	19273-19275	ci	ci	416-5	_	_	_	_
+417-7	19276-19280	sono	sono	416-6	_	_	_	_
+417-8	19281-19286	molte	\[molte	416-7	_	_	*->73-1	*[73]
+417-9	19287-19289	di	di	416-8	_	_	*->73-2	*[73]
+417-10	19290-19296	queste	que\]ste	416-9	_	_	_	_
+417-10.1	19290-19293	que	_	_	_	_	*->73-3	*[73]
+417-11	19297-19307	tradizioni	tradizioni	416-10	_	_	_	_
+
+#Text=s~ sì
+418-1	19308-19310	s~	\[s~	417-0	TO002	_	*->73-4	*[73]
+418-2	19311-19313	sì	sì\]	417-1	_	_	*->73-5	*[73]
+
+#Text=culturali che invece non vengono
+419-1	19314-19323	culturali	culturali	418-0	TO003	_	_	_
+419-2	19324-19327	che	che	418-1	_	_	_	_
+419-3	19328-19334	invece	invece	418-2	_	_	_	_
+419-4	19335-19338	non	non	418-3	_	_	_	_
+419-5	19339-19346	vengono	vengono	418-4	_	_	_	_
+
+#Text=eh valorizzate come dovrebbe essere invece
+420-1	19347-19349	eh	e:h	419-0	TO003	_	_	_
+420-2	19350-19361	valorizzate	valorizzate	419-1	_	_	_	_
+420-3	19362-19366	come	come	419-2	_	_	_	_
+420-4	19367-19375	dovrebbe	dovrebbe	419-3	_	_	_	_
+420-5	19376-19382	essere	essere	419-4	_	_	_	_
+420-6	19383-19389	invece	invece.	419-5	_	Falling	_	_
+
+#Text=infatti il ma~ nelle x dei sistemi territoriali infatti
+421-1	19390-19397	infatti	infatti	420-0	TO002	_	_	_
+421-2	19398-19400	il	\[il	420-1	_	_	*->74-1	*[74]
+421-3	19401-19404	ma~	ma~	420-2	_	_	*->74-2	*[74]
+421-4	19405-19410	nelle	nelle\]	420-3	_	_	*->74-3	*[74]
+421-5	19411-19412	x	xxxx	420-4	_	_	_	_
+421-6	19413-19416	dei	dei	420-5	_	_	_	_
+421-7	19417-19424	sistemi	sistemi	420-6	_	_	_	_
+421-8	19425-19437	territoriali	territoriali	420-7	_	_	_	_
+421-9	19438-19445	infatti	infatti	420-8	_	_	_	_
+
+#Text=x secondo me
+422-1	19446-19447	x	\[xx	421-0	TO003	_	_	_
+422-1.1	19446-19448	x	_	_	_	_	*->74-4	*[74]
+422-2	19448-19455	secondo	secondo	421-1	_	_	*->74-5	*[74]
+422-3	19456-19458	me	me\]	421-2	_	_	*->74-6	*[74]
+
+#Text=eh
+423-1	19459-19461	eh	e:::h	422-0	TO002	_	_	_
+
+#Text=eh punta punta enfatizza il fatto che
+424-1	19462-19464	eh	e::h	423-0	TO002	_	_	_
+424-2	19465-19470	punta	punta	423-1	_	_	_	_
+424-3	19471-19476	punta	punta	423-2	_	_	_	_
+424-4	19477-19486	enfatizza	enfatizza	423-3	_	_	_	_
+424-5	19487-19489	il	il	423-4	_	_	_	_
+424-6	19490-19495	fatto	fatto	423-5	_	_	_	_
+424-7	19496-19499	che	che:	423-6	_	_	_	_
+
+#Text=sia l' introdotto
+425-1	19500-19503	sia	sia	424-0	TO002	_	_	_
+425-2	19504-19506	l'	(l'	424-1	_	_	_	_
+425-3	19507-19517	introdotto	)introdotto	424-2	_	_	_	_
+
+#Text=e la volontà di attori politici
+426-1	19518-19519	e	e	425-0	TO002	_	_	_
+426-2	19520-19522	la	la	425-1	_	_	_	_
+426-3	19523-19530	volontà	volontà	425-2	_	_	_	_
+426-4	19531-19533	di	di	425-3	_	_	_	_
+426-5	19534-19540	attori	attori	425-4	_	_	_	_
+426-6	19541-19549	politici	politici	425-5	_	_	_	_
+
+#Text=eh istituzionali i x istituzionali economici
+427-1	19550-19552	eh	eh	426-0	TO002	_	_	_
+427-2	19553-19566	istituzionali	istituzionali,	426-1	_	weakly_rising	_	_
+427-3	19567-19568	i	i	426-2	_	_	_	_
+427-4	19569-19570	x	xxx	426-3	_	_	_	_
+427-5	19571-19584	istituzionali	istituzionali,	426-4	_	weakly_rising	_	_
+427-6	19585-19594	economici	economici,	426-5	_	weakly_rising	_	_
+
+#Text=che si federano [PAUSE] insieme
+428-1	19595-19598	che	che	427-0	TO002	_	_	_
+428-2	19599-19601	si	si	427-1	_	_	_	_
+428-3	19602-19610	federano	federano	427-2	_	_	_	_
+428-4	19611-19618	[PAUSE]	(.)	427-3	_	_	_	_
+428-5	19619-19626	insieme	insieme	427-4	_	_	_	_
+
+#Text=per [PAUSE] creare non qualcosa che esiste già in natura ma perché quello che esiste
+429-1	19627-19630	per	pe:r	428-0	TO002	_	_	_
+429-2	19631-19638	[PAUSE]	(.)	428-1	_	_	_	_
+429-3	19639-19645	creare	creare	428-2	_	_	_	_
+429-4	19646-19649	non	non	428-3	_	_	_	_
+429-5	19650-19658	qualcosa	qualcosa	428-4	_	_	_	_
+429-6	19659-19662	che	che	428-5	_	_	_	_
+429-7	19663-19669	esiste	esiste	428-6	_	_	_	_
+429-8	19670-19673	già	già	428-7	_	_	_	_
+429-9	19674-19676	in	in	428-8	_	_	_	_
+429-10	19677-19683	natura	natura.	428-9	_	Falling	_	_
+429-11	19684-19686	ma	ma	428-10	_	_	_	_
+429-12	19687-19693	perché	perché	428-11	_	_	_	_
+429-13	19694-19700	quello	quello	428-12	_	_	_	_
+429-14	19701-19704	che	che	428-13	_	_	_	_
+429-15	19705-19711	esiste	esiste	428-14	_	_	_	_
+
+#Text=che ora venga in qualche modo
+430-1	19712-19715	che	(che)	429-0	TO002	_	_	_
+430-2	19716-19719	ora	ora	429-1	_	_	_	_
+430-3	19720-19725	venga	venga	429-2	_	_	_	_
+430-4	19726-19728	in	in	429-3	_	_	_	_
+430-5	19729-19736	qualche	qualche	429-4	_	_	_	_
+430-6	19737-19741	modo	modo	429-5	_	_	_	_
+
+#Text=eh riconosciuto e e
+431-1	19742-19744	eh	e::h	430-0	TO002	_	_	_
+431-2	19745-19757	riconosciuto	riconosciuto	430-1	_	_	_	_
+431-3	19758-19759	e	e	430-2	_	_	_	_
+431-4	19760-19761	e	e::	430-3	_	_	_	_
+
+#Text=diventi oggetto di un brand di un~ di una di un marchio
+432-1	19762-19769	diventi	diventi	431-0	TO002	_	_	_
+432-2	19770-19777	oggetto	oggetto	431-1	_	_	_	_
+432-3	19778-19780	di	di	431-2	_	_	_	_
+432-4	19781-19783	un	un	431-3	_	_	_	_
+432-5	19784-19789	brand	brand	431-4	_	_	_	_
+432-6	19790-19792	di	di	431-5	_	_	_	_
+432-7	19793-19796	un~	un~	431-6	_	_	_	_
+432-8	19797-19799	di	di	431-7	_	_	_	_
+432-9	19800-19803	una	una	431-8	_	_	_	_
+432-10	19804-19806	di	di	431-9	_	_	_	_
+432-11	19807-19809	un	un	431-10	_	_	_	_
+432-12	19810-19817	marchio	marchio,	431-11	_	weakly_rising	_	_
+
+#Text=eh quindi c' è sempre una dimensione di invenzione
+433-1	19818-19820	eh	e:::h	432-0	TO002	_	_	_
+433-2	19821-19827	quindi	quindi	432-1	_	_	_	_
+433-3	19828-19830	c'	c'	432-2	_	_	_	_
+433-4	19831-19832	è	è	432-3	_	_	_	_
+433-5	19833-19839	sempre	sempre	432-4	_	_	_	_
+433-6	19840-19843	una	una	432-5	_	_	_	_
+433-7	19844-19854	dimensione	dimensione	432-6	_	_	_	_
+433-8	19855-19857	di	di	432-7	_	_	_	_
+433-9	19858-19868	invenzione	invenzione.	432-8	_	Falling	_	_
+
+#Text=nell' invenzione che passa attraverso
+434-1	19869-19874	nell'	nell'	433-0	TO002	_	_	_
+434-2	19875-19885	invenzione	invenzione	433-1	_	_	_	_
+434-3	19886-19889	che	che	433-2	_	_	_	_
+434-4	19890-19895	passa	passa	433-3	_	_	_	_
+434-5	19896-19906	attraverso	attraverso	433-4	_	_	_	_
+
+#Text=la ma~ il marketing di quello stesso prodotto insomma
+435-1	19907-19909	la	la	434-0	TO002	_	_	_
+435-2	19910-19913	ma~	ma~	434-1	_	_	_	_
+435-3	19914-19916	il	il	434-2	_	_	_	_
+435-4	19917-19926	marketing	marketing	434-3	_	_	_	_
+435-5	19927-19929	di	di	434-4	_	_	_	_
+435-6	19930-19936	quello	quello	434-5	_	_	_	_
+435-7	19937-19943	stesso	stesso	434-6	_	_	_	_
+435-8	19944-19952	prodotto	prodotto	434-7	_	_	_	_
+435-9	19953-19960	insomma	insomma.	434-8	_	Falling	_	_
+
+#Text=eh
+436-1	19961-19963	eh	e::h	435-0	TO002	_	_	_
+
+#Text=dimensioni diverse
+437-1	19964-19974	dimensioni	dimensioni	436-0	TO002	_	_	_
+437-2	19975-19982	diverse	diverse	436-1	_	_	_	_
+
+#Text=certo il s~ un sistema territoriale come diceva lei è com~ [PAUSE] proprio perché è composto da tanti attori
+438-1	19983-19988	certo	certo	437-0	TO002	_	_	_
+438-2	19989-19991	il	il	437-1	_	_	_	_
+438-3	19992-19994	s~	s~	437-2	_	_	_	_
+438-4	19995-19997	un	un	437-3	_	_	_	_
+438-5	19998-20005	sistema	sistema	437-4	_	_	_	_
+438-6	20006-20018	territoriale	territoriale	437-5	_	_	_	_
+438-7	20019-20023	come	come	437-6	_	_	_	_
+438-8	20024-20030	diceva	diceva	437-7	_	_	_	_
+438-9	20031-20034	lei	lei	437-8	_	_	_	_
+438-10	20035-20036	è	è	437-9	_	_	_	_
+438-11	20037-20041	com~	com~	437-10	_	_	_	_
+438-12	20042-20049	[PAUSE]	(.)	437-11	_	_	_	_
+438-13	20050-20057	proprio	proprio	437-12	_	_	_	_
+438-14	20058-20064	perché	perché	437-13	_	_	_	_
+438-15	20065-20066	è	è	437-14	_	_	_	_
+438-16	20067-20075	composto	composto	437-15	_	_	_	_
+438-17	20076-20078	da	da	437-16	_	_	_	_
+438-18	20079-20084	tanti	tanti	437-17	_	_	_	_
+438-19	20085-20091	attori	attori	437-18	_	_	_	_
+
+#Text=eh più attori ci sono e più sono le dimensioni che possono essere messe in eh in valore piuttosto che [PAUSE] eh l~ la semplice dimensione vinicola che ne so
+439-1	20092-20094	eh	eh	438-0	TO002	_	_	_
+439-2	20095-20098	più	più	438-1	_	_	_	_
+439-3	20099-20105	attori	attori	438-2	_	_	_	_
+439-4	20106-20108	ci	ci	438-3	_	_	_	_
+439-5	20109-20113	sono	sono	438-4	_	_	_	_
+439-6	20114-20115	e	e	438-5	_	_	_	_
+439-7	20116-20119	più	più	438-6	_	_	_	_
+439-8	20120-20124	sono	sono	438-7	_	_	_	_
+439-9	20125-20127	le	le	438-8	_	_	_	_
+439-10	20128-20138	dimensioni	dimensioni	438-9	_	_	_	_
+439-11	20139-20142	che	che	438-10	_	_	_	_
+439-12	20143-20150	possono	possono	438-11	_	_	_	_
+439-13	20151-20157	essere	essere	438-12	_	_	_	_
+439-14	20158-20163	messe	messe	438-13	_	_	_	_
+439-15	20164-20166	in	in	438-14	_	_	_	_
+439-16	20167-20169	eh	e::h	438-15	_	_	_	_
+439-17	20170-20172	in	in	438-16	_	_	_	_
+439-18	20173-20179	valore	valore,	438-17	_	weakly_rising	_	_
+439-19	20180-20189	piuttosto	piuttosto	438-18	_	_	_	_
+439-20	20190-20193	che	che	438-19	_	_	_	_
+439-21	20194-20201	[PAUSE]	(.)	438-20	_	_	_	_
+439-22	20202-20204	eh	eh	438-21	_	_	_	_
+439-23	20205-20207	l~	l~	438-22	_	_	_	_
+439-24	20208-20210	la	la	438-23	_	_	_	_
+439-25	20211-20219	semplice	semplice	438-24	_	_	_	_
+439-26	20220-20230	dimensione	dimensione	438-25	_	_	_	_
+439-27	20231-20239	vinicola	(vinicola).	438-26	_	Falling	_	_
+439-28	20240-20243	che	che	438-27	_	_	_	_
+439-29	20244-20246	ne	ne	438-28	_	_	_	_
+439-30	20247-20249	so	\[so\].	438-29	_	Falling	*->75-1	*[75]
+
+#Text=mh
+440-1	20250-20252	mh	\[m:h\]	439-0	TO003	_	*->75-2	*[75]
+
+#Text=eh o
+441-1	20253-20255	eh	e::h	440-0	TO002	_	_	_
+441-2	20256-20257	o	o:	440-1	_	_	_	_
+
+#Text=tutto il discorso dei saperi locali
+442-1	20258-20263	tutto	tutto	441-0	TO002	_	_	_
+442-2	20264-20266	il	il	441-1	_	_	_	_
+442-3	20267-20275	discorso	discorso	441-2	_	_	_	_
+442-4	20276-20279	dei	dei	441-3	_	_	_	_
+442-5	20280-20286	saperi	saperi	441-4	_	_	_	_
+442-6	20287-20293	locali	locali,	441-5	_	weakly_rising	_	_
+
+#Text=sì
+443-1	20294-20296	sì	sì	442-0	TO003	_	_	_
+
+#Text=può entrare in un
+444-1	20297-20300	può	può	443-0	TO002	_	_	_
+444-2	20301-20308	entrare	entrare	443-1	_	_	_	_
+444-3	20309-20311	in	in	443-2	_	_	_	_
+444-4	20312-20314	un	un	443-3	_	_	_	_
+
+#Text=all' interno di un eh di un sistema territoriale
+445-1	20315-20319	all'	all'	444-0	TO002	_	_	_
+445-2	20320-20327	interno	interno	444-1	_	_	_	_
+445-3	20328-20330	di	di	444-2	_	_	_	_
+445-4	20331-20333	un	u:n	444-3	_	_	_	_
+445-5	20334-20336	eh	\[e::h\]	444-4	_	_	*->76-1	*[76]
+445-6	20337-20339	di	di	444-5	_	_	_	_
+445-7	20340-20342	un	un	444-6	_	_	_	_
+445-8	20343-20350	sistema	sistema	444-7	_	_	_	_
+445-9	20351-20363	territoriale	territoriale,	444-8	_	weakly_rising	_	_
+
+#Text=sì sì sì
+446-1	20364-20366	sì	\[sì	445-0	TO003	_	*->76-2	*[76]
+446-2	20367-20369	sì	sì	445-1	_	_	*->76-3	*[76]
+446-3	20370-20372	sì	sì\]	445-2	_	_	*->76-4	*[76]
+
+#Text=eh facendolo oggetto di valorizzazioni all' uopo insomma
+447-1	20373-20375	eh	e:h	446-0	TO002	_	_	_
+447-2	20376-20385	facendolo	facendolo	446-1	_	_	_	_
+447-3	20386-20393	oggetto	oggetto	446-2	_	_	_	_
+447-4	20394-20396	di	di	446-3	_	_	_	_
+447-5	20397-20411	valorizzazioni	valorizzazioni:::	446-4	_	_	_	_
+447-6	20412-20416	all'	all'	446-5	_	_	_	_
+447-7	20417-20421	uopo	uopo	446-6	_	_	_	_
+447-8	20422-20429	insomma	insomma.	446-7	_	Falling	_	_
+
+#Text=anche se secondo me
+448-1	20430-20435	anche	anche	447-0	TO003	_	_	_
+448-2	20436-20438	se	se	447-1	_	_	_	_
+448-3	20439-20446	secondo	secondo	447-2	_	_	_	_
+448-4	20447-20449	me	me	447-3	_	_	_	_
+
+#Text=questa è una mia opinione personale
+449-1	20450-20456	questa	questa	448-0	TO003	_	_	_
+449-2	20457-20458	è	è	448-1	_	_	_	_
+449-3	20459-20462	una	una	448-2	_	_	_	_
+449-4	20463-20466	mia	mia	448-3	_	_	_	_
+449-5	20467-20475	opinione	opinione	448-4	_	_	_	_
+449-6	20476-20485	personale	personale	448-5	_	_	_	_
+
+#Text=certe volte si tende a far piacere quella cosa nel sen~ e per farla piacere la si modifica
+450-1	20486-20491	certe	certe	449-0	TO003	_	_	_
+450-2	20492-20497	volte	volte	449-1	_	_	_	_
+450-3	20498-20500	si	si	449-2	_	_	_	_
+450-4	20501-20506	tende	tende	449-3	_	_	_	_
+450-5	20507-20508	a	a	449-4	_	_	_	_
+450-6	20509-20512	far	far	449-5	_	_	_	_
+450-7	20513-20520	piacere	piacere	449-6	_	_	_	_
+450-8	20521-20527	quella	quella	449-7	_	_	_	_
+450-9	20528-20532	cosa	cosa	449-8	_	_	_	_
+450-10	20533-20536	nel	nel	449-9	_	_	_	_
+450-11	20537-20541	sen~	sen~	449-10	_	_	_	_
+450-12	20542-20543	e	e	449-11	_	_	_	_
+450-13	20544-20547	per	per	449-12	_	_	_	_
+450-14	20548-20553	farla	farla	449-13	_	_	_	_
+450-15	20554-20561	piacere	piacere	449-14	_	_	_	_
+450-16	20562-20564	la	la	449-15	_	_	_	_
+450-17	20565-20567	si	si	449-16	_	_	_	_
+450-18	20568-20576	modifica	modifica	449-17	_	_	_	_
+
+#Text=certo certo
+451-1	20577-20582	certo	certo	450-0	TO002	_	_	_
+451-2	20583-20588	certo	\[certo\]	450-1	_	_	*->77-1	*[77]
+
+#Text=in modo che [PAUSE] sia di gradimento del
+452-1	20589-20591	in	\[in	451-0	TO003	_	*->77-2	*[77]
+452-2	20592-20596	modo	modo	451-1	_	_	*->77-3	*[77]
+452-3	20597-20600	che	che\]	451-2	_	_	*->77-4	*[77]
+452-4	20601-20608	[PAUSE]	(.)	451-3	_	_	_	_
+452-5	20609-20612	sia	sia	451-4	_	_	_	_
+452-6	20613-20615	di	di	451-5	_	_	_	_
+452-7	20616-20626	gradimento	gradimento	451-6	_	_	_	_
+452-8	20627-20630	del	de:l	451-7	_	_	_	_
+
+#Text=per il gusto della della gente
+453-1	20631-20634	per	per	452-0	TO003	_	_	_
+453-2	20635-20637	il	il	452-1	_	_	_	_
+453-3	20638-20643	gusto	gusto	452-2	_	_	_	_
+453-4	20644-20649	della	della:	452-3	_	_	_	_
+453-5	20650-20655	della	della	452-4	_	_	_	_
+453-6	20656-20661	gente	gente	452-5	_	_	_	_
+
+#Text=va bene va bene basta no non parli più di queste cose non ne posso più
+454-1	20662-20664	va	va	453-0	TO002	_	_	_
+454-2	20665-20669	bene	bene	453-1	_	_	_	_
+454-3	20670-20672	va	va	453-2	_	_	_	_
+454-4	20673-20677	bene	bene	453-3	_	_	_	_
+454-5	20678-20683	basta	basta	453-4	_	_	_	_
+454-6	20684-20686	no	no::	453-5	_	_	_	_
+454-7	20687-20690	non	non	453-6	_	_	_	_
+454-8	20691-20696	parli	(parli)	453-7	_	_	_	_
+454-9	20697-20700	più	più	453-8	_	_	_	_
+454-10	20701-20703	di	(di)	453-9	_	_	_	_
+454-11	20704-20710	queste	queste	453-10	_	_	_	_
+454-12	20711-20715	cose	cose	453-11	_	_	_	_
+454-13	20716-20719	non	(non	453-12	_	_	_	_
+454-14	20720-20722	ne	ne	453-13	_	_	_	_
+454-15	20723-20728	posso	posso	453-14	_	_	_	_
+454-16	20729-20732	più	più)	453-15	_	_	_	_
+
+#Text=((ride))
+455-1	20733-20741	((ride))	((ride))	454-0	TO003	_	_	_
+
+#Text=chiami il tecnico [PAUSE] che qui si è finito
+456-1	20742-20748	chiami	chiami	455-0	TO002	_	_	_
+456-2	20749-20751	il	il	455-1	_	_	_	_
+456-3	20752-20759	tecnico	tecn\[ico\]	455-2	_	_	_	_
+456-3.1	20756-20763	ico	_	_	_	_	*->78-1	*[78]
+456-4	20760-20767	[PAUSE]	(.)	455-3	_	_	_	_
+456-5	20768-20771	che	che	455-4	_	_	_	_
+456-6	20772-20775	qui	qui	455-5	_	_	_	_
+456-7	20776-20778	si	si	455-6	_	_	_	_
+456-8	20779-20780	è	è	455-7	_	_	_	_
+456-9	20781-20787	finito	finito	455-8	_	_	_	_
+
+#Text=ah sì
+457-1	20788-20790	ah	\[ah	456-0	TO003	_	*->78-2	*[78]
+457-2	20791-20793	sì	sì\]	456-1	_	_	*->78-3	*[78]

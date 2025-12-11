@@ -115,7 +115,7 @@ def main(args):
 	for file_input in files_input:
 		basename = pathlib.Path(file_input).stem
 		conv_id = basename.split(".")[0]
-		output_path = pathlib.Path(output_folder) / f"{conv_id}_webanno.tsv"
+		output_path = pathlib.Path(output_folder) / f"{conv_id}.tsv"
 
 		convert_file(file_input, output_path)
 
@@ -125,8 +125,8 @@ if __name__ == "__main__":
 	import argparse
 
 	parser = argparse.ArgumentParser(description="Convert .vert.tsv files to WebAnno TSV format.")
-	parser.add_argument("--input_files", help="List of .vert.tsv files.", nargs='+', required=True)
-	parser.add_argument("--output_folder", help="Output folder path.", default="data/output/")
+	parser.add_argument("--input-files", help="List of .vert.tsv files.", nargs='+', required=True)
+	parser.add_argument("--output-folder", help="Output folder path.", default="data/output/")
 	parser.set_defaults(func=main)
 
 	args = parser.parse_args()
