@@ -21,7 +21,7 @@ SUMMARY_FILE = OUTPUT_DIR / "accuracy_summary.tsv"
 def extract_speaker_text(transcript_lines, speaker_id):
     """
     Extracts and concatenates all text for a given speaker from the transcript lines.
-    Returns a single string with the speaker's text.
+    Returns a single string with the speaker's text. 
     """
     lines = [
         line.split("\t", 1)[1].strip()
@@ -73,92 +73,60 @@ def align_text(hyp_text, ref_text):
     return aligned_hyp, aligned_ref
 
 
-def compute_accuracies_for_file(file_id, generated_lines, original_lines):
-    """
-    Computes accuracy for each speaker and overall accuracy.
-    
-    Args:
-        file_id (str): Identifier for the file.
-        generated_lines (list): Lines from the generated transcript.
-        original_lines (list): Lines from the original transcript.
-    
-    Returns:
-        dict: A dictionary with (a) overall accuracy and (b) per-speaker accuracies.
-    """
-    speakers = set()
+results = {}
 
-    # this loop identifies all speakers present in either transcript
-    for line in generated_lines + original_lines:
+for entry in FILES:
+    with open(entry["generated"], encoding="utf-8") as f:
+        gen_lines = f.readlines()
+
+    with open(entry["original"], encoding="utf-8") as f:
+        gold_lines = f.readlines()
+
+    # speakers in order of appearance in GOLD
+    speakers = []
+    for line in gold_lines:
         if "\t" in line:
-            speakers.add(line.split("\t", 1)[0])
+            spk = line.split("\t", 1)[0]
+            if spk not in speakers:
+                speakers.append(spk)
 
-    speaker_accuracies = {}
-    global_ref = []
-    global_hyp = []
+    speaker_acc = {}
+    global_ref, global_hyp = [], []
 
-    # calculate accuracy per speaker
-    for speaker in sorted(speakers):
-        hyp_text = extract_speaker_text(generated_lines, speaker)
-        ref_text = extract_speaker_text(original_lines, speaker)
+    for spk in speakers:
+        hyp_text = extract_speaker_text(gen_lines, spk)
+        ref_text = extract_speaker_text(gold_lines, spk)
 
-        if not hyp_text.strip() or not ref_text.strip():
-            continue # skip if either text is empty
+        if not hyp_text or not ref_text:
+            continue
 
         aligned_hyp, aligned_ref = align_text(hyp_text, ref_text)
-
-        acc = accuracy_score(aligned_ref, aligned_hyp)
-        speaker_accuracies[speaker] = acc
+        speaker_acc[spk] = accuracy_score(aligned_ref, aligned_hyp)
 
         global_ref.extend(aligned_ref)
         global_hyp.extend(aligned_hyp)
 
-    # calculate overall accuracy
-    global_accuracy = accuracy_score(global_ref, global_hyp) if global_ref else 0.0
-
-    return {
-        "file": file_id,
-        "overall": global_accuracy,
-        "speakers": speaker_accuracies,
+    results[entry["file_id"]] = {
+        "overall": accuracy_score(global_ref, global_hyp),
+        "speakers": speaker_acc,
     }
 
-# Main processing loop, processing each file and computing accuracies
-results = {}
+# =========================
+# WRITE SUMMARY
+# =========================
 
-for entry in FILES:
-    file_id = entry["file_id"]
-
-    with open(entry["generated"], encoding="utf-8") as f:
-        generated_lines = f.readlines()
-
-    with open(entry["original"], encoding="utf-8") as f:
-        original_lines = f.readlines()
-
-    results[file_id] = compute_accuracies_for_file(
-        file_id, generated_lines, original_lines
-    )
-
-# Creating the summary TSV file
-
-# Collect all unique speakers across all files
-all_speakers = set()
-for res in results.values():
-    all_speakers.update(res["speakers"].keys())
-
-all_speakers = sorted(all_speakers)
+all_speakers = sorted(
+    {s for r in results.values() for s in r["speakers"]}
+)
 
 with open(SUMMARY_FILE, "w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f, delimiter="\t")
+    writer.writerow(["File", "Overall"] + all_speakers)
 
-    header = ["File", "Overall"] + all_speakers
-    writer.writerow(header)
-
-    for file_id, res in results.items():
-        row = [file_id, f"{res['overall'] * 100:.2f}%"]
-
-        for speaker in all_speakers:
-            if speaker in res["speakers"]:
-                row.append(f"{res['speakers'][speaker] * 100:.2f}%")
-            else:
-                row.append("-")
-
+    for fid, res in results.items():
+        row = [fid, f"{res['overall']*100:.2f}%"]
+        for spk in all_speakers:
+            row.append(
+                f"{res['speakers'][spk]*100:.2f}%" if spk in res["speakers"] else "-"
+            )
         writer.writerow(row)
