@@ -130,3 +130,7 @@ with open(SUMMARY_FILE, "w", encoding="utf-8", newline="") as f:
                 f"{res['speakers'][spk]*100:.2f}%" if spk in res["speakers"] else "-"
             )
         writer.writerow(row)
+        
+        
+        
+       

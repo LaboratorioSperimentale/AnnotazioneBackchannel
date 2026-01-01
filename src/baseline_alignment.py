@@ -2,140 +2,122 @@ import csv
 from difflib import SequenceMatcher
 from pathlib import Path
 
-# =========================
-# CONFIG
-# =========================
-
-FILE_ID = "PBA001"
-
-GENERATED_FILE = "data/input-diarize-c1/PBA001_diarize-c1_normalized.txt"
-ORIGINAL_FILE = "data/input-kiparla/PBA001.txt"
+# --- Percorsi e configurazione ---
+FILES = [
+    {
+        "file_id": "PBA001",
+        "generated": "data/input-diarize-c1/PBA001_diarize-c1_normalized.txt",
+        "original": "data/input-kiparla/PBA001.txt",
+    }
+]
 
 OUTPUT_DIR = Path("alignments")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-OUT_CONVERSATION = OUTPUT_DIR / f"alignment_{FILE_ID}_conversation.tsv"
 
-# =========================
-# UTILS
-# =========================
-
-def parse_lines(lines):
+def extract_speaker_text(transcript_lines, speaker_id):
     """
-    Parses lines of the form:
-    SPEAKER<TAB>text
-
-    Returns a list of tuples:
-    [(speaker, text), ...] preserving order
+    Estrae e concatena tutto il testo di uno speaker.
+    Restituisce una lista di tuple (speaker, parola) nell'ordine originale.
     """
-    parsed = []
-    for line in lines:
-        line = line.strip()
-        if "\t" not in line:
-            continue
-        speaker, text = line.split("\t", 1)
-        parsed.append((speaker, text.strip()))
-    return parsed
+    words = []
+    for line in transcript_lines:
+        if line.startswith(speaker_id + "\t"):
+            text = line.split("\t", 1)[1].strip()
+            for w in text.split():
+                words.append((speaker_id, w))
+    return words
 
 
-def align_text(hyp_text, ref_text):
+def align_words(seq_a, seq_b):
     """
-    Aligns hypothesis and reference word-by-word
-    using SequenceMatcher.
-
-    Returns:
-        aligned_hyp (list of str)
-        aligned_ref (list of str)
+    Allinea due sequenze di parole con gap '-' quando non c'è match.
+    Restituisce due liste allineate di tuple (speaker, parola) o ('-', '-') per i gap.
     """
-    hyp_words = hyp_text.split()
-    ref_words = ref_text.split()
+    words_a = [w for _, w in seq_a]
+    words_b = [w for _, w in seq_b]
 
-    matcher = SequenceMatcher(None, hyp_words, ref_words)
-
-    aligned_hyp = []
-    aligned_ref = []
+    matcher = SequenceMatcher(None, words_a, words_b)
+    aligned_a = []
+    aligned_b = []
 
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
         if tag == "equal":
-            aligned_hyp.extend(hyp_words[i1:i2])
-            aligned_ref.extend(ref_words[j1:j2])
-
+            aligned_a.extend(seq_a[i1:i2])
+            aligned_b.extend(seq_b[j1:j2])
         elif tag == "replace":
             length = max(i2 - i1, j2 - j1)
-            aligned_hyp.extend(hyp_words[i1:i2] + ["_"] * (length - (i2 - i1)))
-            aligned_ref.extend(ref_words[j1:j2] + ["_"] * (length - (j2 - j1)))
-
+            # Estendi con gap se necessario
+            extended_a = seq_a[i1:i2] + [("-", "-")] * (length - (i2 - i1))
+            extended_b = seq_b[j1:j2] + [("-", "-")] * (length - (j2 - j1))
+            aligned_a.extend(extended_a)
+            aligned_b.extend(extended_b)
         elif tag == "delete":
-            aligned_hyp.extend(hyp_words[i1:i2])
-            aligned_ref.extend(["_"] * (i2 - i1))
-
+            aligned_a.extend(seq_a[i1:i2])
+            aligned_b.extend([("-", "-")] * (i2 - i1))
         elif tag == "insert":
-            aligned_hyp.extend(["_"] * (j2 - j1))
-            aligned_ref.extend(ref_words[j1:j2])
+            aligned_a.extend([("-", "-")] * (j2 - j1))
+            aligned_b.extend(seq_b[j1:j2])
 
-    return aligned_hyp, aligned_ref
+    return aligned_a, aligned_b
 
 
-# =========================
-# LOAD FILES
-# =========================
+def process_file(file_entry):
+    file_id = file_entry["file_id"]
 
-with open(GENERATED_FILE, encoding="utf-8") as f:
-    generated_lines = parse_lines(f.readlines())
+    # Carica i file
+    with open(file_entry["generated"], encoding="utf-8") as f:
+        gen_lines = f.readlines()
+    with open(file_entry["original"], encoding="utf-8") as f:
+        orig_lines = f.readlines()
 
-with open(ORIGINAL_FILE, encoding="utf-8") as f:
-    original_lines = parse_lines(f.readlines())
+    # Trova tutti gli speaker
+    speakers = []
+    for line in gen_lines + orig_lines:
+        if "\t" in line:
+            spk = line.split("\t", 1)[0]
+            if spk not in speakers:
+                speakers.append(spk)  # mantiene l'ordine della conversazione
 
-# =========================
-# BUILD CONVERSATION ORDER
-# =========================
+    # --- Allineamento generale (tutte le parole, rispettando l'ordine) ---
+    all_words_gen = []
+    all_words_orig = []
+    for line in gen_lines:
+        spk, text = line.strip().split("\t", 1)
+        for w in text.split():
+            all_words_gen.append((spk, w))
+    for line in orig_lines:
+        spk, text = line.strip().split("\t", 1)
+        for w in text.split():
+            all_words_orig.append((spk, w))
 
-# We iterate over the ORIGINAL transcript,
-# because it defines the real conversational order
-rows = []
-rows_by_speaker = {}
+    aligned_gen, aligned_orig = align_words(all_words_gen, all_words_orig)
 
-gen_idx = 0  # pointer in generated transcript
-
-for spk, ref_text in original_lines:
-
-    # collect all generated segments for this speaker
-    hyp_segments = []
-    while gen_idx < len(generated_lines) and generated_lines[gen_idx][0] == spk:
-        hyp_segments.append(generated_lines[gen_idx][1])
-        gen_idx += 1
-
-    hyp_text = " ".join(hyp_segments)
-
-    if not hyp_text.strip() and not ref_text.strip():
-        continue
-
-    aligned_hyp, aligned_ref = align_text(hyp_text, ref_text)
-
-    for r, h in zip(aligned_ref, aligned_hyp):
-        row = [spk, r, h]
-        rows.append(row)
-        rows_by_speaker.setdefault(spk, []).append(row)
-
-# =========================
-# WRITE CONVERSATION FILE
-# =========================
-
-with open(OUT_CONVERSATION, "w", encoding="utf-8", newline="") as f:
-    writer = csv.writer(f, delimiter="\t")
-    writer.writerow(["Speaker", "Gold", "Generated"])
-    writer.writerows(rows)
-
-# =========================
-# WRITE PER-SPEAKER FILES
-# =========================
-
-for spk, spk_rows in rows_by_speaker.items():
-    out_spk = OUTPUT_DIR / f"alignment_{FILE_ID}_{spk}.tsv"
-
-    with open(out_spk, "w", encoding="utf-8", newline="") as f:
+    # Salva il CSV generale
+    general_csv = OUTPUT_DIR / f"{file_id}_alignment_all_speakers.csv"
+    with open(general_csv, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f, delimiter="\t")
         writer.writerow(["Speaker", "Gold", "Generated"])
-        writer.writerows(spk_rows)
+        for (spk_g, w_g), (spk_o, w_o) in zip(aligned_orig, aligned_gen):
+            writer.writerow([spk_o if spk_o != "-" else spk_g, w_o if w_o != "-" else "-", w_g if w_g != "-" else "-"])
+
+    # --- CSV separati per speaker ---
+    for speaker in speakers:
+        speaker_gen = extract_speaker_text(gen_lines, speaker)
+        speaker_orig = extract_speaker_text(orig_lines, speaker)
+
+        aligned_speaker_gen, aligned_speaker_orig = align_words(speaker_gen, speaker_orig)
+
+        speaker_csv = OUTPUT_DIR / f"{file_id}_alignment_{speaker}.csv"
+        with open(speaker_csv, "w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f, delimiter="\t")
+            writer.writerow(["Speaker", "Gold", "Generated"])
+            for (spk_g, w_g), (spk_o, w_o) in zip(aligned_speaker_orig, aligned_speaker_gen):
+                writer.writerow([spk_o if spk_o != "-" else spk_g, w_o if w_o != "-" else "-", w_g if w_g != "-" else "-"])
+
+    print(f"[DONE] {file_id} - CSV generati nella cartella {OUTPUT_DIR}")
 
 
+# --- Loop principale ---
+for f_entry in FILES:
+    process_file(f_entry)

@@ -18,7 +18,7 @@ for line in lines:
         text = match.group(2)
         
         text = text.lower()
-        text = text.translate(str.maketrans("", "", string.punctuation)) #removes punctuation
+        text = re.sub(r"[^\w\s']", "", text) #removes punctuation except apostrophes
         text = re.sub(r"\s+", " ", text).strip() # normalize spaces
         normalized_lines.append(f"{speaker_id}\t{text}\n") # final normalized line
     else:
