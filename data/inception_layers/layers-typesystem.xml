@@ -5,74 +5,6 @@
                 
         <typeDescription>
                         
-            <name>de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceChain</name>
-                        
-            <description>Marks the beginning of a chain.</description>
-                        
-            <supertypeName>uima.cas.AnnotationBase</supertypeName>
-                        
-            <features>
-                                
-                <featureDescription>
-                                        
-                    <name>first</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink</rangeTypeName>
-                                    
-                </featureDescription>
-                            
-            </features>
-                    
-        </typeDescription>
-                
-        <typeDescription>
-                        
-            <name>de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink</name>
-                        
-            <description/>
-                        
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-                        
-            <features>
-                                
-                <featureDescription>
-                                        
-                    <name>next</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>referenceType</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>referenceRelation</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                                    
-                </featureDescription>
-                            
-            </features>
-                    
-        </typeDescription>
-                
-        <typeDescription>
-                        
             <name>de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures</name>
                         
             <description>Morphological categories that can be attached to tokens.
@@ -515,6 +447,54 @@ The features are supposed to match the Universal Dependency v1 features.</descri
                 
         <typeDescription>
                         
+            <name>webanno.custom.Backchannel</name>
+                        
+            <description/>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>backchannel_value</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>webanno.custom.Fillers</name>
+                        
+            <description/>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>fillers_values</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
             <name>webanno.custom.Intonation</name>
                         
             <description/>
@@ -631,7 +611,7 @@ The features are supposed to match the Universal Dependency v1 features.</descri
                 
         <typeDescription>
                         
-            <name>webanno.custom.Relation</name>
+            <name>webanno.custom.Repair</name>
                         
             <description/>
                         
@@ -641,51 +621,11 @@ The features are supposed to match the Universal Dependency v1 features.</descri
                                 
                 <featureDescription>
                                         
-                    <name>Dependent</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>webanno.custom.Target</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>Governor</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>webanno.custom.Target</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>Coherentsemantics</name>
+                    <name>repair_value</name>
                                         
                     <description/>
                                         
                     <rangeTypeName>uima.cas.String</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>Governor</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>webanno.custom.Target</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>Dependent</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>webanno.custom.Target</rangeTypeName>
                                     
                 </featureDescription>
                             
@@ -706,40 +646,6 @@ The features are supposed to match the Universal Dependency v1 features.</descri
                 <featureDescription>
                                         
                     <name>Speaker_values</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                                    
-                </featureDescription>
-                            
-            </features>
-                    
-        </typeDescription>
-                
-        <typeDescription>
-                        
-            <name>webanno.custom.Target</name>
-                        
-            <description/>
-                        
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-                        
-            <features>
-                                
-                <featureDescription>
-                                        
-                    <name>Backchannel_semantics</name>
-                                        
-                    <description/>
-                                        
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                                    
-                </featureDescription>
-                                
-                <featureDescription>
-                                        
-                    <name>Target_type</name>
                                         
                     <description/>
                                         

@@ -1,0 +1,13 @@
+{
+  "name" : "Repair",
+  "description" : null,
+  "language" : "it",
+  "tags" : [ {
+    "tag_name" : "OR",
+    "tag_description" : "Other-initiated repair"
+  }, {
+    "tag_name" : "SR",
+    "tag_description" : "self-repair"
+  } ],
+  "create_tag" : false
+}
