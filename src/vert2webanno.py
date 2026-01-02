@@ -6,8 +6,19 @@ def produce_sentence(sentence):
 
 	yield f"#Text={sentence['text'].strip()}"
 	for token in sentence["tokens"]:
-		yield f"{token['id']}\t{token['span_chars']}\t{token['form']}\t{token['span']}\t{token['token_id']}\t{token['speaker_id']}\t{token['intonation']}\t{token['overlap_relation']}\t{token['overlap_type']}"
-		# print(f"{token['id']}\t{token['span_chars']}\t{token['form']}\t{token['intonation']}\t{token['span']}\t{token['speaker_id']}\t{token['token_id']}")
+     		yield "\t".join([
+            token['id'],                 # ID Inception
+            token['span_chars'],         # char offsets
+            token['form'],               # token ortografico
+            token['intonation'],         # Intonation_values
+            token['span'],               # Jefferson_values
+            token['speaker_id'],         # Speaker_values
+            token['token_id'],           # TokenID_values
+            token['overlap_relation'],   # referenceRelation (OverlapsLink)
+            token['overlap_type']        # referenceType (OverlapsLink)
+        ])
+		#yield f"{token['id']}\t{token['span_chars']}\t{token['form']}\t{token['span']}\t{token['token_id']}\t{token['speaker_id']}\t{token['intonation']}\t{token['overlap_relation']}\t{token['overlap_type']}"
+		#print(f"{token['id']}\t{token['span_chars']}\t{token['form']}\t{token['intonation']}\t{token['span']}\t{token['speaker_id']}\t{token['token_id']}")
 
 def convert_file(file_input, output_path):
 
