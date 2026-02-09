@@ -1,29 +1,30 @@
 import csv
 from difflib import SequenceMatcher
 from pathlib import Path
+import re
 
 
 def compute_wer(hyp, ref):
-    substitutions = 0
-    insertions = 0
-    deletions = 0
-    N = 0  # numero parole gold
+	substitutions = 0
+	insertions = 0
+	deletions = 0
+	N = 0  # numero parole gold
 
-    for (_, h), (_, r) in zip(hyp, ref):
-        if r != "-":
-            N += 1
+	for (_, h), (_, r) in zip(hyp, ref):
+		if r != "-":
+			N += 1
 
-        if h == r:
-            continue
-        elif h == "-":
-            deletions += 1
-        elif r == "-":
-            insertions += 1
-        else:
-            substitutions += 1
+		if h == r:
+			continue
+		elif h == "-":
+			deletions += 1
+		elif r == "-":
+			insertions += 1
+		else:
+			substitutions += 1
 
-    wer = (substitutions + deletions + insertions) / N if N > 0 else 0.0
-    return wer
+	wer = (substitutions + deletions + insertions) / N if N > 0 else 0.0
+	return wer
 
 
 def extract_speaker_text(transcript_lines, speaker_id):
@@ -71,6 +72,46 @@ def align_words(seq_a, seq_b):
 			aligned_b.extend(seq_b[j1:j2])
 
 	return aligned_a, aligned_b
+
+def align_backchannels(file_vert, file_whisper):
+	words_vert = []
+	words_whisper = []
+	with open(file_vert) as fin:
+		reader = csv.DictReader(fin, delimiter="\t")
+		for row in reader:
+			if row["type"]!="nonverbalbehavior" and speaker != "???":
+				words_vert.append(row)
+
+	with open(file_whisper) as fin:
+		for line in fin:
+			linesplit = line.strip().split("\t")
+			speaker, utterance = linesplit
+			tokens = re.findall(r"\b\w+'?|\w+", utterance, flags=re.UNICODE)
+			for token in tokens:
+				if token == "ok":
+					token = "okay"
+				words_whisper.append((speaker, token))
+
+	aligned_vert, aligned_whisper = align_words(
+		[(x["speaker"], x["form"]) for x in words_vert],
+		words_whisper
+	)
+
+	i = 0
+	for a, b in zip(aligned_vert, aligned_whisper):
+		sa, wa = a
+		if wa != "-":
+			# if match
+			# elif mismatch
+			print(words_vert[i]["backchannel"], a, b)
+			i += 1
+			# input()
+		else:
+			# insertion
+			print({}, a, b)
+			input()
+
+
 
 
 def process_file(file_entry):
@@ -131,17 +172,20 @@ def process_file(file_entry):
 
 if __name__ == "__main__":
 	# --- Percorsi e configurazione ---
-	FILES = [
-		{
-			"file_id": "BOC1002",
-			"generated": "BOC1002/subs_final/BOC1002_clean_validated_normalized.txt",
-			"original": "GOLD/BOC1002.txt",
-		}
-	]
+	# FILES = [
+	# 	{
+	# 		"file_id": "BOC1002",
+	# 		"generated": "BOC1002/subs_final/BOC1002_clean_validated_normalized.txt",
+	# 		"original": "GOLD/BOC1002.txt",
+	# 	}
+	# ]
 
-	OUTPUT_DIR = Path("alignments")
-	OUTPUT_DIR.mkdir(exist_ok=True)
-	
-	# --- Loop principale ---
-	for f_entry in FILES:
-		process_file(f_entry)
+	# OUTPUT_DIR = Path("alignments")
+	# OUTPUT_DIR.mkdir(exist_ok=True)
+
+	# # --- Loop principale ---
+	# for f_entry in FILES:
+	# 	process_file(f_entry)
+
+	align_backchannels("data/output_vert/BOC1007.vert.tsv",
+                    "data/whisper/BOC1007_event.txt")
